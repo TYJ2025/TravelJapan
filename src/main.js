@@ -1,5 +1,5 @@
 import './style.css'
-import { restaurant } from './data/restaurant.js'
+import { scenarios, getScenario } from './data/scenarios.js'
 import {
   speak,
   stopSpeaking,
@@ -9,8 +9,6 @@ import {
   recognitionSupported,
   scoreAttempt
 } from './speech.js'
-
-const scenario = restaurant
 
 // Display preferences (persisted so your settings survive a refresh).
 const prefs = loadPrefs()
@@ -30,40 +28,99 @@ function savePrefs() {
   localStorage.setItem('tj-prefs', JSON.stringify(prefs))
 }
 
-// ---------------------------------------------------------------------------
-// Render
-// ---------------------------------------------------------------------------
-
 const app = document.getElementById('app')
 
-function render() {
-  app.innerHTML = ''
-  app.appendChild(renderHeader())
-  app.appendChild(renderToolbar())
-  app.appendChild(renderDialogue())
-  app.appendChild(renderFooter())
-  applyPrefClasses()
+// ---------------------------------------------------------------------------
+// Routing: the URL hash selects a scenario (e.g. #sushi). Empty = home.
+// ---------------------------------------------------------------------------
+
+function currentScenario() {
+  const id = location.hash.replace(/^#/, '')
+  return id ? getScenario(id) : null
 }
 
-function renderHeader() {
+function render() {
+  stopSpeaking()
+  const scenario = currentScenario()
+  app.innerHTML = ''
+  if (scenario) {
+    renderScenario(scenario)
+  } else {
+    renderHome()
+  }
+  applyPrefClasses()
+  window.scrollTo(0, 0)
+}
+
+window.addEventListener('hashchange', render)
+
+// ---------------------------------------------------------------------------
+// Home screen
+// ---------------------------------------------------------------------------
+
+function renderHome() {
   const header = el('header', 'header')
   header.innerHTML = `
     <div class="brand">旅の日本語</div>
+    <h1>🍱 Travel Japanese</h1>
+    <p class="subtitle">Practise ordering food — listening, speaking & reading. Pick a place to start.</p>
+  `
+  app.appendChild(header)
+
+  const grid = el('div', 'home-grid')
+  scenarios.forEach((s) => {
+    const card = el('a', 'scenario-card')
+    card.href = `#${s.id}`
+    card.innerHTML = `
+      <div class="scenario-emoji">${s.emoji}</div>
+      <div class="scenario-text">
+        <div class="scenario-title">${s.title}</div>
+        <div class="scenario-jp">${s.titleJp}</div>
+        <div class="scenario-desc">${s.description}</div>
+        <div class="scenario-meta">${s.lines.length} lines</div>
+      </div>
+      <div class="scenario-chevron">›</div>
+    `
+    grid.appendChild(card)
+  })
+  app.appendChild(grid)
+
+  app.appendChild(renderFooter())
+}
+
+// ---------------------------------------------------------------------------
+// Scenario (dialogue) screen
+// ---------------------------------------------------------------------------
+
+function renderScenario(scenario) {
+  app.appendChild(renderScenarioHeader(scenario))
+  app.appendChild(renderToolbar(scenario))
+  app.appendChild(renderDialogue(scenario))
+  app.appendChild(renderFooter())
+}
+
+function renderScenarioHeader(scenario) {
+  const header = el('header', 'header')
+  const back = el('a', 'back-link')
+  back.href = '#'
+  back.innerHTML = '‹ All scenarios'
+  header.appendChild(back)
+
+  const h = el('div', 'scenario-head')
+  h.innerHTML = `
     <h1>${scenario.emoji} ${scenario.title}</h1>
     <p class="subtitle">${scenario.titleJp} · ${scenario.description}</p>
   `
+  header.appendChild(h)
   return header
 }
 
-function renderToolbar() {
+function renderToolbar(scenario) {
   const bar = el('div', 'toolbar')
-
-  // Reading toggles.
   bar.appendChild(toggle('Furigana', 'furigana'))
   bar.appendChild(toggle('Rōmaji', 'romaji'))
   bar.appendChild(toggle('English', 'english'))
 
-  // Play-the-whole-conversation button.
   const playAll = el('button', 'btn btn-primary play-all')
   playAll.innerHTML = '▶︎ Play all'
   let playing = false
@@ -88,7 +145,6 @@ function renderToolbar() {
     clearActive()
   })
   bar.appendChild(playAll)
-
   return bar
 }
 
@@ -108,11 +164,9 @@ function toggle(label, key) {
   return b
 }
 
-function renderDialogue() {
+function renderDialogue(scenario) {
   const list = el('div', 'dialogue')
-  scenario.lines.forEach((line, i) => {
-    list.appendChild(renderLine(line, i))
-  })
+  scenario.lines.forEach((line, i) => list.appendChild(renderLine(line, i)))
   return list
 }
 
@@ -139,7 +193,6 @@ function renderLine(line, index) {
 
   bubble.append(who, jp, romaji, en)
 
-  // Controls: listen always; speak only for your lines.
   const controls = el('div', 'controls')
 
   const listenBtn = el('button', 'chip')
@@ -168,9 +221,7 @@ function renderLine(line, index) {
     const speakBtn = el('button', 'chip chip-speak')
     speakBtn.innerHTML = '🎤 Practice'
     const feedback = el('div', 'feedback')
-    speakBtn.addEventListener('click', () =>
-      practiceLine(line, speakBtn, feedback)
-    )
+    speakBtn.addEventListener('click', () => practiceLine(line, speakBtn, feedback))
     controls.appendChild(speakBtn)
     bubble.appendChild(controls)
     bubble.appendChild(feedback)
@@ -182,11 +233,8 @@ function renderLine(line, index) {
   return row
 }
 
-// Speaking practice: record once, score, and give feedback.
 async function practiceLine(line, btn, feedback) {
   if (!recognitionSupported()) {
-    // Graceful fallback (this is the iPhone path when recognition is missing):
-    // reveal the answer and let the learner self-check.
     feedback.className = 'feedback show info'
     feedback.innerHTML = `
       <strong>Voice scoring isn't available in this browser.</strong>
