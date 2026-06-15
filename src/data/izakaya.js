@@ -173,5 +173,19 @@ export const izakaya = {
         { emoji: '🍚', jp: 'お茶漬け', ruby: 'お<ruby>茶漬<rt>ちゃづ</rt></ruby>け', romaji: 'ochazuke', zh: '茶泡飯', en: 'rice with tea broth' }
       ]
     }
+  ],
+  phrases: [
+    {
+      title: 'よく使う一言 · Handy phrases',
+      items: [
+        { jp: 'とりあえず生で。', say: 'とりあえずなまで。', ruby: 'とりあえず<ruby>生<rt>なま</rt></ruby>で。', zh: '先來杯生啤。', en: 'A draft beer to start, please.' },
+        { jp: 'メニューを見せてください。', ruby: 'メニューを<ruby>見<rt>み</rt></ruby>せてください。', zh: '請給我看菜單。', en: 'Please show me the menu.' },
+        { jp: '取り皿をください。', say: 'とりざらをください。', ruby: '<ruby>取<rt>と</rt></ruby>り<ruby>皿<rt>ざら</rt></ruby>をください。', zh: '請給我小盤子。', en: 'Could I have a small plate?' },
+        { jp: '同じものをもう一つください。', ruby: '<ruby>同<rt>おな</rt></ruby>じものをもう<ruby>一<rt>ひと</rt></ruby>つください。', zh: '再給我一份一樣的。', en: 'One more of the same, please.' },
+        { jp: 'ラストオーダーは何時ですか？', ruby: 'ラストオーダーは<ruby>何時<rt>なんじ</rt></ruby>ですか？', zh: '最後點餐是幾點?', en: 'What time is last order?' },
+        { jp: 'おすすめのお酒はありますか？', ruby: 'おすすめのお<ruby>酒<rt>さけ</rt></ruby>はありますか？', zh: '有推薦的酒嗎?', en: 'Do you have a recommended drink?' },
+        { jp: 'お会計、別々でお願いします。', ruby: 'お<ruby>会計<rt>かいけい</rt></ruby>、<ruby>別々<rt>べつべつ</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '結帳請分開算。', en: 'Separate checks, please.' }
+      ]
+    }
   ]
 }

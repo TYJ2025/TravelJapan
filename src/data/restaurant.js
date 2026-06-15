@@ -182,5 +182,20 @@ export const restaurant = {
         { emoji: '🍚', jp: 'ご飯', ruby: 'ご<ruby>飯<rt>はん</rt></ruby>', romaji: 'gohan', zh: '白飯', en: 'steamed rice' }
       ]
     }
+  ],
+  phrases: [
+    {
+      title: 'よく使う一言 · Handy phrases',
+      items: [
+        { jp: 'メニューを見せてください。', ruby: 'メニューを<ruby>見<rt>み</rt></ruby>せてください。', zh: '請給我看菜單。', en: 'Please show me the menu.' },
+        { jp: 'おすすめは何ですか？', ruby: 'おすすめは<ruby>何<rt>なん</rt></ruby>ですか？', zh: '有什麼推薦的?', en: 'What do you recommend?' },
+        { jp: 'これは何ですか？', ruby: 'これは<ruby>何<rt>なん</rt></ruby>ですか？', zh: '這是什麼?', en: 'What is this?' },
+        { jp: '同じものをください。', ruby: '<ruby>同<rt>おな</rt></ruby>じものをください。', zh: '請給我一樣的。', en: "I'll have the same, please." },
+        { jp: '取り皿をください。', say: 'とりざらをください。', ruby: '<ruby>取<rt>と</rt></ruby>り<ruby>皿<rt>ざら</rt></ruby>をください。', zh: '請給我小盤子。', en: 'Could I have a small plate?' },
+        { jp: 'お水をください。', ruby: 'お<ruby>水<rt>みず</rt></ruby>をください。', zh: '請給我水。', en: 'Water, please.' },
+        { jp: '持ち帰りできますか？', ruby: '<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りできますか？', zh: '可以外帶嗎?', en: 'Can I take this to go?' },
+        { jp: 'お会計をお願いします。', ruby: 'お<ruby>会計<rt>かいけい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '麻煩結帳。', en: 'The bill, please.' }
+      ]
+    }
   ]
 }

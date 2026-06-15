@@ -170,5 +170,18 @@ export const yakiniku = {
         { emoji: '🍚', jp: 'ビビンバ', ruby: 'ビビンバ', romaji: 'bibinba', zh: '石鍋拌飯', en: 'bibimbap' }
       ]
     }
+  ],
+  phrases: [
+    {
+      title: 'よく使う一言 · Handy phrases',
+      items: [
+        { jp: '食べ放題はありますか？', ruby: '<ruby>食<rt>た</rt></ruby>べ<ruby>放題<rt>ほうだい</rt></ruby>はありますか？', zh: '有吃到飽嗎?', en: 'Do you have all-you-can-eat?' },
+        { jp: '網を変えてください。', say: 'あみをかえてください。', ruby: '<ruby>網<rt>あみ</rt></ruby>を<ruby>変<rt>か</rt></ruby>えてください。', zh: '請幫我換烤網。', en: 'Please change the grill net.' },
+        { jp: 'タレをもらえますか？', ruby: 'タレをもらえますか？', zh: '可以給我醬料嗎?', en: 'Could I get some sauce?' },
+        { jp: 'ご飯のおかわりをください。', ruby: 'ご<ruby>飯<rt>はん</rt></ruby>のおかわりをください。', zh: '請再給我一碗飯。', en: 'Another bowl of rice, please.' },
+        { jp: 'これはどのくらい焼きますか？', ruby: 'これはどのくらい<ruby>焼<rt>や</rt></ruby>きますか？', zh: '這個要烤多久?', en: 'How long should I grill this?' },
+        { jp: '飲み物のおかわりをください。', ruby: '<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>のおかわりをください。', zh: '請再給我一杯飲料。', en: 'Another drink, please.' }
+      ]
+    }
   ]
 }

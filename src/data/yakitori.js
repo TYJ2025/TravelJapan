@@ -145,5 +145,18 @@ export const yakitori = {
         { emoji: '🥓', jp: 'アスパラベーコン', ruby: 'アスパラベーコン', romaji: 'asupara-bēkon', zh: '蘆筍培根捲', en: 'asparagus & bacon' }
       ]
     }
+  ],
+  phrases: [
+    {
+      title: 'よく使う一言 · Handy phrases',
+      items: [
+        { jp: 'タレでお願いします。', ruby: 'タレでお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '請用醬汁口味。', en: 'With sauce, please.' },
+        { jp: '塩でお願いします。', ruby: '<ruby>塩<rt>しお</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '請用鹽味。', en: 'With salt, please.' },
+        { jp: 'おすすめの盛り合わせはありますか？', ruby: 'おすすめの<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせはありますか？', zh: '有推薦的拼盤嗎?', en: 'Do you have a recommended assortment?' },
+        { jp: 'これは何の部位ですか？', ruby: 'これは<ruby>何<rt>なん</rt></ruby>の<ruby>部位<rt>ぶい</rt></ruby>ですか？', zh: '這是哪個部位?', en: 'Which cut is this?' },
+        { jp: '同じものをもう一本ください。', ruby: '<ruby>同<rt>おな</rt></ruby>じものをもう<ruby>一本<rt>いっぽん</rt></ruby>ください。', zh: '再給我一串一樣的。', en: 'One more skewer of the same, please.' },
+        { jp: '半分ずつできますか？', ruby: '<ruby>半分<rt>はんぶん</rt></ruby>ずつできますか？', zh: '可以一半醬汁一半鹽味嗎?', en: 'Can I get half sauce and half salt?' }
+      ]
+    }
   ]
 }

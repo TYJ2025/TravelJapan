@@ -210,5 +210,19 @@ export const sushi = {
         { emoji: '🍣', jp: 'かんぴょう巻き', say: 'かんぴょうまき', ruby: 'かんぴょう<ruby>巻<rt>ま</rt></ruby>き', romaji: 'kanpyō-maki', zh: '葫蘆乾捲', en: 'dried gourd roll' }
       ]
     }
+  ],
+  phrases: [
+    {
+      title: 'お寿司屋さんで · At the sushi counter',
+      items: [
+        { jp: 'お任せでお願いします。', ruby: 'お<ruby>任<rt>まか</rt></ruby>せでお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '請幫我配（廚師發辦）。', en: "Chef's choice, please." },
+        { jp: 'サビ抜きでお願いします。', ruby: 'サビ<ruby>抜<rt>ぬ</rt></ruby>きでお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '請不要加芥末。', en: 'Without wasabi, please.' },
+        { jp: 'ガリをもっとください。', ruby: 'ガリをもっとください。', zh: '請多給我一些薑片。', en: 'More pickled ginger, please.' },
+        { jp: 'あがりをください。', ruby: 'あがりをください。', zh: '請給我（壽司店的）茶。', en: 'Green tea, please.' },
+        { jp: 'これは何の魚ですか？', ruby: 'これは<ruby>何<rt>なん</rt></ruby>の<ruby>魚<rt>さかな</rt></ruby>ですか？', zh: '這是什麼魚?', en: 'What fish is this?' },
+        { jp: '一貫ずつでもいいですか？', ruby: '<ruby>一貫<rt>いっかん</rt></ruby>ずつでもいいですか？', zh: '可以一貫一貫點嗎?', en: 'Can I order one piece at a time?' },
+        { jp: '今日のおすすめはどれですか？', ruby: '<ruby>今日<rt>きょう</rt></ruby>のおすすめはどれですか？', zh: '今天推薦哪一個?', en: "Which is today's recommendation?" }
+      ]
+    }
   ]
 }

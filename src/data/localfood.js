@@ -163,5 +163,19 @@ export const localfood = {
         { emoji: '🍎', jp: 'りんご飴', say: 'りんごあめ', ruby: 'りんご<ruby>飴<rt>あめ</rt></ruby>', romaji: 'ringo-ame', zh: '蘋果糖', en: 'candy apple' }
       ]
     }
+  ],
+  phrases: [
+    {
+      title: 'よく使う一言 · Handy phrases',
+      items: [
+        { jp: '一番人気はどれですか？', ruby: '<ruby>一番<rt>いちばん</rt></ruby><ruby>人気<rt>にんき</rt></ruby>はどれですか？', zh: '最受歡迎的是哪個?', en: 'Which is the most popular?' },
+        { jp: '持ち帰りできますか？', ruby: '<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>りできますか？', zh: '可以外帶嗎?', en: 'Can I take it to go?' },
+        { jp: 'ここで食べられますか？', ruby: 'ここで<ruby>食<rt>た</rt></ruby>べられますか？', zh: '可以在這裡吃嗎?', en: 'Can I eat here?' },
+        { jp: '現金しか使えませんか？', ruby: '<ruby>現金<rt>げんきん</rt></ruby>しか<ruby>使<rt>つか</rt></ruby>えませんか？', zh: '只能用現金嗎?', en: 'Is it cash only?' },
+        { jp: '辛さは選べますか？', ruby: '<ruby>辛<rt>から</rt></ruby>さは<ruby>選<rt>えら</rt></ruby>べますか？', zh: '辣度可以選嗎?', en: 'Can I choose the spice level?' },
+        { jp: '温めてもらえますか？', ruby: '<ruby>温<rt>あたた</rt></ruby>めてもらえますか？', zh: '可以幫我加熱嗎?', en: 'Could you heat it up?' },
+        { jp: '袋をください。', ruby: '<ruby>袋<rt>ふくろ</rt></ruby>をください。', zh: '請給我袋子。', en: 'A bag, please.' }
+      ]
+    }
   ]
 }
