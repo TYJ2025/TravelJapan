@@ -5,6 +5,9 @@ import {
   stopSpeaking,
   ttsSupported,
   primeVoices,
+  listJapaneseVoices,
+  setPreferredVoice,
+  getActiveVoiceURI,
   listenOnce,
   recognitionSupported,
   scoreAttempt
@@ -16,11 +19,11 @@ const prefs = loadPrefs()
 function loadPrefs() {
   try {
     return Object.assign(
-      { furigana: true, romaji: true, english: true, rate: 0.9 },
+      { furigana: true, romaji: true, english: true, rate: 0.92, voiceURI: '' },
       JSON.parse(localStorage.getItem('tj-prefs') || '{}')
     )
   } catch {
-    return { furigana: true, romaji: true, english: true, rate: 0.9 }
+    return { furigana: true, romaji: true, english: true, rate: 0.92, voiceURI: '' }
   }
 }
 
@@ -95,8 +98,96 @@ function renderHome() {
 function renderScenario(scenario) {
   app.appendChild(renderScenarioHeader(scenario))
   app.appendChild(renderToolbar(scenario))
+  app.appendChild(renderSettings())
   app.appendChild(renderDialogue(scenario))
   app.appendChild(renderFooter())
+}
+
+// Voice + speed controls. The voice list lets you swap the robotic default
+// for a higher-quality (downloaded "Enhanced") voice if your device has one.
+function renderSettings() {
+  const wrap = el('div', 'settings')
+  if (!ttsSupported()) return wrap
+
+  const voiceField = el('label', 'field')
+  voiceField.innerHTML = '<span>🎙 Voice</span>'
+  const voiceSel = el('select', 'select voice-select')
+  voiceField.appendChild(voiceSel)
+  wrap.appendChild(voiceField)
+
+  const speedField = el('label', 'field')
+  speedField.innerHTML = '<span>🐢 Speed</span>'
+  const speedSel = el('select', 'select')
+  ;[
+    ['Slow', 0.7],
+    ['Normal', 0.92],
+    ['Native', 1.05]
+  ].forEach(([label, val]) => {
+    const o = el('option')
+    o.value = String(val)
+    o.textContent = label
+    if (Math.abs(val - prefs.rate) < 0.001) o.selected = true
+    speedField.appendChild(o)
+    speedSel.appendChild(o)
+  })
+  speedField.appendChild(speedSel)
+  speedSel.addEventListener('change', () => {
+    prefs.rate = parseFloat(speedSel.value)
+    savePrefs()
+  })
+  wrap.appendChild(speedField)
+
+  voiceSel.addEventListener('change', () => {
+    prefs.voiceURI = voiceSel.value
+    setPreferredVoice(prefs.voiceURI)
+    savePrefs()
+    // Give an instant preview so the change is audible.
+    speak('こんにちは', { rate: prefs.rate })
+  })
+
+  populateVoiceSelect(voiceSel)
+  return wrap
+}
+
+function populateVoiceSelect(sel) {
+  const voices = listJapaneseVoices()
+  sel.innerHTML = ''
+  if (!voices.length) {
+    const o = el('option')
+    o.textContent = 'Default'
+    sel.appendChild(o)
+    sel.disabled = true
+    return
+  }
+  sel.disabled = false
+  const auto = el('option')
+  auto.value = ''
+  auto.textContent = 'Auto (best available)'
+  sel.appendChild(auto)
+  const active = getActiveVoiceURI()
+  voices.forEach((v) => {
+    const o = el('option')
+    o.value = v.voiceURI
+    // Trim the verbose system prefix some platforms add.
+    o.textContent = v.name.replace(/^Microsoft\s+|^Google\s+/, '')
+    if (prefs.voiceURI ? v.voiceURI === prefs.voiceURI : false) o.selected = true
+    sel.appendChild(o)
+  })
+  if (!prefs.voiceURI) {
+    sel.value = ''
+    auto.textContent = `Auto · ${voiceName(active) || 'best available'}`
+  }
+}
+
+function voiceName(uri) {
+  const v = listJapaneseVoices().find((x) => x.voiceURI === uri)
+  return v ? v.name.replace(/^Microsoft\s+|^Google\s+/, '') : ''
+}
+
+// Repopulate any visible voice <select> once the async voice list arrives.
+function refreshVoiceOptions() {
+  const sel = app.querySelector('.voice-select')
+  if (sel) populateVoiceSelect(sel)
 }
 
 function renderScenarioHeader(scenario) {
@@ -330,9 +421,20 @@ function escapeHtml(s) {
   return d.innerHTML
 }
 
-// Prime the TTS voice list on the first interaction (required by Safari/iOS).
+// Apply any saved voice choice, and keep the picker in sync as the (async)
+// voice list loads in. Prime on first interaction (required by Safari/iOS).
+setPreferredVoice(prefs.voiceURI)
+primeVoices(() => {
+  setPreferredVoice(prefs.voiceURI)
+  refreshVoiceOptions()
+})
+
 function primeOnce() {
-  primeVoices()
+  primeVoices(() => {
+    setPreferredVoice(prefs.voiceURI)
+    refreshVoiceOptions()
+  })
+  refreshVoiceOptions()
   window.removeEventListener('pointerdown', primeOnce)
 }
 window.addEventListener('pointerdown', primeOnce)

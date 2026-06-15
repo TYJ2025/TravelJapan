@@ -9,45 +9,101 @@
 // ----- Text-to-Speech (listening) -----------------------------------------
 
 let cachedJaVoice = null
-
-// Voices load asynchronously on some browsers; grab the best Japanese one.
-function pickJapaneseVoice() {
-  const voices = window.speechSynthesis ? window.speechSynthesis.getVoices() : []
-  if (!voices.length) return null
-  // Prefer a voice explicitly tagged ja / ja-JP.
-  const ja = voices.find((v) => v.lang && v.lang.toLowerCase().startsWith('ja'))
-  return ja || null
-}
+let preferredVoiceURI = null // user's manual choice, if any
 
 export function ttsSupported() {
   return typeof window !== 'undefined' && 'speechSynthesis' in window
 }
 
+// All Japanese voices the device offers.
+export function listJapaneseVoices() {
+  const voices = ttsSupported() ? window.speechSynthesis.getVoices() : []
+  return voices.filter((v) => v.lang && v.lang.toLowerCase().startsWith('ja'))
+}
+
+// Score a voice so we can auto-pick the most natural one. Higher = better.
+// "Enhanced"/"Premium"/"Neural" voices (which the user can download for free)
+// sound far less robotic than the tiny default "compact" voices.
+function voiceQuality(v) {
+  const name = (v.name || '').toLowerCase()
+  let score = 0
+  if (/(enhanced|premium|neural|natural)/.test(name)) score += 100
+  if (/(siri)/.test(name)) score += 60
+  // Known good named Japanese voices (vs the basic default).
+  if (/(o-ren|otoya|hattori|sakura|kyoko)/.test(name)) score += 20
+  if (/(compact|eloquence)/.test(name)) score -= 40 // low-fi voices
+  if (v.localService) score += 5
+  return score
+}
+
+// Pick the best available Japanese voice (respecting a manual choice).
+function pickJapaneseVoice() {
+  const ja = listJapaneseVoices()
+  if (!ja.length) return null
+  if (preferredVoiceURI) {
+    const chosen = ja.find((v) => v.voiceURI === preferredVoiceURI)
+    if (chosen) return chosen
+  }
+  return ja.slice().sort((a, b) => voiceQuality(b) - voiceQuality(a))[0]
+}
+
+export function setPreferredVoice(voiceURI) {
+  preferredVoiceURI = voiceURI || null
+  cachedJaVoice = pickJapaneseVoice()
+}
+
+export function getActiveVoiceURI() {
+  const v = cachedJaVoice || pickJapaneseVoice()
+  return v ? v.voiceURI : null
+}
+
 // Warm up the voice list (call once on first user interaction).
-export function primeVoices() {
+export function primeVoices(onReady) {
   if (!ttsSupported()) return
   cachedJaVoice = pickJapaneseVoice()
   window.speechSynthesis.onvoiceschanged = () => {
     cachedJaVoice = pickJapaneseVoice()
+    if (typeof onReady === 'function') onReady()
   }
 }
 
-// Speak Japanese text. rate < 1 is slower (good for learning).
-export function speak(text, { rate = 0.9 } = {}) {
+// Split a line into natural phrases at Japanese punctuation, so each clause
+// gets its own gentle pause instead of one flat, run-on robotic delivery.
+function intoPhrases(text) {
+  return text
+    .split(/(?<=[、。！？「」])/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+}
+
+// Speak Japanese text. rate < 1 is slower (good for learning); a touch of
+// pitch variation and clause-by-clause delivery make it sound more natural.
+export function speak(text, { rate = 0.92, pitch = 1.0 } = {}) {
   return new Promise((resolve) => {
     if (!ttsSupported()) {
       resolve(false)
       return
     }
     window.speechSynthesis.cancel() // stop anything already playing
-    const u = new SpeechSynthesisUtterance(text)
-    u.lang = 'ja-JP'
-    u.rate = rate
     const voice = cachedJaVoice || pickJapaneseVoice()
-    if (voice) u.voice = voice
-    u.onend = () => resolve(true)
-    u.onerror = () => resolve(false)
-    window.speechSynthesis.speak(u)
+    const phrases = intoPhrases(text)
+    let i = 0
+
+    const sayNext = () => {
+      if (i >= phrases.length) {
+        resolve(true)
+        return
+      }
+      const u = new SpeechSynthesisUtterance(phrases[i++])
+      u.lang = 'ja-JP'
+      u.rate = rate
+      u.pitch = pitch
+      if (voice) u.voice = voice
+      u.onend = sayNext
+      u.onerror = () => resolve(false)
+      window.speechSynthesis.speak(u)
+    }
+    sayNext()
   })
 }
 
