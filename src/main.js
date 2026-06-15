@@ -223,6 +223,11 @@ function renderMenuItem(item) {
   const en = el('div', 'en')
   en.textContent = item.en
   body.append(jp, zh, en)
+  if (item.desc) {
+    const desc = el('div', 'menu-desc')
+    desc.textContent = item.desc
+    body.appendChild(desc)
+  }
 
   // Listen + Practice on the dish NAME itself, available while collapsed.
   const controls = el('div', 'controls')
