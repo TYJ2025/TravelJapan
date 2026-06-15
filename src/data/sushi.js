@@ -143,15 +143,15 @@ export const sushi = {
         { emoji: '🍣', jp: '中トロ', say: 'ちゅうトロ', ruby: '<ruby>中<rt>ちゅう</rt></ruby>トロ', romaji: 'chū-toro', zh: '中腹鮪魚', en: 'medium fatty tuna' },
         { emoji: '🍣', jp: 'サーモン', ruby: 'サーモン', romaji: 'sāmon', zh: '鮭魚', en: 'salmon' },
         { emoji: '🍣', jp: 'ハマチ', ruby: 'ハマチ', romaji: 'hamachi', zh: '青甘魚', en: 'young yellowtail' },
-        { emoji: '🐟', jp: '鯛', ruby: '<ruby>鯛<rt>たい</rt></ruby>', romaji: 'tai', zh: '鯛魚', en: 'sea bream' },
+        { emoji: '🐟', jp: '鯛', say: 'たい', ruby: '<ruby>鯛<rt>たい</rt></ruby>', romaji: 'tai', zh: '鯛魚', en: 'sea bream' },
         { emoji: '🦑', jp: 'イカ', ruby: 'イカ', romaji: 'ika', zh: '花枝', en: 'squid' },
         { emoji: '🐙', jp: 'タコ', ruby: 'タコ', romaji: 'tako', zh: '章魚', en: 'octopus' },
         { emoji: '🍤', jp: 'エビ', ruby: 'エビ', romaji: 'ebi', zh: '蝦', en: 'shrimp' },
         { emoji: '🐚', jp: 'ホタテ', ruby: 'ホタテ', romaji: 'hotate', zh: '干貝', en: 'scallop' },
         { emoji: '🍣', jp: 'ウニ', ruby: 'ウニ', romaji: 'uni', zh: '海膽', en: 'sea urchin' },
         { emoji: '🍣', jp: 'イクラ', ruby: 'イクラ', romaji: 'ikura', zh: '鮭魚卵', en: 'salmon roe' },
-        { emoji: '🍣', jp: '穴子', ruby: '<ruby>穴子<rt>あなご</rt></ruby>', romaji: 'anago', zh: '星鰻', en: 'sea eel' },
-        { emoji: '🍳', jp: '玉子', ruby: '<ruby>玉子<rt>たまご</rt></ruby>', romaji: 'tamago', zh: '玉子燒', en: 'sweet egg' },
+        { emoji: '🍣', jp: '穴子', say: 'あなご', ruby: '<ruby>穴子<rt>あなご</rt></ruby>', romaji: 'anago', zh: '星鰻', en: 'sea eel' },
+        { emoji: '🍳', jp: '玉子', say: 'たまご', ruby: '<ruby>玉子<rt>たまご</rt></ruby>', romaji: 'tamago', zh: '玉子燒', en: 'sweet egg' },
         { emoji: '🍣', jp: 'ネギトロ', ruby: 'ネギトロ', romaji: 'negitoro', zh: '蔥花鮪魚', en: 'minced fatty tuna' }
       ]
     }

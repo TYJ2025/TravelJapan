@@ -10,6 +10,7 @@ export const allergy = {
     {
       speaker: 'you',
       jp: 'すみません、食物アレルギーがあります。',
+      say: 'すみません、しょくもつアレルギーがあります。',
       ruby: 'すみません、<ruby>食物<rt>しょくもつ</rt></ruby>アレルギーがあります。',
       romaji: 'Sumimasen, shokumotsu arerugī ga arimasu.',
       zh: '不好意思,我有食物過敏。',
@@ -100,7 +101,7 @@ export const allergy = {
     {
       title: 'アレルギーを伝える · Telling them',
       items: [
-        { jp: '乳アレルギーがあります。', ruby: '<ruby>乳<rt>にゅう</rt></ruby>アレルギーがあります。', zh: '我對奶（乳製品）過敏。', en: 'I have a milk (dairy) allergy.' },
+        { jp: '乳アレルギーがあります。', say: 'にゅうアレルギーがあります。', ruby: '<ruby>乳<rt>にゅう</rt></ruby>アレルギーがあります。', zh: '我對奶（乳製品）過敏。', en: 'I have a milk (dairy) allergy.' },
         { jp: '卵アレルギーがあります。', ruby: '<ruby>卵<rt>たまご</rt></ruby>アレルギーがあります。', zh: '我對蛋過敏。', en: 'I have an egg allergy.' },
         { jp: '小麦（グルテン）アレルギーがあります。', ruby: '<ruby>小麦<rt>こむぎ</rt></ruby>（グルテン）アレルギーがあります。', zh: '我對小麥（麩質）過敏。', en: 'I have a wheat (gluten) allergy.' }
       ]

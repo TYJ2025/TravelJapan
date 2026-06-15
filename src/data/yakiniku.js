@@ -105,6 +105,7 @@ export const yakiniku = {
     {
       speaker: 'staff',
       jp: '大盛りになさいますか？',
+      say: 'おおもりになさいますか？',
       ruby: '<ruby>大盛<rt>おおも</rt></ruby>りになさいますか？',
       romaji: 'Ōmori ni nasaimasu ka?',
       zh: '白飯要大碗的嗎?',
@@ -121,6 +122,7 @@ export const yakiniku = {
     {
       speaker: 'you',
       jp: 'この網、もう変えてもらえますか？',
+      say: 'このあみ、もう変えてもらえますか？',
       ruby: 'この<ruby>網<rt>あみ</rt></ruby>、もう<ruby>変<rt>か</rt></ruby>えてもらえますか？',
       romaji: 'Kono ami, mō kaete moraemasu ka?',
       zh: '這個烤網可以幫我換一下嗎?',

@@ -33,6 +33,7 @@ export const localfood = {
     {
       speaker: 'staff',
       jp: 'この豚骨ラーメンです。トッピングは別のボタンで選べます。',
+      say: 'このとんこつラーメンです。トッピングは別のボタンで選べます。',
       ruby: 'この<ruby>豚骨<rt>とんこつ</rt></ruby>ラーメンです。トッピングは<ruby>別<rt>べつ</rt></ruby>のボタンで<ruby>選<rt>えら</rt></ruby>べます。',
       romaji: 'Kono tonkotsu rāmen desu. Toppingu wa betsu no botan de erabemasu.',
       zh: '這個豚骨拉麵。配料可以用另外的按鈕選擇。',
@@ -41,6 +42,7 @@ export const localfood = {
     {
       speaker: 'you',
       jp: '味玉を追加できますか？',
+      say: 'あじたまを追加できますか？',
       ruby: '<ruby>味玉<rt>あじたま</rt></ruby>を<ruby>追加<rt>ついか</rt></ruby>できますか？',
       romaji: 'Ajitama o tsuika dekimasu ka?',
       zh: '可以加一顆滷蛋嗎？',
@@ -147,7 +149,7 @@ export const localfood = {
     {
       title: '屋台・ローカルグルメ · Street & local food',
       items: [
-        { emoji: '🍜', jp: '豚骨ラーメン', ruby: '<ruby>豚骨<rt>とんこつ</rt></ruby>ラーメン', romaji: 'tonkotsu rāmen', zh: '豚骨拉麵', en: 'pork-bone ramen' },
+        { emoji: '🍜', jp: '豚骨ラーメン', say: 'とんこつラーメン', ruby: '<ruby>豚骨<rt>とんこつ</rt></ruby>ラーメン', romaji: 'tonkotsu rāmen', zh: '豚骨拉麵', en: 'pork-bone ramen' },
         { emoji: '🍜', jp: '醤油ラーメン', ruby: '<ruby>醤油<rt>しょうゆ</rt></ruby>ラーメン', romaji: 'shōyu rāmen', zh: '醬油拉麵', en: 'soy-sauce ramen' },
         { emoji: '🍜', jp: '味噌ラーメン', ruby: '<ruby>味噌<rt>みそ</rt></ruby>ラーメン', romaji: 'miso rāmen', zh: '味噌拉麵', en: 'miso ramen' },
         { emoji: '🐙', jp: 'たこ焼き', ruby: 'たこ<ruby>焼<rt>や</rt></ruby>き', romaji: 'takoyaki', zh: '章魚燒', en: 'octopus balls' },
@@ -156,9 +158,9 @@ export const localfood = {
         { emoji: '🐟', jp: 'たい焼き', ruby: 'たい<ruby>焼<rt>や</rt></ruby>き', romaji: 'taiyaki', zh: '鯛魚燒', en: 'fish-shaped cake' },
         { emoji: '🥟', jp: '肉まん', ruby: '<ruby>肉<rt>にく</rt></ruby>まん', romaji: 'nikuman', zh: '肉包', en: 'steamed pork bun' },
         { emoji: '🍡', jp: '団子', ruby: '<ruby>団子<rt>だんご</rt></ruby>', romaji: 'dango', zh: '醬油糰子', en: 'sweet dumplings' },
-        { emoji: '🍧', jp: 'かき氷', ruby: 'かき<ruby>氷<rt>ごおり</rt></ruby>', romaji: 'kakigōri', zh: '刨冰', en: 'shaved ice' },
+        { emoji: '🍧', jp: 'かき氷', say: 'かきごおり', ruby: 'かき<ruby>氷<rt>ごおり</rt></ruby>', romaji: 'kakigōri', zh: '刨冰', en: 'shaved ice' },
         { emoji: '🌽', jp: '焼きとうもろこし', ruby: '<ruby>焼<rt>や</rt></ruby>きとうもろこし', romaji: 'yaki-tōmorokoshi', zh: '烤玉米', en: 'grilled corn' },
-        { emoji: '🍎', jp: 'りんご飴', ruby: 'りんご<ruby>飴<rt>あめ</rt></ruby>', romaji: 'ringo-ame', zh: '蘋果糖', en: 'candy apple' }
+        { emoji: '🍎', jp: 'りんご飴', say: 'りんごあめ', ruby: 'りんご<ruby>飴<rt>あめ</rt></ruby>', romaji: 'ringo-ame', zh: '蘋果糖', en: 'candy apple' }
       ]
     }
   ]

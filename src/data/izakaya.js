@@ -147,7 +147,7 @@ export const izakaya = {
     {
       title: 'お飲み物 · Drinks',
       items: [
-        { emoji: '🍺', jp: '生ビール', ruby: '<ruby>生<rt>なま</rt></ruby>ビール', romaji: 'nama-bīru', zh: '生啤酒', en: 'draft beer' },
+        { emoji: '🍺', jp: '生ビール', say: 'なまビール', ruby: '<ruby>生<rt>なま</rt></ruby>ビール', romaji: 'nama-bīru', zh: '生啤酒', en: 'draft beer' },
         { emoji: '🥃', jp: 'ハイボール', ruby: 'ハイボール', romaji: 'haibōru', zh: '高球調酒', en: 'highball' },
         { emoji: '🍋', jp: 'レモンサワー', ruby: 'レモンサワー', romaji: 'remon sawā', zh: '檸檬沙瓦', en: 'lemon sour' },
         { emoji: '🍶', jp: '日本酒', ruby: '<ruby>日本酒<rt>にほんしゅ</rt></ruby>', romaji: 'nihonshu', zh: '日本酒', en: 'sake' },
@@ -167,7 +167,7 @@ export const izakaya = {
         { emoji: '🐟', jp: '刺身の盛り合わせ', ruby: '<ruby>刺身<rt>さしみ</rt></ruby>の<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'sashimi no moriawase', zh: '生魚片拼盤', en: 'assorted sashimi' },
         { emoji: '🍟', jp: 'ポテトフライ', ruby: 'ポテトフライ', romaji: 'poteto furai', zh: '薯條', en: 'french fries' },
         { emoji: '🥟', jp: '餃子', ruby: '<ruby>餃子<rt>ぎょうざ</rt></ruby>', romaji: 'gyōza', zh: '煎餃', en: 'gyoza dumplings' },
-        { emoji: '🍢', jp: '串カツ', ruby: '<ruby>串<rt>くし</rt></ruby>カツ', romaji: 'kushikatsu', zh: '串炸', en: 'fried skewers' },
+        { emoji: '🍢', jp: '串カツ', say: 'くしカツ', ruby: '<ruby>串<rt>くし</rt></ruby>カツ', romaji: 'kushikatsu', zh: '串炸', en: 'fried skewers' },
         { emoji: '🍙', jp: '焼きおにぎり', ruby: '<ruby>焼<rt>や</rt></ruby>きおにぎり', romaji: 'yaki-onigiri', zh: '烤飯糰', en: 'grilled rice ball' },
         { emoji: '🥒', jp: '漬物', ruby: '<ruby>漬物<rt>つけもの</rt></ruby>', romaji: 'tsukemono', zh: '醃漬物', en: 'pickles' },
         { emoji: '🍚', jp: 'お茶漬け', ruby: 'お<ruby>茶漬<rt>ちゃづ</rt></ruby>け', romaji: 'ochazuke', zh: '茶泡飯', en: 'rice with tea broth' }

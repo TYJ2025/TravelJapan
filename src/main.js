@@ -415,7 +415,7 @@ function renderToolbar(scenario) {
     for (let i = 0; i < scenario.lines.length; i++) {
       if (!playing) break
       setActive(i)
-      await speak(scenario.lines[i].jp, { rate: prefs.rate })
+      await speak(scenario.lines[i].say || scenario.lines[i].jp, { rate: prefs.rate })
       await wait(250)
     }
     playing = false
@@ -478,7 +478,7 @@ function renderLine(line, index) {
   listenBtn.addEventListener('click', async () => {
     setActive(index)
     listenBtn.classList.add('busy')
-    await speak(line.jp, { rate: prefs.rate })
+    await speak(line.say || line.jp, { rate: prefs.rate })
     listenBtn.classList.remove('busy')
     clearActive()
   })
@@ -489,7 +489,7 @@ function renderLine(line, index) {
   slowBtn.addEventListener('click', async () => {
     setActive(index)
     slowBtn.classList.add('busy')
-    await speak(line.jp, { rate: 0.6 })
+    await speak(line.say || line.jp, { rate: 0.6 })
     slowBtn.classList.remove('busy')
     clearActive()
   })

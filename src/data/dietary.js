@@ -42,6 +42,7 @@ export const dietary = {
     {
       speaker: 'you',
       jp: 'いいですね。出汁は魚を使っていますか？',
+      say: 'いいですね。だしは魚を使っていますか？',
       ruby: 'いいですね。<ruby>出汁<rt>だし</rt></ruby>は<ruby>魚<rt>さかな</rt></ruby>を<ruby>使<rt>つか</rt></ruby>っていますか？',
       romaji: 'Ii desu ne. Dashi wa sakana o tsukatte imasu ka?',
       zh: '好啊。高湯有用到魚嗎?',
@@ -50,6 +51,7 @@ export const dietary = {
     {
       speaker: 'staff',
       jp: 'いいえ、昆布出汁です。',
+      say: 'いいえ、こんぶだしです。',
       ruby: 'いいえ、<ruby>昆布<rt>こんぶ</rt></ruby><ruby>出汁<rt>だし</rt></ruby>です。',
       romaji: 'Iie, konbu-dashi desu.',
       zh: '沒有,是用昆布高湯。',
@@ -80,7 +82,7 @@ export const dietary = {
         { jp: '私はヴィーガンです。', ruby: '<ruby>私<rt>わたし</rt></ruby>はヴィーガンです。', zh: '我吃全素（純素）。', en: "I'm vegan." },
         { jp: '肉も魚も食べられません。', ruby: '<ruby>肉<rt>にく</rt></ruby>も<ruby>魚<rt>さかな</rt></ruby>も<ruby>食<rt>た</rt></ruby>べられません。', zh: '肉和魚都不能吃。', en: "I can't eat meat or fish." },
         { jp: '野菜だけの料理はありますか？', ruby: '<ruby>野菜<rt>やさい</rt></ruby>だけの<ruby>料理<rt>りょうり</rt></ruby>はありますか？', zh: '有純蔬菜的料理嗎?', en: 'Do you have vegetable-only dishes?' },
-        { jp: '出汁は何で取っていますか？', ruby: '<ruby>出汁<rt>だし</rt></ruby>は<ruby>何<rt>なに</rt></ruby>で<ruby>取<rt>と</rt></ruby>っていますか？', zh: '高湯是用什麼熬的?', en: 'What is the broth made from?' }
+        { jp: '出汁は何で取っていますか？', say: 'だしは何で取っていますか？', ruby: '<ruby>出汁<rt>だし</rt></ruby>は<ruby>何<rt>なに</rt></ruby>で<ruby>取<rt>と</rt></ruby>っていますか？', zh: '高湯是用什麼熬的?', en: 'What is the broth made from?' }
       ]
     },
     {

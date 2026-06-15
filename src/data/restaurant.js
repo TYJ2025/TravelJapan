@@ -174,7 +174,7 @@ export const restaurant = {
         { emoji: '🍖', jp: 'とんかつ', ruby: 'とんかつ', romaji: 'tonkatsu', zh: '炸豬排', en: 'pork cutlet' },
         { emoji: '🍜', jp: 'うどん', ruby: 'うどん', romaji: 'udon', zh: '烏龍麵', en: 'udon noodles' },
         { emoji: '🍜', jp: 'そば', ruby: 'そば', romaji: 'soba', zh: '蕎麥麵', en: 'soba noodles' },
-        { emoji: '🍚', jp: '親子丼', ruby: '<ruby>親子丼<rt>おやこどん</rt></ruby>', romaji: 'oyakodon', zh: '親子丼', en: 'chicken & egg rice bowl' },
+        { emoji: '🍚', jp: '親子丼', say: 'おやこどん', ruby: '<ruby>親子丼<rt>おやこどん</rt></ruby>', romaji: 'oyakodon', zh: '親子丼', en: 'chicken & egg rice bowl' },
         { emoji: '🍔', jp: 'ハンバーグ', ruby: 'ハンバーグ', romaji: 'hambāgu', zh: '漢堡排', en: 'hamburg steak' },
         { emoji: '🍳', jp: 'オムライス', ruby: 'オムライス', romaji: 'omu-raisu', zh: '蛋包飯', en: 'omelette rice' },
         { emoji: '🥗', jp: 'サラダ', ruby: 'サラダ', romaji: 'sarada', zh: '沙拉', en: 'salad' },
