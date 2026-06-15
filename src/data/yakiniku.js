@@ -147,27 +147,56 @@ export const yakiniku = {
   ],
   menu: [
     {
-      title: 'お肉 · Meat',
+      title: '牛肉 · Beef',
       items: [
         { emoji: '🥩', jp: 'カルビ', ruby: 'カルビ', romaji: 'karubi', zh: '牛五花', en: 'short rib' },
         { emoji: '🥩', jp: '上カルビ', say: 'じょうカルビ', ruby: '<ruby>上<rt>じょう</rt></ruby>カルビ', romaji: 'jō-karubi', zh: '上等牛五花', en: 'premium short rib' },
+        { emoji: '🥩', jp: '特上カルビ', say: 'とくじょうカルビ', ruby: '<ruby>特上<rt>とくじょう</rt></ruby>カルビ', romaji: 'tokujō-karubi', zh: '特上牛五花', en: 'top-grade short rib' },
         { emoji: '🥩', jp: 'ハラミ', ruby: 'ハラミ', romaji: 'harami', zh: '牛橫膈膜', en: 'skirt steak' },
-        { emoji: '👅', jp: 'タン', ruby: 'タン', romaji: 'tan', zh: '牛舌', en: 'beef tongue' },
-        { emoji: '🥩', jp: 'ロース', ruby: 'ロース', romaji: 'rōsu', zh: '里肌肉', en: 'loin' },
-        { emoji: '🥓', jp: '豚トロ', say: 'とんトロ', ruby: '<ruby>豚<rt>とん</rt></ruby>トロ', romaji: 'ton-toro', zh: '松阪豬', en: 'pork jowl' },
-        { emoji: '🍗', jp: '鶏もも', say: 'とりもも', ruby: '<ruby>鶏<rt>とり</rt></ruby>もも', romaji: 'tori-momo', zh: '雞腿肉', en: 'chicken thigh' },
-        { emoji: '🍢', jp: 'ホルモン', ruby: 'ホルモン', romaji: 'horumon', zh: '牛腸', en: 'beef intestines' }
+        { emoji: '🥩', jp: 'サガリ', ruby: 'サガリ', romaji: 'sagari', zh: '牛吊帶（橫膈膜）', en: 'hanger steak' },
+        { emoji: '🥩', jp: 'ロース', ruby: 'ロース', romaji: 'rōsu', zh: '牛里肌', en: 'loin' },
+        { emoji: '🥩', jp: 'リブロース', ruby: 'リブロース', romaji: 'ribu-rōsu', zh: '肋眼', en: 'rib loin' },
+        { emoji: '🥩', jp: 'ミスジ', ruby: 'ミスジ', romaji: 'misuji', zh: '牛肩胛（三筋）', en: 'top blade' },
+        { emoji: '🥩', jp: 'イチボ', ruby: 'イチボ', romaji: 'ichibo', zh: '牛臀肉', en: 'rump cap' },
+        { emoji: '🥩', jp: 'ザブトン', ruby: 'ザブトン', romaji: 'zabuton', zh: '牛肩胛裡脊', en: 'chuck flap' }
       ]
     },
     {
-      title: 'サイド · Sides',
+      title: 'タン・ホルモン · Tongue & offal',
       items: [
-        { emoji: '🍚', jp: 'ライス', ruby: 'ライス', romaji: 'raisu', zh: '白飯', en: 'rice' },
-        { emoji: '🌶', jp: 'キムチ', ruby: 'キムチ', romaji: 'kimuchi', zh: '泡菜', en: 'kimchi' },
+        { emoji: '👅', jp: 'タン', ruby: 'タン', romaji: 'tan', zh: '牛舌', en: 'beef tongue' },
+        { emoji: '👅', jp: '上タン', say: 'じょうタン', ruby: '<ruby>上<rt>じょう</rt></ruby>タン', romaji: 'jō-tan', zh: '上等牛舌', en: 'premium tongue' },
+        { emoji: '🧂', jp: 'タン塩', say: 'タンしお', ruby: 'タン<ruby>塩<rt>しお</rt></ruby>', romaji: 'tan-shio', zh: '鹽味牛舌', en: 'salted tongue' },
+        { emoji: '🍢', jp: 'ホルモン', ruby: 'ホルモン', romaji: 'horumon', zh: '牛腸', en: 'beef intestines' },
+        { emoji: '🍢', jp: 'ミノ', ruby: 'ミノ', romaji: 'mino', zh: '牛胃（毛肚）', en: 'beef tripe' },
+        { emoji: '🍢', jp: 'シマチョウ', ruby: 'シマチョウ', romaji: 'shimachō', zh: '牛大腸', en: 'large intestine' },
+        { emoji: '❤️', jp: 'ハツ', ruby: 'ハツ', romaji: 'hatsu', zh: '牛心', en: 'beef heart' },
+        { emoji: '🍢', jp: 'レバー', ruby: 'レバー', romaji: 'rebā', zh: '牛肝', en: 'beef liver' },
+        { emoji: '🍢', jp: 'センマイ', ruby: 'センマイ', romaji: 'senmai', zh: '牛百葉', en: 'beef omasum' }
+      ]
+    },
+    {
+      title: '豚・鶏 · Pork & chicken',
+      items: [
+        { emoji: '🥓', jp: '豚カルビ', say: 'ぶたカルビ', ruby: '<ruby>豚<rt>ぶた</rt></ruby>カルビ', romaji: 'buta-karubi', zh: '豬五花', en: 'pork belly' },
+        { emoji: '🥓', jp: '豚トロ', say: 'とんトロ', ruby: '<ruby>豚<rt>とん</rt></ruby>トロ', romaji: 'ton-toro', zh: '松阪豬', en: 'pork jowl' },
+        { emoji: '🍗', jp: '鶏もも', say: 'とりもも', ruby: '<ruby>鶏<rt>とり</rt></ruby>もも', romaji: 'tori-momo', zh: '雞腿肉', en: 'chicken thigh' }
+      ]
+    },
+    {
+      title: '野菜・ご飯・スープ · Veg, rice & soup',
+      items: [
+        { emoji: '🥗', jp: '野菜盛り合わせ', say: 'やさいもりあわせ', ruby: '<ruby>野菜<rt>やさい</rt></ruby><ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'yasai moriawase', zh: '蔬菜拼盤', en: 'assorted vegetables' },
+        { emoji: '🍄', jp: 'しいたけ', ruby: 'しいたけ', romaji: 'shiitake', zh: '香菇', en: 'shiitake mushroom' },
+        { emoji: '🧅', jp: '玉ねぎ', say: 'たまねぎ', ruby: '<ruby>玉<rt>たま</rt></ruby>ねぎ', romaji: 'tamanegi', zh: '洋蔥', en: 'onion' },
+        { emoji: '🥬', jp: 'キムチ', ruby: 'キムチ', romaji: 'kimuchi', zh: '泡菜', en: 'kimchi' },
         { emoji: '🥬', jp: 'ナムル', ruby: 'ナムル', romaji: 'namuru', zh: '韓式涼拌菜', en: 'seasoned vegetables' },
         { emoji: '🥬', jp: 'サンチュ', ruby: 'サンチュ', romaji: 'sanchu', zh: '生菜', en: 'lettuce wraps' },
+        { emoji: '🍚', jp: 'ライス', ruby: 'ライス', romaji: 'raisu', zh: '白飯', en: 'rice' },
+        { emoji: '🍚', jp: 'ビビンバ', ruby: 'ビビンバ', romaji: 'bibinba', zh: '石鍋拌飯', en: 'bibimbap' },
+        { emoji: '🍜', jp: '冷麺', say: 'れいめん', ruby: '<ruby>冷麺<rt>れいめん</rt></ruby>', romaji: 'reimen', zh: '韓式冷麵', en: 'cold noodles' },
         { emoji: '🍲', jp: 'わかめスープ', ruby: 'わかめスープ', romaji: 'wakame sūpu', zh: '海帶芽湯', en: 'seaweed soup' },
-        { emoji: '🍚', jp: 'ビビンバ', ruby: 'ビビンバ', romaji: 'bibinba', zh: '石鍋拌飯', en: 'bibimbap' }
+        { emoji: '🍲', jp: 'クッパ', ruby: 'クッパ', romaji: 'kuppa', zh: '韓式湯飯', en: 'gukbap (rice soup)' }
       ]
     }
   ],
