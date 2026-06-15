@@ -241,19 +241,25 @@ body {
   border-color: var(--accent);
 }
 
-/* ---------- Menu (orderable dishes) ---------- */
-.menu {
+/* ---------- View switching (Dialogue / Menu / Phrases) ---------- */
+.menu,
+.phrasebook {
   display: none;
   flex-direction: column;
   gap: 10px;
 }
-.show-menu .menu {
+[data-view='menu'] .menu {
   display: flex;
 }
-.show-menu .dialogue {
+[data-view='phrases'] .phrasebook {
+  display: flex;
+}
+[data-view='menu'] .dialogue,
+[data-view='phrases'] .dialogue {
   display: none;
 }
-.show-menu .play-all {
+[data-view='menu'] .play-all,
+[data-view='phrases'] .play-all {
   display: none;
 }
 .menu-intro {

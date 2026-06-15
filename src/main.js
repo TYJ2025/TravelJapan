@@ -44,7 +44,7 @@ function currentScenario() {
 
 function render() {
   stopSpeaking()
-  app.classList.remove('show-menu') // always start on the dialogue tab
+  app.dataset.view = 'dialogue' // always start on the dialogue tab
   const scenario = currentScenario()
   app.innerHTML = ''
   if (scenario) {
@@ -99,37 +99,48 @@ function renderHome() {
 function renderScenario(scenario) {
   app.appendChild(renderScenarioHeader(scenario))
   app.appendChild(renderSettings())
-  if (scenario.menu) app.appendChild(renderTabs(scenario))
+  app.appendChild(renderTabs(scenario))
   app.appendChild(renderToolbar(scenario))
   app.appendChild(renderDialogue(scenario))
   if (scenario.menu) app.appendChild(renderMenu(scenario))
+  if (scenario.phrases) app.appendChild(renderPhrases(scenario))
   app.appendChild(renderFooter())
 }
 
-// Tabs to switch between the conversation and the orderable menu.
+// Tabs to switch between dialogue, the orderable menu, and a phrasebook.
+// Only shown when the scenario has more than one view.
 function renderTabs(scenario) {
-  const count = scenario.menu.reduce((n, s) => n + s.items.length, 0)
+  const views = [['dialogue', '会話 · Dialogue']]
+  if (scenario.menu) views.push(['menu', 'メニュー · Menu'])
+  if (scenario.phrases) views.push(['phrases', 'フレーズ · Phrases'])
+  if (views.length === 1) return el('div', 'tabs-empty')
+
   const tabs = el('div', 'tabs')
-  const tDialogue = el('button', 'tab on')
-  tDialogue.textContent = '会話 · Dialogue'
-  const tMenu = el('button', 'tab')
-  tMenu.textContent = `メニュー · Menu (${count})`
-  tDialogue.addEventListener('click', () => {
-    stopSpeaking()
-    app.classList.remove('show-menu')
-    tDialogue.classList.add('on')
-    tMenu.classList.remove('on')
-    window.scrollTo(0, 0)
+  views.forEach(([view, label]) => {
+    const b = el('button', 'tab' + (view === 'dialogue' ? ' on' : ''))
+    b.textContent = label
+    b.addEventListener('click', () => {
+      stopSpeaking()
+      app.dataset.view = view
+      tabs.querySelectorAll('.tab').forEach((t) => t.classList.remove('on'))
+      b.classList.add('on')
+      window.scrollTo(0, 0)
+    })
+    tabs.appendChild(b)
   })
-  tMenu.addEventListener('click', () => {
-    stopSpeaking()
-    app.classList.add('show-menu')
-    tMenu.classList.add('on')
-    tDialogue.classList.remove('on')
-    window.scrollTo(0, 0)
-  })
-  tabs.append(tDialogue, tMenu)
   return tabs
+}
+
+// A simple phrasebook: ready-made phrases, each with Listen + Practice.
+function renderPhrases(scenario) {
+  const wrap = el('div', 'phrasebook')
+  scenario.phrases.forEach((section) => {
+    const title = el('div', 'menu-section-title')
+    title.textContent = section.title
+    wrap.appendChild(title)
+    section.items.forEach((p) => wrap.appendChild(renderPhraseRow(p)))
+  })
+  return wrap
 }
 
 // The orderable menu: tap a dish to reveal several ordering patterns.
