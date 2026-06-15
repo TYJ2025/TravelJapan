@@ -163,7 +163,7 @@ export const izakaya = {
         { emoji: '🍢', jp: '焼き鳥の盛り合わせ', ruby: '<ruby>焼<rt>や</rt></ruby>き<ruby>鳥<rt>とり</rt></ruby>の<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'yakitori no moriawase', zh: '烤雞肉串拼盤', en: 'assorted grilled skewers' },
         { emoji: '🍗', jp: '唐揚げ', ruby: '<ruby>唐揚<rt>からあ</rt></ruby>げ', romaji: 'kara-age', zh: '炸雞塊', en: 'fried chicken' },
         { emoji: '🍳', jp: 'だし巻き卵', ruby: 'だし<ruby>巻<rt>ま</rt></ruby>き<ruby>卵<rt>たまご</rt></ruby>', romaji: 'dashimaki-tamago', zh: '高湯煎蛋捲', en: 'rolled omelette' },
-        { emoji: '🧊', jp: '冷奴', ruby: '<ruby>冷奴<rt>ひややっこ</rt></ruby>', romaji: 'hiyayakko', zh: '冷豆腐', en: 'cold tofu' },
+        { emoji: '🧊', jp: '冷奴', say: 'ひややっこ', ruby: '<ruby>冷奴<rt>ひややっこ</rt></ruby>', romaji: 'hiyayakko', zh: '冷豆腐', en: 'cold tofu' },
         { emoji: '🐟', jp: '刺身の盛り合わせ', ruby: '<ruby>刺身<rt>さしみ</rt></ruby>の<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'sashimi no moriawase', zh: '生魚片拼盤', en: 'assorted sashimi' },
         { emoji: '🍟', jp: 'ポテトフライ', ruby: 'ポテトフライ', romaji: 'poteto furai', zh: '薯條', en: 'french fries' },
         { emoji: '🥟', jp: '餃子', ruby: '<ruby>餃子<rt>ぎょうざ</rt></ruby>', romaji: 'gyōza', zh: '煎餃', en: 'gyoza dumplings' },

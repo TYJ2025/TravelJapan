@@ -148,12 +148,12 @@ export const yakiniku = {
       title: 'お肉 · Meat',
       items: [
         { emoji: '🥩', jp: 'カルビ', ruby: 'カルビ', romaji: 'karubi', zh: '牛五花', en: 'short rib' },
-        { emoji: '🥩', jp: '上カルビ', ruby: '<ruby>上<rt>じょう</rt></ruby>カルビ', romaji: 'jō-karubi', zh: '上等牛五花', en: 'premium short rib' },
+        { emoji: '🥩', jp: '上カルビ', say: 'じょうカルビ', ruby: '<ruby>上<rt>じょう</rt></ruby>カルビ', romaji: 'jō-karubi', zh: '上等牛五花', en: 'premium short rib' },
         { emoji: '🥩', jp: 'ハラミ', ruby: 'ハラミ', romaji: 'harami', zh: '牛橫膈膜', en: 'skirt steak' },
         { emoji: '👅', jp: 'タン', ruby: 'タン', romaji: 'tan', zh: '牛舌', en: 'beef tongue' },
         { emoji: '🥩', jp: 'ロース', ruby: 'ロース', romaji: 'rōsu', zh: '里肌肉', en: 'loin' },
-        { emoji: '🥓', jp: '豚トロ', ruby: '<ruby>豚<rt>とん</rt></ruby>トロ', romaji: 'ton-toro', zh: '松阪豬', en: 'pork jowl' },
-        { emoji: '🍗', jp: '鶏もも', ruby: '<ruby>鶏<rt>とり</rt></ruby>もも', romaji: 'tori-momo', zh: '雞腿肉', en: 'chicken thigh' },
+        { emoji: '🥓', jp: '豚トロ', say: 'とんトロ', ruby: '<ruby>豚<rt>とん</rt></ruby>トロ', romaji: 'ton-toro', zh: '松阪豬', en: 'pork jowl' },
+        { emoji: '🍗', jp: '鶏もも', say: 'とりもも', ruby: '<ruby>鶏<rt>とり</rt></ruby>もも', romaji: 'tori-momo', zh: '雞腿肉', en: 'chicken thigh' },
         { emoji: '🍢', jp: 'ホルモン', ruby: 'ホルモン', romaji: 'horumon', zh: '牛腸', en: 'beef intestines' }
       ]
     },

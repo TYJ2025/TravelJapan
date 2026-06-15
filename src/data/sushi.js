@@ -140,7 +140,7 @@ export const sushi = {
       title: 'ネタ · Sushi toppings',
       items: [
         { emoji: '🍣', jp: 'マグロ', ruby: 'マグロ', romaji: 'maguro', zh: '鮪魚', en: 'tuna' },
-        { emoji: '🍣', jp: '中トロ', ruby: '<ruby>中<rt>ちゅう</rt></ruby>トロ', romaji: 'chū-toro', zh: '中腹鮪魚', en: 'medium fatty tuna' },
+        { emoji: '🍣', jp: '中トロ', say: 'ちゅうトロ', ruby: '<ruby>中<rt>ちゅう</rt></ruby>トロ', romaji: 'chū-toro', zh: '中腹鮪魚', en: 'medium fatty tuna' },
         { emoji: '🍣', jp: 'サーモン', ruby: 'サーモン', romaji: 'sāmon', zh: '鮭魚', en: 'salmon' },
         { emoji: '🍣', jp: 'ハマチ', ruby: 'ハマチ', romaji: 'hamachi', zh: '青甘魚', en: 'young yellowtail' },
         { emoji: '🐟', jp: '鯛', ruby: '<ruby>鯛<rt>たい</rt></ruby>', romaji: 'tai', zh: '鯛魚', en: 'sea bream' },

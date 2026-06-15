@@ -167,33 +167,39 @@ const F = {
 
 // Several practical ordering patterns generated from a dish.
 function orderPatterns(item) {
+  const say = item.say || item.jp // kana to force correct TTS pronunciation
   return [
     {
       jp: `${item.jp}をお願いします`,
+      say: `${say}をお願いします`,
       ruby: `${item.ruby}を${F.onegai}`,
       zh: `請給我${item.zh}`,
       en: `${item.en}, please`
     },
     {
       jp: `${item.jp}を一つください`,
+      say: `${say}を一つください`,
       ruby: `${item.ruby}を${F.hitotsu}ください`,
       zh: `請給我一份${item.zh}`,
       en: `One ${item.en}, please`
     },
     {
       jp: `${item.jp}を二つください`,
+      say: `${say}を二つください`,
       ruby: `${item.ruby}を${F.futatsu}ください`,
       zh: `請給我兩份${item.zh}`,
       en: `Two ${item.en}, please`
     },
     {
       jp: `${item.jp}はありますか？`,
+      say: `${say}はありますか？`,
       ruby: `${item.ruby}はありますか？`,
       zh: `有${item.zh}嗎？`,
       en: `Do you have ${item.en}?`
     },
     {
       jp: `${item.jp}をもう一つください`,
+      say: `${say}をもう一つください`,
       ruby: `${item.ruby}をもう${F.hitotsu}ください`,
       zh: `請再給我一份${item.zh}`,
       en: `One more ${item.en}, please`
@@ -226,7 +232,7 @@ function renderMenuItem(item) {
   listenBtn.addEventListener('click', async (e) => {
     e.stopPropagation()
     listenBtn.classList.add('busy')
-    await speak(item.jp, { rate: prefs.rate })
+    await speak(item.say || item.jp, { rate: prefs.rate })
     listenBtn.classList.remove('busy')
   })
   const speakBtn = el('button', 'chip chip-speak')
@@ -271,7 +277,7 @@ function renderPhraseRow(p) {
   listenBtn.innerHTML = '🔊'
   listenBtn.addEventListener('click', async () => {
     listenBtn.classList.add('busy')
-    await speak(p.jp, { rate: prefs.rate })
+    await speak(p.say || p.jp, { rate: prefs.rate })
     listenBtn.classList.remove('busy')
   })
   const speakBtn = el('button', 'chip chip-speak')
@@ -513,7 +519,7 @@ async function practiceLine(line, btn, feedback) {
       Say it out loud, then check yourself:
       <div class="reveal">${line.ruby}<br><span class="reveal-romaji">${line.zh}</span></div>
     `
-    await speak(line.jp, { rate: 0.7 })
+    await speak(line.say || line.jp, { rate: 0.7 })
     return
   }
 
