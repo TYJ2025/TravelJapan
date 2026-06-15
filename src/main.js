@@ -147,7 +147,7 @@ function renderPhrases(scenario) {
 function renderMenu(scenario) {
   const wrap = el('div', 'menu')
   const intro = el('p', 'menu-intro')
-  intro.innerHTML = 'Tap a dish to see ordering patterns · 點一下料理展開各種點餐句型 · 🔊 Listen / 🎤 Practice'
+  intro.innerHTML = '🔊 聽發音 · 🎤 練習菜名 · 點一下料理展開更多點餐句型 (tap a dish for ordering patterns)'
   wrap.appendChild(intro)
   scenario.menu.forEach((section) => {
     const title = el('div', 'menu-section-title')
@@ -204,9 +204,11 @@ function orderPatterns(item) {
 function renderMenuItem(item) {
   const card = el('div', 'menu-item')
 
-  const head = el('button', 'menu-head')
+  const head = el('div', 'menu-head')
   const emoji = el('div', 'menu-emoji')
   emoji.textContent = item.emoji || '🍽'
+
+  const main = el('div', 'menu-main')
   const body = el('div', 'menu-body')
   const jp = el('div', 'jp')
   jp.innerHTML = item.ruby
@@ -215,15 +217,41 @@ function renderMenuItem(item) {
   const en = el('div', 'en')
   en.textContent = item.en
   body.append(jp, zh, en)
+
+  // Listen + Practice on the dish NAME itself, available while collapsed.
+  const controls = el('div', 'controls')
+  const listenBtn = el('button', 'chip')
+  listenBtn.innerHTML = '🔊 Listen'
+  const feedback = el('div', 'feedback')
+  listenBtn.addEventListener('click', async (e) => {
+    e.stopPropagation()
+    listenBtn.classList.add('busy')
+    await speak(item.jp, { rate: prefs.rate })
+    listenBtn.classList.remove('busy')
+  })
+  const speakBtn = el('button', 'chip chip-speak')
+  speakBtn.innerHTML = '🎤 Practice'
+  speakBtn.addEventListener('click', (e) => {
+    e.stopPropagation()
+    practiceLine(item, speakBtn, feedback)
+  })
+  controls.append(listenBtn, speakBtn)
+  main.append(body, controls)
+
   const caret = el('div', 'menu-caret')
   caret.textContent = '▾'
-  head.append(emoji, body, caret)
+  head.append(emoji, main, caret)
 
+  // Expanded panel: several advanced ordering patterns.
   const panel = el('div', 'phrases')
+  const panelHint = el('div', 'phrases-hint')
+  panelHint.textContent = '點餐句型 · Ordering patterns'
+  panel.appendChild(panelHint)
   orderPatterns(item).forEach((p) => panel.appendChild(renderPhraseRow(p)))
 
+  // Tapping the dish (but not the buttons) expands/collapses the patterns.
   head.addEventListener('click', () => card.classList.toggle('open'))
-  card.append(head, panel)
+  card.append(head, feedback, panel)
   return card
 }
 
