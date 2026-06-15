@@ -270,13 +270,26 @@ body {
 }
 .menu-item {
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  flex-direction: column;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 12px 14px;
   box-shadow: var(--shadow);
+}
+.menu-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .menu-emoji {
   font-size: 30px;
@@ -292,16 +305,38 @@ body {
   font-size: 20px;
   line-height: 1.9;
 }
-.order-phrase {
-  margin-top: 8px;
-  padding-top: 8px;
-  border-top: 1px dashed var(--line);
-  font-size: 13px;
+.menu-caret {
+  flex: 0 0 auto;
   color: var(--muted);
+  font-size: 18px;
+  transition: transform 0.15s ease;
 }
-.order-phrase .op-jp {
-  font-size: 16px;
-  color: var(--ink);
+.menu-item.open .menu-caret {
+  transform: rotate(180deg);
+}
+.phrases {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+}
+.menu-item.open .phrases {
+  display: flex;
+}
+.phrase-row {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+.phrase-text .op-jp {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.phrase-row .controls {
+  margin-top: 6px;
 }
 
 /* ---------- Dialogue ---------- */
@@ -383,15 +418,14 @@ ruby rt {
   font-weight: 600;
 }
 
-.romaji {
-  font-size: 13px;
-  color: var(--muted);
-  font-style: italic;
+.zh {
+  font-size: 14px;
+  color: var(--accent);
   margin-top: 4px;
 }
 .en {
   font-size: 14px;
-  color: var(--ink);
+  color: var(--muted);
   margin-top: 4px;
 }
 
@@ -399,7 +433,7 @@ ruby rt {
 .hide-furigana ruby rt {
   display: none;
 }
-.hide-romaji .romaji {
+.hide-zh .zh {
   display: none;
 }
 .hide-english .en {

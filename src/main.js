@@ -19,11 +19,11 @@ const prefs = loadPrefs()
 function loadPrefs() {
   try {
     return Object.assign(
-      { furigana: true, romaji: true, english: true, rate: 0.92, voiceURI: '' },
+      { furigana: true, zh: true, english: true, rate: 0.92, voiceURI: '' },
       JSON.parse(localStorage.getItem('tj-prefs') || '{}')
     )
   } catch {
-    return { furigana: true, romaji: true, english: true, rate: 0.92, voiceURI: '' }
+    return { furigana: true, zh: true, english: true, rate: 0.92, voiceURI: '' }
   }
 }
 
@@ -132,11 +132,11 @@ function renderTabs(scenario) {
   return tabs
 }
 
-// The orderable menu: each dish has Listen + Practice for 「〜をお願いします」.
+// The orderable menu: tap a dish to reveal several ordering patterns.
 function renderMenu(scenario) {
   const wrap = el('div', 'menu')
   const intro = el('p', 'menu-intro')
-  intro.innerHTML = 'Tap 🎤 to practise ordering: <b>「〜をお願いします」</b> (…please).'
+  intro.innerHTML = 'Tap a dish to see ordering patterns · 點一下料理展開各種點餐句型 · 🔊 Listen / 🎤 Practice'
   wrap.appendChild(intro)
   scenario.menu.forEach((section) => {
     const title = el('div', 'menu-section-title')
@@ -147,47 +147,102 @@ function renderMenu(scenario) {
   return wrap
 }
 
-function renderMenuItem(item) {
-  // Build the full ordering phrase from the dish name.
-  const order = {
-    jp: `${item.jp}をお願いします`,
-    ruby: `${item.ruby}をお<ruby>願<rt>ねが</rt></ruby>いします`,
-    romaji: `${item.romaji} o onegai shimasu`,
-    en: `${item.en}, please`
-  }
+// Reusable furigana fragments for building the ordering phrases.
+const F = {
+  onegai: 'お<ruby>願<rt>ねが</rt></ruby>いします',
+  hitotsu: '<ruby>一<rt>ひと</rt></ruby>つ',
+  futatsu: '<ruby>二<rt>ふた</rt></ruby>つ'
+}
 
+// Several practical ordering patterns generated from a dish.
+function orderPatterns(item) {
+  return [
+    {
+      jp: `${item.jp}をお願いします`,
+      ruby: `${item.ruby}を${F.onegai}`,
+      zh: `請給我${item.zh}`,
+      en: `${item.en}, please`
+    },
+    {
+      jp: `${item.jp}を一つください`,
+      ruby: `${item.ruby}を${F.hitotsu}ください`,
+      zh: `請給我一份${item.zh}`,
+      en: `One ${item.en}, please`
+    },
+    {
+      jp: `${item.jp}を二つください`,
+      ruby: `${item.ruby}を${F.futatsu}ください`,
+      zh: `請給我兩份${item.zh}`,
+      en: `Two ${item.en}, please`
+    },
+    {
+      jp: `${item.jp}はありますか？`,
+      ruby: `${item.ruby}はありますか？`,
+      zh: `有${item.zh}嗎？`,
+      en: `Do you have ${item.en}?`
+    },
+    {
+      jp: `${item.jp}をもう一つください`,
+      ruby: `${item.ruby}をもう${F.hitotsu}ください`,
+      zh: `請再給我一份${item.zh}`,
+      en: `One more ${item.en}, please`
+    }
+  ]
+}
+
+function renderMenuItem(item) {
   const card = el('div', 'menu-item')
+
+  const head = el('button', 'menu-head')
   const emoji = el('div', 'menu-emoji')
   emoji.textContent = item.emoji || '🍽'
-
   const body = el('div', 'menu-body')
   const jp = el('div', 'jp')
   jp.innerHTML = item.ruby
-  const romaji = el('div', 'romaji')
-  romaji.textContent = item.romaji
+  const zh = el('div', 'zh')
+  zh.textContent = item.zh
   const en = el('div', 'en')
   en.textContent = item.en
+  body.append(jp, zh, en)
+  const caret = el('div', 'menu-caret')
+  caret.textContent = '▾'
+  head.append(emoji, body, caret)
 
-  const phrase = el('div', 'order-phrase')
-  phrase.innerHTML = `👉 <span class="op-jp">${order.ruby}</span>`
+  const panel = el('div', 'phrases')
+  orderPatterns(item).forEach((p) => panel.appendChild(renderPhraseRow(p)))
+
+  head.addEventListener('click', () => card.classList.toggle('open'))
+  card.append(head, panel)
+  return card
+}
+
+function renderPhraseRow(p) {
+  const row = el('div', 'phrase-row')
+  const text = el('div', 'phrase-text')
+  const jp = el('div', 'jp op-jp')
+  jp.innerHTML = p.ruby
+  const zh = el('div', 'zh')
+  zh.textContent = p.zh
+  const en = el('div', 'en')
+  en.textContent = p.en
+  text.append(jp, zh, en)
 
   const controls = el('div', 'controls')
   const listenBtn = el('button', 'chip')
-  listenBtn.innerHTML = '🔊 Listen'
+  listenBtn.innerHTML = '🔊'
   listenBtn.addEventListener('click', async () => {
     listenBtn.classList.add('busy')
-    await speak(order.jp, { rate: prefs.rate })
+    await speak(p.jp, { rate: prefs.rate })
     listenBtn.classList.remove('busy')
   })
   const speakBtn = el('button', 'chip chip-speak')
-  speakBtn.innerHTML = '🎤 Practice'
+  speakBtn.innerHTML = '🎤'
   const feedback = el('div', 'feedback')
-  speakBtn.addEventListener('click', () => practiceLine(order, speakBtn, feedback))
+  speakBtn.addEventListener('click', () => practiceLine(p, speakBtn, feedback))
   controls.append(listenBtn, speakBtn)
 
-  body.append(jp, romaji, en, phrase, controls, feedback)
-  card.append(emoji, body)
-  return card
+  row.append(text, controls, feedback)
+  return row
 }
 
 // Voice + speed controls. The voice list lets you swap the robotic default
@@ -296,7 +351,7 @@ function renderScenarioHeader(scenario) {
 function renderToolbar(scenario) {
   const bar = el('div', 'toolbar')
   bar.appendChild(toggle('Furigana', 'furigana'))
-  bar.appendChild(toggle('Rōmaji', 'romaji'))
+  bar.appendChild(toggle('中文', 'zh'))
   bar.appendChild(toggle('English', 'english'))
 
   const playAll = el('button', 'btn btn-primary play-all')
@@ -363,13 +418,13 @@ function renderLine(line, index) {
   const jp = el('div', 'jp')
   jp.innerHTML = line.ruby
 
-  const romaji = el('div', 'romaji')
-  romaji.textContent = line.romaji
+  const zh = el('div', 'zh')
+  zh.textContent = line.zh
 
   const en = el('div', 'en')
   en.textContent = line.en
 
-  bubble.append(who, jp, romaji, en)
+  bubble.append(who, jp, zh, en)
 
   const controls = el('div', 'controls')
 
@@ -417,7 +472,7 @@ async function practiceLine(line, btn, feedback) {
     feedback.innerHTML = `
       <strong>Voice scoring isn't available in this browser.</strong>
       Say it out loud, then check yourself:
-      <div class="reveal">${line.ruby}<br><span class="reveal-romaji">${line.romaji}</span></div>
+      <div class="reveal">${line.ruby}<br><span class="reveal-romaji">${line.zh}</span></div>
     `
     await speak(line.jp, { rate: 0.7 })
     return
@@ -475,7 +530,7 @@ function renderFooter() {
 
 function applyPrefClasses() {
   app.classList.toggle('hide-furigana', !prefs.furigana)
-  app.classList.toggle('hide-romaji', !prefs.romaji)
+  app.classList.toggle('hide-zh', !prefs.zh)
   app.classList.toggle('hide-english', !prefs.english)
 }
 
