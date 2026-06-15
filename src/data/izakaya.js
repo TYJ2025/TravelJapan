@@ -125,5 +125,36 @@ export const izakaya = {
       romaji: 'Mōshiwake gozaimasen, o-kaikei wa go-issho ni narimasu.',
       en: "I'm sorry, the bill must be paid together."
     }
+  ],
+  menu: [
+    {
+      title: 'お飲み物 · Drinks',
+      items: [
+        { emoji: '🍺', jp: '生ビール', ruby: '<ruby>生<rt>なま</rt></ruby>ビール', romaji: 'nama-bīru', en: 'draft beer' },
+        { emoji: '🥃', jp: 'ハイボール', ruby: 'ハイボール', romaji: 'haibōru', en: 'highball' },
+        { emoji: '🍋', jp: 'レモンサワー', ruby: 'レモンサワー', romaji: 'remon sawā', en: 'lemon sour' },
+        { emoji: '🍶', jp: '日本酒', ruby: '<ruby>日本酒<rt>にほんしゅ</rt></ruby>', romaji: 'nihonshu', en: 'sake' },
+        { emoji: '🍶', jp: '焼酎', ruby: '<ruby>焼酎<rt>しょうちゅう</rt></ruby>', romaji: 'shōchū', en: 'shochu' },
+        { emoji: '🍵', jp: 'ウーロン茶', ruby: 'ウーロン<ruby>茶<rt>ちゃ</rt></ruby>', romaji: 'ūron-cha', en: 'oolong tea' },
+        { emoji: '🥤', jp: 'コーラ', ruby: 'コーラ', romaji: 'kōra', en: 'cola' }
+      ]
+    },
+    {
+      title: 'お料理 · Food',
+      items: [
+        { emoji: '🫛', jp: '枝豆', ruby: '<ruby>枝豆<rt>えだまめ</rt></ruby>', romaji: 'edamame', en: 'edamame (soybeans)' },
+        { emoji: '🍢', jp: '焼き鳥の盛り合わせ', ruby: '<ruby>焼<rt>や</rt></ruby>き<ruby>鳥<rt>とり</rt></ruby>の<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'yakitori no moriawase', en: 'assorted grilled skewers' },
+        { emoji: '🍗', jp: '唐揚げ', ruby: '<ruby>唐揚<rt>からあ</rt></ruby>げ', romaji: 'kara-age', en: 'fried chicken' },
+        { emoji: '🍳', jp: 'だし巻き卵', ruby: 'だし<ruby>巻<rt>ま</rt></ruby>き<ruby>卵<rt>たまご</rt></ruby>', romaji: 'dashimaki-tamago', en: 'rolled omelette' },
+        { emoji: '🧊', jp: '冷奴', ruby: '<ruby>冷奴<rt>ひややっこ</rt></ruby>', romaji: 'hiyayakko', en: 'cold tofu' },
+        { emoji: '🐟', jp: '刺身の盛り合わせ', ruby: '<ruby>刺身<rt>さしみ</rt></ruby>の<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'sashimi no moriawase', en: 'assorted sashimi' },
+        { emoji: '🍟', jp: 'ポテトフライ', ruby: 'ポテトフライ', romaji: 'poteto furai', en: 'french fries' },
+        { emoji: '🥟', jp: '餃子', ruby: '<ruby>餃子<rt>ぎょうざ</rt></ruby>', romaji: 'gyōza', en: 'gyoza dumplings' },
+        { emoji: '🍢', jp: '串カツ', ruby: '<ruby>串<rt>くし</rt></ruby>カツ', romaji: 'kushikatsu', en: 'fried skewers' },
+        { emoji: '🍙', jp: '焼きおにぎり', ruby: '<ruby>焼<rt>や</rt></ruby>きおにぎり', romaji: 'yaki-onigiri', en: 'grilled rice ball' },
+        { emoji: '🥒', jp: '漬物', ruby: '<ruby>漬物<rt>つけもの</rt></ruby>', romaji: 'tsukemono', en: 'pickles' },
+        { emoji: '🍚', jp: 'お茶漬け', ruby: 'お<ruby>茶漬<rt>ちゃづ</rt></ruby>け', romaji: 'ochazuke', en: 'rice with tea broth' }
+      ]
+    }
   ]
 }

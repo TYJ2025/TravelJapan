@@ -125,5 +125,24 @@ export const localfood = {
       romaji: 'Daijōbu desu. Hai, gohyaku-en. Gochisōsama!',
       en: "No problem. Here, 500 yen. Thanks for the food!"
     }
+  ],
+  menu: [
+    {
+      title: '屋台・ローカルグルメ · Street & local food',
+      items: [
+        { emoji: '🍜', jp: '豚骨ラーメン', ruby: '<ruby>豚骨<rt>とんこつ</rt></ruby>ラーメン', romaji: 'tonkotsu rāmen', en: 'pork-bone ramen' },
+        { emoji: '🍜', jp: '醤油ラーメン', ruby: '<ruby>醤油<rt>しょうゆ</rt></ruby>ラーメン', romaji: 'shōyu rāmen', en: 'soy-sauce ramen' },
+        { emoji: '🍜', jp: '味噌ラーメン', ruby: '<ruby>味噌<rt>みそ</rt></ruby>ラーメン', romaji: 'miso rāmen', en: 'miso ramen' },
+        { emoji: '🐙', jp: 'たこ焼き', ruby: 'たこ<ruby>焼<rt>や</rt></ruby>き', romaji: 'takoyaki', en: 'octopus balls' },
+        { emoji: '🥞', jp: 'お好み焼き', ruby: 'お<ruby>好<rt>この</rt></ruby>み<ruby>焼<rt>や</rt></ruby>き', romaji: 'okonomiyaki', en: 'savory pancake' },
+        { emoji: '🍜', jp: '焼きそば', ruby: '<ruby>焼<rt>や</rt></ruby>きそば', romaji: 'yakisoba', en: 'fried noodles' },
+        { emoji: '🐟', jp: 'たい焼き', ruby: 'たい<ruby>焼<rt>や</rt></ruby>き', romaji: 'taiyaki', en: 'fish-shaped cake' },
+        { emoji: '🥟', jp: '肉まん', ruby: '<ruby>肉<rt>にく</rt></ruby>まん', romaji: 'nikuman', en: 'steamed pork bun' },
+        { emoji: '🍡', jp: '団子', ruby: '<ruby>団子<rt>だんご</rt></ruby>', romaji: 'dango', en: 'sweet dumplings' },
+        { emoji: '🍧', jp: 'かき氷', ruby: 'かき<ruby>氷<rt>ごおり</rt></ruby>', romaji: 'kakigōri', en: 'shaved ice' },
+        { emoji: '🌽', jp: '焼きとうもろこし', ruby: '<ruby>焼<rt>や</rt></ruby>きとうもろこし', romaji: 'yaki-tōmorokoshi', en: 'grilled corn' },
+        { emoji: '🍎', jp: 'りんご飴', ruby: 'りんご<ruby>飴<rt>あめ</rt></ruby>', romaji: 'ringo-ame', en: 'candy apple' }
+      ]
+    }
   ]
 }

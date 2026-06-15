@@ -118,5 +118,26 @@ export const sushi = {
       romaji: 'Gochisōsama deshita. Totemo oishikatta desu.',
       en: 'Thank you for the meal. It was delicious.'
     }
+  ],
+  menu: [
+    {
+      title: 'ネタ · Sushi toppings',
+      items: [
+        { emoji: '🍣', jp: 'マグロ', ruby: 'マグロ', romaji: 'maguro', en: 'tuna' },
+        { emoji: '🍣', jp: '中トロ', ruby: '<ruby>中<rt>ちゅう</rt></ruby>トロ', romaji: 'chū-toro', en: 'medium fatty tuna' },
+        { emoji: '🍣', jp: 'サーモン', ruby: 'サーモン', romaji: 'sāmon', en: 'salmon' },
+        { emoji: '🍣', jp: 'ハマチ', ruby: 'ハマチ', romaji: 'hamachi', en: 'young yellowtail' },
+        { emoji: '🐟', jp: '鯛', ruby: '<ruby>鯛<rt>たい</rt></ruby>', romaji: 'tai', en: 'sea bream' },
+        { emoji: '🦑', jp: 'イカ', ruby: 'イカ', romaji: 'ika', en: 'squid' },
+        { emoji: '🐙', jp: 'タコ', ruby: 'タコ', romaji: 'tako', en: 'octopus' },
+        { emoji: '🍤', jp: 'エビ', ruby: 'エビ', romaji: 'ebi', en: 'shrimp' },
+        { emoji: '🐚', jp: 'ホタテ', ruby: 'ホタテ', romaji: 'hotate', en: 'scallop' },
+        { emoji: '🍣', jp: 'ウニ', ruby: 'ウニ', romaji: 'uni', en: 'sea urchin' },
+        { emoji: '🍣', jp: 'イクラ', ruby: 'イクラ', romaji: 'ikura', en: 'salmon roe' },
+        { emoji: '🍣', jp: '穴子', ruby: '<ruby>穴子<rt>あなご</rt></ruby>', romaji: 'anago', en: 'sea eel' },
+        { emoji: '🍳', jp: '玉子', ruby: '<ruby>玉子<rt>たまご</rt></ruby>', romaji: 'tamago', en: 'sweet egg' },
+        { emoji: '🍣', jp: 'ネギトロ', ruby: 'ネギトロ', romaji: 'negitoro', en: 'minced fatty tuna' }
+      ]
+    }
   ]
 }

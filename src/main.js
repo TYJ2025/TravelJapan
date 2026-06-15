@@ -44,6 +44,7 @@ function currentScenario() {
 
 function render() {
   stopSpeaking()
+  app.classList.remove('show-menu') // always start on the dialogue tab
   const scenario = currentScenario()
   app.innerHTML = ''
   if (scenario) {
@@ -97,10 +98,96 @@ function renderHome() {
 
 function renderScenario(scenario) {
   app.appendChild(renderScenarioHeader(scenario))
-  app.appendChild(renderToolbar(scenario))
   app.appendChild(renderSettings())
+  if (scenario.menu) app.appendChild(renderTabs(scenario))
+  app.appendChild(renderToolbar(scenario))
   app.appendChild(renderDialogue(scenario))
+  if (scenario.menu) app.appendChild(renderMenu(scenario))
   app.appendChild(renderFooter())
+}
+
+// Tabs to switch between the conversation and the orderable menu.
+function renderTabs(scenario) {
+  const count = scenario.menu.reduce((n, s) => n + s.items.length, 0)
+  const tabs = el('div', 'tabs')
+  const tDialogue = el('button', 'tab on')
+  tDialogue.textContent = '会話 · Dialogue'
+  const tMenu = el('button', 'tab')
+  tMenu.textContent = `メニュー · Menu (${count})`
+  tDialogue.addEventListener('click', () => {
+    stopSpeaking()
+    app.classList.remove('show-menu')
+    tDialogue.classList.add('on')
+    tMenu.classList.remove('on')
+    window.scrollTo(0, 0)
+  })
+  tMenu.addEventListener('click', () => {
+    stopSpeaking()
+    app.classList.add('show-menu')
+    tMenu.classList.add('on')
+    tDialogue.classList.remove('on')
+    window.scrollTo(0, 0)
+  })
+  tabs.append(tDialogue, tMenu)
+  return tabs
+}
+
+// The orderable menu: each dish has Listen + Practice for 「〜をお願いします」.
+function renderMenu(scenario) {
+  const wrap = el('div', 'menu')
+  const intro = el('p', 'menu-intro')
+  intro.innerHTML = 'Tap 🎤 to practise ordering: <b>「〜をお願いします」</b> (…please).'
+  wrap.appendChild(intro)
+  scenario.menu.forEach((section) => {
+    const title = el('div', 'menu-section-title')
+    title.textContent = section.title
+    wrap.appendChild(title)
+    section.items.forEach((item) => wrap.appendChild(renderMenuItem(item)))
+  })
+  return wrap
+}
+
+function renderMenuItem(item) {
+  // Build the full ordering phrase from the dish name.
+  const order = {
+    jp: `${item.jp}をお願いします`,
+    ruby: `${item.ruby}をお<ruby>願<rt>ねが</rt></ruby>いします`,
+    romaji: `${item.romaji} o onegai shimasu`,
+    en: `${item.en}, please`
+  }
+
+  const card = el('div', 'menu-item')
+  const emoji = el('div', 'menu-emoji')
+  emoji.textContent = item.emoji || '🍽'
+
+  const body = el('div', 'menu-body')
+  const jp = el('div', 'jp')
+  jp.innerHTML = item.ruby
+  const romaji = el('div', 'romaji')
+  romaji.textContent = item.romaji
+  const en = el('div', 'en')
+  en.textContent = item.en
+
+  const phrase = el('div', 'order-phrase')
+  phrase.innerHTML = `👉 <span class="op-jp">${order.ruby}</span>`
+
+  const controls = el('div', 'controls')
+  const listenBtn = el('button', 'chip')
+  listenBtn.innerHTML = '🔊 Listen'
+  listenBtn.addEventListener('click', async () => {
+    listenBtn.classList.add('busy')
+    await speak(order.jp, { rate: prefs.rate })
+    listenBtn.classList.remove('busy')
+  })
+  const speakBtn = el('button', 'chip chip-speak')
+  speakBtn.innerHTML = '🎤 Practice'
+  const feedback = el('div', 'feedback')
+  speakBtn.addEventListener('click', () => practiceLine(order, speakBtn, feedback))
+  controls.append(listenBtn, speakBtn)
+
+  body.append(jp, romaji, en, phrase, controls, feedback)
+  card.append(emoji, body)
+  return card
 }
 
 // Voice + speed controls. The voice list lets you swap the robotic default

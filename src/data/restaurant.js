@@ -145,5 +145,24 @@ export const restaurant = {
       romaji: 'Gochisōsama deshita.',
       en: 'Thank you for the meal.'
     }
+  ],
+  menu: [
+    {
+      title: 'メニュー · Dishes',
+      items: [
+        { emoji: '🍜', jp: 'ラーメン', ruby: 'ラーメン', romaji: 'rāmen', en: 'ramen' },
+        { emoji: '🍛', jp: 'カレーライス', ruby: 'カレーライス', romaji: 'karē raisu', en: 'curry rice' },
+        { emoji: '🍤', jp: '天ぷら', ruby: '<ruby>天<rt>てん</rt></ruby>ぷら', romaji: 'tempura', en: 'tempura' },
+        { emoji: '🍖', jp: 'とんかつ', ruby: 'とんかつ', romaji: 'tonkatsu', en: 'pork cutlet' },
+        { emoji: '🍜', jp: 'うどん', ruby: 'うどん', romaji: 'udon', en: 'udon noodles' },
+        { emoji: '🍜', jp: 'そば', ruby: 'そば', romaji: 'soba', en: 'soba noodles' },
+        { emoji: '🍚', jp: '親子丼', ruby: '<ruby>親子丼<rt>おやこどん</rt></ruby>', romaji: 'oyakodon', en: 'chicken & egg rice bowl' },
+        { emoji: '🍔', jp: 'ハンバーグ', ruby: 'ハンバーグ', romaji: 'hambāgu', en: 'hamburg steak' },
+        { emoji: '🍳', jp: 'オムライス', ruby: 'オムライス', romaji: 'omu-raisu', en: 'omelette rice' },
+        { emoji: '🥗', jp: 'サラダ', ruby: 'サラダ', romaji: 'sarada', en: 'salad' },
+        { emoji: '🍲', jp: '味噌汁', ruby: '<ruby>味噌汁<rt>みそしる</rt></ruby>', romaji: 'miso-shiru', en: 'miso soup' },
+        { emoji: '🍚', jp: 'ご飯', ruby: 'ご<ruby>飯<rt>はん</rt></ruby>', romaji: 'gohan', en: 'steamed rice' }
+      ]
+    }
   ]
 }
