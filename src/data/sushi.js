@@ -139,75 +139,75 @@ export const sushi = {
     {
       title: 'マグロ・赤身 · Tuna & red fish',
       items: [
-        { emoji: '🍣', jp: 'マグロ', ruby: 'マグロ', romaji: 'maguro', zh: '鮪魚（赤身）', en: 'lean tuna' },
-        { emoji: '🍣', jp: '中トロ', say: 'ちゅうトロ', ruby: '<ruby>中<rt>ちゅう</rt></ruby>トロ', romaji: 'chū-toro', zh: '中腹鮪魚', en: 'medium fatty tuna' },
-        { emoji: '🍣', jp: '大トロ', say: 'おおトロ', ruby: '<ruby>大<rt>おお</rt></ruby>トロ', romaji: 'ō-toro', zh: '大腹鮪魚', en: 'fattiest tuna belly' },
-        { emoji: '🍣', jp: 'ネギトロ', ruby: 'ネギトロ', romaji: 'negitoro', zh: '蔥花鮪魚泥', en: 'minced fatty tuna & leek' },
-        { emoji: '🐟', jp: 'カツオ', ruby: 'カツオ', romaji: 'katsuo', zh: '鰹魚', en: 'bonito' },
-        { emoji: '🍣', jp: '鉄火巻き', say: 'てっかまき', ruby: '<ruby>鉄火<rt>てっか</rt></ruby><ruby>巻<rt>ま</rt></ruby>き', romaji: 'tekka-maki', zh: '鮪魚捲', en: 'tuna roll' }
+        { emoji: '🍣', jp: 'マグロ', ruby: 'マグロ', romaji: 'maguro', zh: '鮪魚（赤身）', en: 'lean tuna', desc: '鮪魚瘦肉，味道清爽、鐵質鮮味足，壽司基本款。' },
+        { emoji: '🍣', jp: '中トロ', say: 'ちゅうトロ', ruby: '<ruby>中<rt>ちゅう</rt></ruby>トロ', romaji: 'chū-toro', zh: '中腹鮪魚', en: 'medium fatty tuna', desc: '鮪魚中腹，油脂與瘦肉均衡、入口即化。' },
+        { emoji: '🍣', jp: '大トロ', say: 'おおトロ', ruby: '<ruby>大<rt>おお</rt></ruby>トロ', romaji: 'ō-toro', zh: '大腹鮪魚', en: 'fattiest tuna belly', desc: '鮪魚大腹，油脂最豐厚、入口即化的頂級部位。' },
+        { emoji: '🍣', jp: 'ネギトロ', ruby: 'ネギトロ', romaji: 'negitoro', zh: '蔥花鮪魚泥', en: 'minced fatty tuna & leek', desc: '鮪魚泥拌蔥花，綿密滑順、蔥香解膩，多做成軍艦。' },
+        { emoji: '🐟', jp: 'カツオ', ruby: 'カツオ', romaji: 'katsuo', zh: '鰹魚', en: 'bonito', desc: '鰹魚，赤身肉味濃、帶獨特酸香，常炙燒成半敲燒。' },
+        { emoji: '🍣', jp: '鉄火巻き', say: 'てっかまき', ruby: '<ruby>鉄火<rt>てっか</rt></ruby><ruby>巻<rt>ま</rt></ruby>き', romaji: 'tekka-maki', zh: '鮪魚捲', en: 'tuna roll', desc: '鮪魚赤身細捲，清爽不膩的經典壽司捲。' }
       ]
     },
     {
       title: '白身魚 · White fish',
       items: [
-        { emoji: '🐟', jp: '鯛', say: 'たい', ruby: '<ruby>鯛<rt>たい</rt></ruby>', romaji: 'tai', zh: '鯛魚', en: 'sea bream' },
-        { emoji: '🐟', jp: 'ヒラメ', ruby: 'ヒラメ', romaji: 'hirame', zh: '比目魚', en: 'flounder' },
-        { emoji: '🐟', jp: 'エンガワ', ruby: 'エンガワ', romaji: 'engawa', zh: '比目魚鰭邊', en: 'flounder fin' },
-        { emoji: '🐟', jp: 'カンパチ', ruby: 'カンパチ', romaji: 'kanpachi', zh: '紅甘鰺', en: 'amberjack' },
-        { emoji: '🐟', jp: 'ハマチ', ruby: 'ハマチ', romaji: 'hamachi', zh: '青甘魚', en: 'young yellowtail' },
-        { emoji: '🐟', jp: 'ブリ', ruby: 'ブリ', romaji: 'buri', zh: '鰤魚', en: 'yellowtail' },
-        { emoji: '🐟', jp: 'スズキ', ruby: 'スズキ', romaji: 'suzuki', zh: '鱸魚', en: 'sea bass' },
-        { emoji: '🐟', jp: '金目鯛', say: 'きんめだい', ruby: '<ruby>金目鯛<rt>きんめだい</rt></ruby>', romaji: 'kinmedai', zh: '金目鯛', en: 'splendid alfonsino' },
-        { emoji: '🐟', jp: 'のどぐろ', ruby: 'のどぐろ', romaji: 'nodoguro', zh: '喉黑魚', en: 'blackthroat seaperch' }
+        { emoji: '🐟', jp: '鯛', say: 'たい', ruby: '<ruby>鯛<rt>たい</rt></ruby>', romaji: 'tai', zh: '鯛魚', en: 'sea bream', desc: '鯛魚，白身魚代表，肉質緊實、味道清雅。' },
+        { emoji: '🐟', jp: 'ヒラメ', ruby: 'ヒラメ', romaji: 'hirame', zh: '比目魚', en: 'flounder', desc: '比目魚，白身魚肉質爽脆、味道清淡回甘。' },
+        { emoji: '🐟', jp: 'エンガワ', ruby: 'エンガワ', romaji: 'engawa', zh: '比目魚鰭邊', en: 'flounder fin', desc: '比目魚鰭邊肉，富膠質、爽脆有嚼勁、油脂香。' },
+        { emoji: '🐟', jp: 'カンパチ', ruby: 'カンパチ', romaji: 'kanpachi', zh: '紅甘鰺', en: 'amberjack', desc: '紅甘鰺，肉質緊實爽脆、味道清甜不腥。' },
+        { emoji: '🐟', jp: 'ハマチ', ruby: 'ハマチ', romaji: 'hamachi', zh: '青甘魚', en: 'young yellowtail', desc: '青甘魚（鰤魚幼魚），油脂適中、口感柔嫩。' },
+        { emoji: '🐟', jp: 'ブリ', ruby: 'ブリ', romaji: 'buri', zh: '鰤魚', en: 'yellowtail', desc: '鰤魚，冬季油脂豐厚、肉質肥美鮮甜。' },
+        { emoji: '🐟', jp: 'スズキ', ruby: 'スズキ', romaji: 'suzuki', zh: '鱸魚', en: 'sea bass', desc: '鱸魚，白身魚肉質細嫩、味道清淡爽口。' },
+        { emoji: '🐟', jp: '金目鯛', say: 'きんめだい', ruby: '<ruby>金目鯛<rt>きんめだい</rt></ruby>', romaji: 'kinmedai', zh: '金目鯛', en: 'splendid alfonsino', desc: '金目鯛，皮下油脂豐潤、肉質柔嫩鮮甜。' },
+        { emoji: '🐟', jp: 'のどぐろ', ruby: 'のどぐろ', romaji: 'nodoguro', zh: '喉黑魚', en: 'blackthroat seaperch', desc: '喉黑魚，油脂極豐厚、入口即化的高級白身魚。' }
       ]
     },
     {
       title: '光り物 · Silver-skinned fish',
       items: [
-        { emoji: '🐟', jp: 'サバ', ruby: 'サバ', romaji: 'saba', zh: '鯖魚', en: 'mackerel' },
-        { emoji: '🐟', jp: 'アジ', ruby: 'アジ', romaji: 'aji', zh: '竹筴魚', en: 'horse mackerel' },
-        { emoji: '🐟', jp: 'イワシ', ruby: 'イワシ', romaji: 'iwashi', zh: '沙丁魚', en: 'sardine' },
-        { emoji: '🐟', jp: 'コハダ', ruby: 'コハダ', romaji: 'kohada', zh: '窩斑鰶（小鰭）', en: 'gizzard shad' },
-        { emoji: '🐟', jp: 'サンマ', ruby: 'サンマ', romaji: 'sanma', zh: '秋刀魚', en: 'pacific saury' }
+        { emoji: '🐟', jp: 'サバ', ruby: 'サバ', romaji: 'saba', zh: '鯖魚', en: 'mackerel', desc: '鯖魚，油脂豐厚、味道濃郁，常以醋漬處理。' },
+        { emoji: '🐟', jp: 'アジ', ruby: 'アジ', romaji: 'aji', zh: '竹筴魚', en: 'horse mackerel', desc: '竹筴魚，肉質鮮甜、油脂適中，常配蔥薑提味。' },
+        { emoji: '🐟', jp: 'イワシ', ruby: 'イワシ', romaji: 'iwashi', zh: '沙丁魚', en: 'sardine', desc: '沙丁魚，油脂豐潤、味道濃郁鮮美。' },
+        { emoji: '🐟', jp: 'コハダ', ruby: 'コハダ', romaji: 'kohada', zh: '窩斑鰶（小鰭）', en: 'gizzard shad', desc: '小鰭，醋漬光物代表，酸香清爽、肉質細緻。' },
+        { emoji: '🐟', jp: 'サンマ', ruby: 'サンマ', romaji: 'sanma', zh: '秋刀魚', en: 'pacific saury', desc: '秋刀魚，秋季油脂肥美、味道濃郁帶微苦甘。' }
       ]
     },
     {
       title: 'サーモン・その他の魚 · Salmon & others',
       items: [
-        { emoji: '🍣', jp: 'サーモン', ruby: 'サーモン', romaji: 'sāmon', zh: '鮭魚', en: 'salmon' },
-        { emoji: '🔥', jp: '炙りサーモン', say: 'あぶりサーモン', ruby: '<ruby>炙<rt>あぶ</rt></ruby>りサーモン', romaji: 'aburi-sāmon', zh: '炙燒鮭魚', en: 'seared salmon' },
-        { emoji: '🐟', jp: 'ウナギ', ruby: 'ウナギ', romaji: 'unagi', zh: '鰻魚', en: 'freshwater eel' },
-        { emoji: '🍣', jp: '穴子', say: 'あなご', ruby: '<ruby>穴子<rt>あなご</rt></ruby>', romaji: 'anago', zh: '星鰻', en: 'sea eel' },
-        { emoji: '🐟', jp: 'タチウオ', ruby: 'タチウオ', romaji: 'tachiuo', zh: '白帶魚', en: 'cutlassfish' }
+        { emoji: '🍣', jp: 'サーモン', ruby: 'サーモン', romaji: 'sāmon', zh: '鮭魚', en: 'salmon', desc: '鮭魚，油脂豐潤、口感滑順鮮甜，人氣定番。' },
+        { emoji: '🔥', jp: '炙りサーモン', say: 'あぶりサーモン', ruby: '<ruby>炙<rt>あぶ</rt></ruby>りサーモン', romaji: 'aburi-sāmon', zh: '炙燒鮭魚', en: 'seared salmon', desc: '炙燒鮭魚，表面微焦香、油脂融化更甘甜。' },
+        { emoji: '🐟', jp: 'ウナギ', ruby: 'ウナギ', romaji: 'unagi', zh: '鰻魚', en: 'freshwater eel', desc: '鰻魚，蒲燒後鬆軟、刷甜醬香氣濃郁。' },
+        { emoji: '🍣', jp: '穴子', say: 'あなご', ruby: '<ruby>穴子<rt>あなご</rt></ruby>', romaji: 'anago', zh: '星鰻', en: 'sea eel', desc: '星鰻，蒸烤後鬆軟、刷上甜醬，入口即化。' },
+        { emoji: '🐟', jp: 'タチウオ', ruby: 'タチウオ', romaji: 'tachiuo', zh: '白帶魚', en: 'cutlassfish', desc: '白帶魚，白身肉質細嫩、油脂清香，常炙燒。' }
       ]
     },
     {
       title: '貝・海老・蟹 · Shellfish, shrimp & crab',
       items: [
-        { emoji: '🍤', jp: 'エビ', ruby: 'エビ', romaji: 'ebi', zh: '蝦', en: 'shrimp' },
-        { emoji: '🦐', jp: '甘エビ', say: 'あまエビ', ruby: '<ruby>甘<rt>あま</rt></ruby>エビ', romaji: 'ama-ebi', zh: '甜蝦', en: 'sweet shrimp' },
-        { emoji: '🦐', jp: 'ボタンエビ', ruby: 'ボタンエビ', romaji: 'botan-ebi', zh: '牡丹蝦', en: 'botan shrimp' },
-        { emoji: '🐚', jp: 'ホタテ', ruby: 'ホタテ', romaji: 'hotate', zh: '干貝', en: 'scallop' },
-        { emoji: '🐚', jp: 'アカガイ', ruby: 'アカガイ', romaji: 'akagai', zh: '赤貝', en: 'ark shell' },
-        { emoji: '🐚', jp: 'ホッキ貝', say: 'ホッキがい', ruby: 'ホッキ<ruby>貝<rt>がい</rt></ruby>', romaji: 'hokkigai', zh: '北寄貝', en: 'surf clam' },
-        { emoji: '🐚', jp: 'ツブ貝', say: 'ツブがい', ruby: 'ツブ<ruby>貝<rt>がい</rt></ruby>', romaji: 'tsubugai', zh: '海螺', en: 'whelk' },
-        { emoji: '🦪', jp: 'カキ', ruby: 'カキ', romaji: 'kaki', zh: '牡蠣', en: 'oyster' },
-        { emoji: '🦀', jp: 'カニ', ruby: 'カニ', romaji: 'kani', zh: '螃蟹', en: 'crab' },
-        { emoji: '🦑', jp: 'イカ', ruby: 'イカ', romaji: 'ika', zh: '花枝', en: 'squid' },
-        { emoji: '🐙', jp: 'タコ', ruby: 'タコ', romaji: 'tako', zh: '章魚', en: 'octopus' }
+        { emoji: '🍤', jp: 'エビ', ruby: 'エビ', romaji: 'ebi', zh: '蝦', en: 'shrimp', desc: '熟蝦，肉質彈牙、味道清甜，壽司基本款。' },
+        { emoji: '🦐', jp: '甘エビ', say: 'あまエビ', ruby: '<ruby>甘<rt>あま</rt></ruby>エビ', romaji: 'ama-ebi', zh: '甜蝦', en: 'sweet shrimp', desc: '甜蝦，生食口感軟黏、味道甘甜濃郁。' },
+        { emoji: '🦐', jp: 'ボタンエビ', ruby: 'ボタンエビ', romaji: 'botan-ebi', zh: '牡丹蝦', en: 'botan shrimp', desc: '牡丹蝦，體型大、肉質Q彈、鮮甜飽滿。' },
+        { emoji: '🐚', jp: 'ホタテ', ruby: 'ホタテ', romaji: 'hotate', zh: '干貝', en: 'scallop', desc: '干貝，肉質肥厚軟嫩、味道清甜柔和。' },
+        { emoji: '🐚', jp: 'アカガイ', ruby: 'アカガイ', romaji: 'akagai', zh: '赤貝', en: 'ark shell', desc: '赤貝，口感爽脆有嚼勁、帶獨特海潮香甜。' },
+        { emoji: '🐚', jp: 'ホッキ貝', say: 'ホッキがい', ruby: 'ホッキ<ruby>貝<rt>がい</rt></ruby>', romaji: 'hokkigai', zh: '北寄貝', en: 'surf clam', desc: '北寄貝，汆燙後呈紅色、爽脆清甜。' },
+        { emoji: '🐚', jp: 'ツブ貝', say: 'ツブがい', ruby: 'ツブ<ruby>貝<rt>がい</rt></ruby>', romaji: 'tsubugai', zh: '海螺', en: 'whelk', desc: '海螺，肉質爽脆彈牙、味道清甜帶海味。' },
+        { emoji: '🦪', jp: 'カキ', ruby: 'カキ', romaji: 'kaki', zh: '牡蠣', en: 'oyster', desc: '牡蠣，綿密多汁、海味濃郁鮮甜。' },
+        { emoji: '🦀', jp: 'カニ', ruby: 'カニ', romaji: 'kani', zh: '螃蟹', en: 'crab', desc: '螃蟹，蟹肉細緻鮮甜、口感柔嫩。' },
+        { emoji: '🦑', jp: 'イカ', ruby: 'イカ', romaji: 'ika', zh: '花枝', en: 'squid', desc: '花枝，肉質爽脆軟黏、味道清甜淡雅。' },
+        { emoji: '🐙', jp: 'タコ', ruby: 'タコ', romaji: 'tako', zh: '章魚', en: 'octopus', desc: '章魚，汆燙後爽脆有嚼勁、味道清甜。' }
       ]
     },
     {
       title: '軍艦・卵・巻物 · Gunkan, roe & rolls',
       items: [
-        { emoji: '🍣', jp: 'ウニ', ruby: 'ウニ', romaji: 'uni', zh: '海膽', en: 'sea urchin' },
-        { emoji: '🍣', jp: 'イクラ', ruby: 'イクラ', romaji: 'ikura', zh: '鮭魚卵', en: 'salmon roe' },
-        { emoji: '🍣', jp: 'とびこ', ruby: 'とびこ', romaji: 'tobiko', zh: '飛魚卵', en: 'flying fish roe' },
-        { emoji: '🍣', jp: '数の子', say: 'かずのこ', ruby: '<ruby>数<rt>かず</rt></ruby>の<ruby>子<rt>こ</rt></ruby>', romaji: 'kazunoko', zh: '鯡魚卵', en: 'herring roe' },
-        { emoji: '🍳', jp: '玉子', say: 'たまご', ruby: '<ruby>玉子<rt>たまご</rt></ruby>', romaji: 'tamago', zh: '玉子燒', en: 'sweet egg' },
-        { emoji: '🥒', jp: 'かっぱ巻き', say: 'かっぱまき', ruby: 'かっぱ<ruby>巻<rt>ま</rt></ruby>き', romaji: 'kappa-maki', zh: '小黃瓜捲', en: 'cucumber roll' },
-        { emoji: '🍣', jp: '納豆巻き', say: 'なっとうまき', ruby: '<ruby>納豆<rt>なっとう</rt></ruby><ruby>巻<rt>ま</rt></ruby>き', romaji: 'nattō-maki', zh: '納豆捲', en: 'natto roll' },
-        { emoji: '🍣', jp: 'かんぴょう巻き', say: 'かんぴょうまき', ruby: 'かんぴょう<ruby>巻<rt>ま</rt></ruby>き', romaji: 'kanpyō-maki', zh: '葫蘆乾捲', en: 'dried gourd roll' }
+        { emoji: '🍣', jp: 'ウニ', ruby: 'ウニ', romaji: 'uni', zh: '海膽', en: 'sea urchin', desc: '海膽，綿密濃郁、海味甘甜，多以軍艦捲呈現。' },
+        { emoji: '🍣', jp: 'イクラ', ruby: 'イクラ', romaji: 'ikura', zh: '鮭魚卵', en: 'salmon roe', desc: '鮭魚卵，顆粒飽滿、咬下爆漿鹹鮮，常做成軍艦。' },
+        { emoji: '🍣', jp: 'とびこ', ruby: 'とびこ', romaji: 'tobiko', zh: '飛魚卵', en: 'flying fish roe', desc: '飛魚卵，顆粒細小、口感爽脆、味道清鹹。' },
+        { emoji: '🍣', jp: '数の子', say: 'かずのこ', ruby: '<ruby>数<rt>かず</rt></ruby>の<ruby>子<rt>こ</rt></ruby>', romaji: 'kazunoko', zh: '鯡魚卵', en: 'herring roe', desc: '鯡魚卵，口感爽脆彈牙、味道清淡微鹹。' },
+        { emoji: '🍳', jp: '玉子', say: 'たまご', ruby: '<ruby>玉子<rt>たまご</rt></ruby>', romaji: 'tamago', zh: '玉子燒', en: 'sweet egg', desc: '玉子燒，蛋香鬆軟微甜，常作為收尾的一貫。' },
+        { emoji: '🥒', jp: 'かっぱ巻き', say: 'かっぱまき', ruby: 'かっぱ<ruby>巻<rt>ま</rt></ruby>き', romaji: 'kappa-maki', zh: '小黃瓜捲', en: 'cucumber roll', desc: '小黃瓜捲，清脆爽口、解膩的經典細捲。' },
+        { emoji: '🍣', jp: '納豆巻き', say: 'なっとうまき', ruby: '<ruby>納豆<rt>なっとう</rt></ruby><ruby>巻<rt>ま</rt></ruby>き', romaji: 'nattō-maki', zh: '納豆捲', en: 'natto roll', desc: '納豆細捲，黏稠發酵風味獨特、香氣濃郁。' },
+        { emoji: '🍣', jp: 'かんぴょう巻き', say: 'かんぴょうまき', ruby: 'かんぴょう<ruby>巻<rt>ま</rt></ruby>き', romaji: 'kanpyō-maki', zh: '葫蘆乾捲', en: 'dried gourd roll', desc: '葫蘆乾細捲，甜鹹滷味、口感軟韌的傳統捲物。' }
       ]
     }
   ],
