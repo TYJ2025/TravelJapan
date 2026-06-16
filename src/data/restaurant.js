@@ -166,20 +166,95 @@ export const restaurant = {
   ],
   menu: [
     {
-      title: 'メニュー · Dishes',
+      title: '前菜・サラダ · Starters & salads',
       items: [
-        { emoji: '🍜', jp: 'ラーメン', ruby: 'ラーメン', romaji: 'rāmen', zh: '拉麵', en: 'ramen' },
-        { emoji: '🍛', jp: 'カレーライス', ruby: 'カレーライス', romaji: 'karē raisu', zh: '咖哩飯', en: 'curry rice' },
-        { emoji: '🍤', jp: '天ぷら', ruby: '<ruby>天<rt>てん</rt></ruby>ぷら', romaji: 'tempura', zh: '天婦羅', en: 'tempura' },
-        { emoji: '🍖', jp: 'とんかつ', ruby: 'とんかつ', romaji: 'tonkatsu', zh: '炸豬排', en: 'pork cutlet' },
-        { emoji: '🍜', jp: 'うどん', ruby: 'うどん', romaji: 'udon', zh: '烏龍麵', en: 'udon noodles' },
-        { emoji: '🍜', jp: 'そば', ruby: 'そば', romaji: 'soba', zh: '蕎麥麵', en: 'soba noodles' },
-        { emoji: '🍚', jp: '親子丼', say: 'おやこどん', ruby: '<ruby>親子丼<rt>おやこどん</rt></ruby>', romaji: 'oyakodon', zh: '親子丼', en: 'chicken & egg rice bowl' },
-        { emoji: '🍔', jp: 'ハンバーグ', ruby: 'ハンバーグ', romaji: 'hambāgu', zh: '漢堡排', en: 'hamburg steak' },
-        { emoji: '🍳', jp: 'オムライス', ruby: 'オムライス', romaji: 'omu-raisu', zh: '蛋包飯', en: 'omelette rice' },
-        { emoji: '🥗', jp: 'サラダ', ruby: 'サラダ', romaji: 'sarada', zh: '沙拉', en: 'salad' },
-        { emoji: '🍲', jp: '味噌汁', ruby: '<ruby>味噌汁<rt>みそしる</rt></ruby>', romaji: 'miso-shiru', zh: '味噌湯', en: 'miso soup' },
-        { emoji: '🍚', jp: 'ご飯', ruby: 'ご<ruby>飯<rt>はん</rt></ruby>', romaji: 'gohan', zh: '白飯', en: 'steamed rice' }
+        { emoji: '🫛', jp: '枝豆', say: 'えだまめ', ruby: '<ruby>枝豆<rt>えだまめ</rt></ruby>', romaji: 'edamame', zh: '毛豆', en: 'edamame', desc: '鹽味水煮毛豆，清爽開胃的經典前菜。' },
+        { emoji: '🥗', jp: 'シーザーサラダ', ruby: 'シーザーサラダ', romaji: 'shīzā sarada', zh: '凱薩沙拉', en: 'Caesar salad', desc: '生菜佐凱薩醬與起司，配脆麵包丁。' },
+        { emoji: '🍟', jp: 'ポテトフライ', ruby: 'ポテトフライ', romaji: 'poteto furai', zh: '炸薯條', en: 'french fries', desc: '金黃酥脆的炸薯條，大人小孩都愛。' },
+        { emoji: '🌽', jp: 'コーンスープ', ruby: 'コーンスープ', romaji: 'kōn sūpu', zh: '玉米濃湯', en: 'corn soup', desc: '香甜濃郁的玉米濃湯，溫暖順口。' },
+        { emoji: '🍗', jp: '唐揚げ', say: 'からあげ', ruby: '<ruby>唐揚<rt>からあ</rt></ruby>げ', romaji: 'kara-age', zh: '日式炸雞', en: 'fried chicken', desc: '外酥內多汁的日式炸雞塊，沾檸檬更清爽。' },
+        { emoji: '🥟', jp: '餃子', say: 'ぎょうざ', ruby: '<ruby>餃子<rt>ぎょうざ</rt></ruby>', romaji: 'gyōza', zh: '煎餃', en: 'pan-fried dumplings', desc: '底部煎得金黃酥脆的豬肉煎餃。' }
+      ]
+    },
+    {
+      title: '洋食メイン · Western mains',
+      items: [
+        { emoji: '🍔', jp: 'ハンバーグ', ruby: 'ハンバーグ', romaji: 'hambāgu', zh: '漢堡排', en: 'hamburg steak', desc: '多汁的牛豬混合肉排，淋上濃郁醬汁。' },
+        { emoji: '🧀', jp: 'チーズハンバーグ', ruby: 'チーズハンバーグ', romaji: 'chīzu hambāgu', zh: '起司漢堡排', en: 'cheese hamburg steak', desc: '漢堡排鋪上融化起司，香濃誘人。' },
+        { emoji: '🥩', jp: 'ステーキ', ruby: 'ステーキ', romaji: 'sutēki', zh: '牛排', en: 'steak', desc: '香煎牛排，可選擇喜好的熟度。' },
+        { emoji: '🍤', jp: 'エビフライ', say: 'えびフライ', ruby: 'エビフライ', romaji: 'ebi furai', zh: '炸蝦', en: 'fried prawns', desc: '裹麵包粉酥炸的大蝦，外酥內彈。' },
+        { emoji: '🍳', jp: 'オムライス', ruby: 'オムライス', romaji: 'omu-raisu', zh: '蛋包飯', en: 'omelette rice', desc: '滑蛋包覆番茄炒飯，淋上番茄醬。' },
+        { emoji: '🧀', jp: 'グラタン', ruby: 'グラタン', romaji: 'guratan', zh: '焗烤', en: 'gratin', desc: '白醬與起司焗烤至金黃，濃郁燙口。' },
+        { emoji: '🍚', jp: 'ドリア', ruby: 'ドリア', romaji: 'doria', zh: '焗烤飯', en: 'rice gratin', desc: '白醬焗烤飯，飯與起司一起烤得香濃。' },
+        { emoji: '🍝', jp: 'ナポリタン', ruby: 'ナポリタン', romaji: 'naporitan', zh: '拿坡里義大利麵', en: 'Napolitan pasta', desc: '番茄醬炒義大利麵，日式洋食的代表。' },
+        { emoji: '🍝', jp: 'カルボナーラ', ruby: 'カルボナーラ', romaji: 'karubonāra', zh: '奶油培根義大利麵', en: 'carbonara', desc: '蛋液與起司製成的濃郁奶油培根麵。' },
+        { emoji: '🍕', jp: 'ピザ', ruby: 'ピザ', romaji: 'piza', zh: '披薩', en: 'pizza', desc: '現烤披薩，餅皮酥脆、起司牽絲。' },
+        { emoji: '🍲', jp: 'ビーフシチュー', ruby: 'ビーフシチュー', romaji: 'bīfu shichū', zh: '燉牛肉', en: 'beef stew', desc: '牛肉燉煮至軟爛，醬汁濃郁香醇。' }
+      ]
+    },
+    {
+      title: '和食メイン · Japanese mains',
+      items: [
+        { emoji: '🐟', jp: '焼き魚定食', say: 'やきざかなていしょく', ruby: '<ruby>焼<rt>や</rt></ruby>き<ruby>魚定食<rt>ざかなていしょく</rt></ruby>', romaji: 'yakizakana teishoku', zh: '烤魚定食', en: 'grilled fish set', desc: '鹽烤魚搭配白飯、味噌湯與小菜的套餐。' },
+        { emoji: '🍖', jp: '生姜焼き定食', say: 'しょうがやきていしょく', ruby: '<ruby>生姜焼<rt>しょうがや</rt></ruby>き<ruby>定食<rt>ていしょく</rt></ruby>', romaji: 'shōgayaki teishoku', zh: '薑燒豬肉定食', en: 'ginger pork set', desc: '薑汁醬油炒豬肉的定食，下飯又開胃。' },
+        { emoji: '🍖', jp: 'とんかつ', ruby: 'とんかつ', romaji: 'tonkatsu', zh: '炸豬排', en: 'pork cutlet', desc: '裹粉酥炸的厚豬排，沾豬排醬享用。' },
+        { emoji: '🍤', jp: '天ぷら盛り合わせ', say: 'てんぷらもりあわせ', ruby: '<ruby>天<rt>てん</rt></ruby>ぷら<ruby>盛<rt>も</rt></ruby>り<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'tempura moriawase', zh: '綜合天婦羅', en: 'assorted tempura', desc: '蝦與蔬菜的綜合炸物拼盤，外衣酥脆。' },
+        { emoji: '🍣', jp: '刺身定食', say: 'さしみていしょく', ruby: '<ruby>刺身定食<rt>さしみていしょく</rt></ruby>', romaji: 'sashimi teishoku', zh: '生魚片定食', en: 'sashimi set', desc: '新鮮生魚片搭配白飯與味噌湯的套餐。' },
+        { emoji: '🐟', jp: '煮魚', say: 'にざかな', ruby: '<ruby>煮魚<rt>にざかな</rt></ruby>', romaji: 'nizakana', zh: '燉煮魚', en: 'simmered fish', desc: '以醬油與糖燉煮入味的魚，肉質軟嫩。' }
+      ]
+    },
+    {
+      title: '丼・カレー · Rice bowls & curry',
+      items: [
+        { emoji: '🍚', jp: '親子丼', say: 'おやこどん', ruby: '<ruby>親子丼<rt>おやこどん</rt></ruby>', romaji: 'oyakodon', zh: '親子丼', en: 'chicken & egg rice bowl', desc: '雞肉與滑蛋蓋飯，鹹甜醬汁滲入白飯。' },
+        { emoji: '🍚', jp: 'カツ丼', say: 'かつどん', ruby: 'カツ<ruby>丼<rt>どん</rt></ruby>', romaji: 'katsudon', zh: '豬排丼', en: 'pork cutlet rice bowl', desc: '炸豬排與滑蛋蓋飯，份量飽足。' },
+        { emoji: '🍚', jp: '牛丼', say: 'ぎゅうどん', ruby: '<ruby>牛丼<rt>ぎゅうどん</rt></ruby>', romaji: 'gyūdon', zh: '牛丼', en: 'beef rice bowl', desc: '甜鹹醬汁燉煮的薄牛肉與洋蔥蓋飯。' },
+        { emoji: '🍤', jp: '天丼', say: 'てんどん', ruby: '<ruby>天丼<rt>てんどん</rt></ruby>', romaji: 'tendon', zh: '天丼', en: 'tempura rice bowl', desc: '天婦羅蓋飯，淋上甜鹹的丼飯醬汁。' },
+        { emoji: '🍛', jp: 'カレーライス', ruby: 'カレーライス', romaji: 'karē raisu', zh: '咖哩飯', en: 'curry rice', desc: '濃郁日式咖哩淋在白飯上，溫和不辣。' },
+        { emoji: '🍛', jp: 'ハヤシライス', ruby: 'ハヤシライス', romaji: 'hayashi raisu', zh: '牛肉燴飯', en: 'hashed beef rice', desc: '番茄牛肉醬燴飯，酸甜濃郁。' },
+        { emoji: '🍚', jp: 'チャーハン', ruby: 'チャーハン', romaji: 'chāhan', zh: '炒飯', en: 'fried rice', desc: '粒粒分明的中華風炒飯，鑊氣十足。' }
+      ]
+    },
+    {
+      title: '麺類 · Noodles',
+      items: [
+        { emoji: '🍜', jp: 'ラーメン', ruby: 'ラーメン', romaji: 'rāmen', zh: '拉麵', en: 'ramen', desc: '熱湯拉麵，可選醬油、味噌等湯頭。' },
+        { emoji: '🍜', jp: 'うどん', ruby: 'うどん', romaji: 'udon', zh: '烏龍麵', en: 'udon noodles', desc: '粗白麵條配清爽高湯，口感Q彈。' },
+        { emoji: '🍜', jp: 'そば', ruby: 'そば', romaji: 'soba', zh: '蕎麥麵', en: 'soba noodles', desc: '蕎麥製的細麵，香氣樸實、冷熱皆宜。' },
+        { emoji: '🍜', jp: 'つけ麺', say: 'つけめん', ruby: 'つけ<ruby>麺<rt>めん</rt></ruby>', romaji: 'tsukemen', zh: '沾麵', en: 'dipping noodles', desc: '麵與濃湯分開，沾著濃郁湯汁享用。' },
+        { emoji: '🍜', jp: '冷やし中華', say: 'ひやしちゅうか', ruby: '<ruby>冷<rt>ひ</rt></ruby>やし<ruby>中華<rt>ちゅうか</rt></ruby>', romaji: 'hiyashi chūka', zh: '冷麵', en: 'cold ramen', desc: '夏季冷麵，淋上酸甜醬汁配多彩配料。' }
+      ]
+    },
+    {
+      title: 'ご飯・サイド · Rice & sides',
+      items: [
+        { emoji: '🍚', jp: 'ご飯', say: 'ごはん', ruby: 'ご<ruby>飯<rt>はん</rt></ruby>', romaji: 'gohan', zh: '白飯', en: 'steamed rice', desc: '一碗熱騰騰的白飯，可加點或續碗。' },
+        { emoji: '🍲', jp: '味噌汁', say: 'みそしる', ruby: '<ruby>味噌汁<rt>みそしる</rt></ruby>', romaji: 'miso-shiru', zh: '味噌湯', en: 'miso soup', desc: '味噌調味的湯，配料常有豆腐與海帶芽。' },
+        { emoji: '🥬', jp: '漬物', say: 'つけもの', ruby: '<ruby>漬物<rt>つけもの</rt></ruby>', romaji: 'tsukemono', zh: '醃菜', en: 'pickles', desc: '日式醃漬蔬菜，爽脆解膩的小菜。' },
+        { emoji: '🥚', jp: '卵', say: 'たまご', ruby: '<ruby>卵<rt>たまご</rt></ruby>', romaji: 'tamago', zh: '雞蛋', en: 'egg', desc: '生蛋或溫泉蛋，可拌飯或加在丼飯上。' }
+      ]
+    },
+    {
+      title: 'デザート · Dessert',
+      items: [
+        { emoji: '🍨', jp: 'パフェ', ruby: 'パフェ', romaji: 'pafe', zh: '聖代', en: 'parfait', desc: '冰淇淋、水果與鮮奶油層疊的華麗甜點。' },
+        { emoji: '🍰', jp: 'ケーキ', ruby: 'ケーキ', romaji: 'kēki', zh: '蛋糕', en: 'cake', desc: '當日精選蛋糕，鬆軟香甜。' },
+        { emoji: '🍮', jp: 'プリン', ruby: 'プリン', romaji: 'purin', zh: '布丁', en: 'pudding', desc: '滑嫩雞蛋布丁，淋上微苦焦糖醬。' },
+        { emoji: '🍦', jp: 'アイスクリーム', ruby: 'アイスクリーム', romaji: 'aisu kurīmu', zh: '冰淇淋', en: 'ice cream', desc: '香濃冰淇淋，飯後的清涼甜點。' },
+        { emoji: '🍡', jp: 'あんみつ', ruby: 'あんみつ', romaji: 'anmitsu', zh: '蜜豆冰', en: 'anmitsu', desc: '寒天、紅豆餡與水果淋黑糖蜜的和風甜點。' }
+      ]
+    },
+    {
+      title: 'ドリンク · Drinks',
+      items: [
+        { emoji: '🥤', jp: 'ドリンクバー', ruby: 'ドリンクバー', romaji: 'dorinku bā', zh: '飲料吧', en: 'drink bar', desc: '自助暢飲的飲料吧，可無限續杯。' },
+        { emoji: '☕', jp: 'コーヒー', ruby: 'コーヒー', romaji: 'kōhī', zh: '咖啡', en: 'coffee', desc: '現煮咖啡，熱飲冰飲皆可。' },
+        { emoji: '🍵', jp: '紅茶', say: 'こうちゃ', ruby: '<ruby>紅茶<rt>こうちゃ</rt></ruby>', romaji: 'kōcha', zh: '紅茶', en: 'black tea', desc: '香氣優雅的紅茶，可加奶或檸檬。' },
+        { emoji: '🍊', jp: 'オレンジジュース', ruby: 'オレンジジュース', romaji: 'orenji jūsu', zh: '柳橙汁', en: 'orange juice', desc: '清爽柳橙汁，酸甜開胃。' },
+        { emoji: '🥤', jp: 'コーラ', ruby: 'コーラ', romaji: 'kōra', zh: '可樂', en: 'cola', desc: '冰涼可樂，氣泡暢快。' },
+        { emoji: '🥤', jp: 'メロンソーダ', ruby: 'メロンソーダ', romaji: 'meron sōda', zh: '哈密瓜蘇打', en: 'melon soda', desc: '螢光綠的哈密瓜風味蘇打，常加冰淇淋。' },
+        { emoji: '🍵', jp: 'ウーロン茶', say: 'ウーロンちゃ', ruby: 'ウーロン<ruby>茶<rt>ちゃ</rt></ruby>', romaji: 'ūron-cha', zh: '烏龍茶', en: 'oolong tea', desc: '無糖烏龍茶，解膩又解渴。' },
+        { emoji: '🍺', jp: '生ビール', say: 'なまビール', ruby: '<ruby>生<rt>なま</rt></ruby>ビール', romaji: 'nama-bīru', zh: '生啤酒', en: 'draft beer', desc: '冰涼生啤酒，泡沫綿密、暢快爽口。' }
       ]
     }
   ],
