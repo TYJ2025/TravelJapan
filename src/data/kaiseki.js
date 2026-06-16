@@ -113,20 +113,25 @@ export const kaiseki = {
   ],
   menu: [
     {
-      title: '会席のお品書き · The course',
+      title: 'お品書き（コース） · The course',
       items: [
-        { emoji: '🍡', jp: '先付', say: 'さきづけ', ruby: '<ruby>先付<rt>さきづけ</rt></ruby>', romaji: 'sakizuke', zh: '開胃小菜', en: 'amuse-bouche', desc: '會席最先上的一口開胃小菜，展現當季食材與季節感。' },
-        { emoji: '🥢', jp: '前菜', say: 'ぜんさい', ruby: '<ruby>前菜<rt>ぜんさい</rt></ruby>', romaji: 'zensai', zh: '前菜拼盤', en: 'appetizer platter', desc: '數種小菜盛在一盤的前菜拼盤，色彩豐富賞心悅目。' },
-        { emoji: '🍵', jp: 'お椀／吸い物', say: 'おわん／すいもの', ruby: 'お<ruby>椀<rt>わん</rt></ruby>／<ruby>吸<rt>す</rt></ruby>い<ruby>物<rt>もの</rt></ruby>', romaji: 'o-wan / suimono', zh: '清湯', en: 'clear soup', desc: '以高湯為底的清湯，是展現廚師功力的一道清雅料理。' },
-        { emoji: '🐟', jp: 'お造り／刺身', say: 'おつくり／さしみ', ruby: 'お<ruby>造<rt>つく</rt></ruby>り／<ruby>刺身<rt>さしみ</rt></ruby>', romaji: 'o-tsukuri / sashimi', zh: '生魚片', en: 'sashimi course', desc: '當季新鮮的生魚片，沾醬油與山葵享用。' },
-        { emoji: '🔥', jp: '焼き物', say: 'やきもの', ruby: '<ruby>焼<rt>や</rt></ruby>き<ruby>物<rt>もの</rt></ruby>', romaji: 'yakimono', zh: '燒烤料理', en: 'grilled course', desc: '燒烤的一道菜，多為魚類，外香內嫩。' },
-        { emoji: '🍲', jp: '煮物', say: 'にもの', ruby: '<ruby>煮物<rt>にもの</rt></ruby>', romaji: 'nimono', zh: '燉煮料理', en: 'simmered dish', desc: '以高湯細火慢燉的蔬菜或魚肉，味道溫潤入味。' },
-        { emoji: '🍤', jp: '揚げ物', say: 'あげもの', ruby: '<ruby>揚<rt>あ</rt></ruby>げ<ruby>物<rt>もの</rt></ruby>', romaji: 'agemono', zh: '炸物', en: 'tempura course', desc: '酥炸料理，通常為天婦羅，外酥內嫩。' },
-        { emoji: '🥗', jp: '酢の物', say: 'すのもの', ruby: '<ruby>酢<rt>す</rt></ruby>の<ruby>物<rt>もの</rt></ruby>', romaji: 'sunomono', zh: '醋漬涼拌', en: 'vinegared dish', desc: '以醋調味的清爽小菜，可解膩、轉換口味。' },
-        { emoji: '🍮', jp: '蒸し物／茶碗蒸し', say: 'むしもの／ちゃわんむし', ruby: '<ruby>蒸<rt>む</rt></ruby>し<ruby>物<rt>もの</rt></ruby>／<ruby>茶碗蒸<rt>ちゃわんむ</rt></ruby>し', romaji: 'mushimono / chawanmushi', zh: '蒸物（茶碗蒸）', en: 'chawanmushi', desc: '蒸蛋料理，滑嫩的蒸蛋中藏著蝦、菇等配料。' },
-        { emoji: '🍚', jp: '食事（ご飯・味噌汁・香の物）', say: 'しょくじ（ごはん・みそしる・こうのもの）', ruby: '<ruby>食事<rt>しょくじ</rt></ruby>（ご<ruby>飯<rt>はん</rt></ruby>・<ruby>味噌汁<rt>みそしる</rt></ruby>・<ruby>香<rt>こう</rt></ruby>の<ruby>物<rt>もの</rt></ruby>）', romaji: 'shokuji (gohan, miso-shiru, kō no mono)', zh: '主食（白飯、味噌湯、醬菜）', en: 'rice, miso soup & pickles', desc: '收尾的主食，白飯搭配味噌湯與醬菜。' },
-        { emoji: '🍇', jp: '水菓子', say: 'みずがし', ruby: '<ruby>水菓子<rt>みずがし</rt></ruby>', romaji: 'mizugashi', zh: '甜點水果', en: 'dessert / fruit', desc: '餐後的甜點或當季水果，清爽收尾。' },
-        { emoji: '🍵', jp: '抹茶', say: 'まっちゃ', ruby: '<ruby>抹茶<rt>まっちゃ</rt></ruby>', romaji: 'matcha', zh: '抹茶', en: 'matcha', desc: '最後奉上的一碗抹茶，微苦回甘為一餐畫下句點。' }
+        { emoji: '🍡', jp: '先付', say: 'さきづけ', ruby: '<ruby>先付<rt>さきづけ</rt></ruby>', romaji: 'sakizuke', zh: '開胃小菜', en: 'amuse-bouche', desc: '這是會席最先上桌、如同前菜的第一道小菜，用來開胃並預告當季的主題。' },
+        { emoji: '🥢', jp: '八寸', say: 'はっすん', ruby: '<ruby>八寸<rt>はっすん</rt></ruby>', romaji: 'hassun', zh: '什錦拼盤', en: 'seasonal assorted platter', desc: '這是擺盤精緻的拼盤，集合山珍海味的數種小品，多為下酒小菜，最能展現季節感。' },
+        { emoji: '🐟', jp: '向付', say: 'むこうづけ', ruby: '<ruby>向付<rt>むこうづけ</rt></ruby>', romaji: 'mukōzuke', zh: '生魚片小碟', en: 'sashimi side dish', desc: '這是擺在膳食對面、以生魚片為主的一道，是會席中最早登場的鮮味料理。' },
+        { emoji: '🍵', jp: 'お椀（吸い物）', say: 'おわん（すいもの）', ruby: 'お<ruby>椀<rt>わん</rt></ruby>（<ruby>吸<rt>す</rt></ruby>い<ruby>物<rt>もの</rt></ruby>）', romaji: 'o-wan (suimono)', zh: '清湯', en: 'clear soup course', desc: '這是以高湯為底的一碗清湯，香氣與滋味最能展現廚師的功力，是會席的核心料理。' },
+        { emoji: '🍣', jp: 'お造り（刺身）', say: 'おつくり（さしみ）', ruby: 'お<ruby>造<rt>つく</rt></ruby>り（<ruby>刺身<rt>さしみ</rt></ruby>）', romaji: 'o-tsukuri (sashimi)', zh: '生魚片', en: 'sashimi course', desc: '這是生魚片類的一道，以當季新鮮魚貝切片盛盤，沾醬油與山葵享用。' },
+        { emoji: '🔥', jp: '焼き物', say: 'やきもの', ruby: '<ruby>焼<rt>や</rt></ruby>き<ruby>物<rt>もの</rt></ruby>', romaji: 'yakimono', zh: '燒烤料理', en: 'grilled course', desc: '這是燒烤的一道，多為當季魚類，外皮焦香、內裡軟嫩。' },
+        { emoji: '🍲', jp: '炊き合わせ', say: 'たきあわせ', ruby: '<ruby>炊<rt>た</rt></ruby>き<ruby>合<rt>あ</rt></ruby>わせ', romaji: 'takiawase', zh: '分煮拼盤', en: 'assorted simmered dish', desc: '這是將數種食材分別燉煮、再一同盛盤的一道，各自保留原味又相映成趣。' },
+        { emoji: '🥘', jp: '煮物', say: 'にもの', ruby: '<ruby>煮物<rt>にもの</rt></ruby>', romaji: 'nimono', zh: '燉煮料理', en: 'simmered dish', desc: '這是以高湯細火慢燉的一道，蔬菜或魚肉吸飽湯汁，味道溫潤入味。' },
+        { emoji: '🍤', jp: '揚げ物', say: 'あげもの', ruby: '<ruby>揚<rt>あ</rt></ruby>げ<ruby>物<rt>もの</rt></ruby>', romaji: 'agemono', zh: '炸物', en: 'tempura course', desc: '這是酥炸的一道，通常為天婦羅，外酥內嫩，趁熱享用最佳。' },
+        { emoji: '🍮', jp: '蒸し物（茶碗蒸し）', say: 'むしもの（ちゃわんむし）', ruby: '<ruby>蒸<rt>む</rt></ruby>し<ruby>物<rt>もの</rt></ruby>（<ruby>茶碗蒸<rt>ちゃわんむ</rt></ruby>し）', romaji: 'mushimono (chawanmushi)', zh: '蒸物（茶碗蒸）', en: 'steamed dish (chawanmushi)', desc: '這是蒸製的一道，多為茶碗蒸，滑嫩的蒸蛋中藏著蝦、菇等配料。' },
+        { emoji: '🍢', jp: '強肴', say: 'しいざかな', ruby: '<ruby>強肴<rt>しいざかな</rt></ruby>', romaji: 'shīzakana', zh: '勸酒佳餚', en: 'extra dish to encourage drinking', desc: '這是用來勸酒、額外加上的一道下酒佳餚，讓賓主盡興多飲幾杯。' },
+        { emoji: '🥗', jp: '酢の物', say: 'すのもの', ruby: '<ruby>酢<rt>す</rt></ruby>の<ruby>物<rt>もの</rt></ruby>', romaji: 'sunomono', zh: '醋漬涼拌', en: 'vinegared dish', desc: '這是以醋調味的清爽一道，在用餐後段解膩、轉換口味。' },
+        { emoji: '🍜', jp: '止め椀（味噌汁）', say: 'とめわん（みそしる）', ruby: '<ruby>止<rt>と</rt></ruby>め<ruby>椀<rt>わん</rt></ruby>（<ruby>味噌汁<rt>みそしる</rt></ruby>）', romaji: 'tome-wan (miso-shiru)', zh: '收尾味噌湯', en: 'closing miso soup', desc: '這是收尾的味噌湯，與白飯一同上桌，告知正餐即將結束。' },
+        { emoji: '🍚', jp: '食事（ご飯）', say: 'しょくじ（ごはん）', ruby: '<ruby>食事<rt>しょくじ</rt></ruby>（ご<ruby>飯<rt>はん</rt></ruby>）', romaji: 'shokuji (gohan)', zh: '主食（白飯）', en: 'rice course', desc: '這是作為主食的白飯，常為當季炊飯，與止め椀、香の物一同收尾。' },
+        { emoji: '🥬', jp: '香の物', say: 'こうのもの', ruby: '<ruby>香<rt>こう</rt></ruby>の<ruby>物<rt>もの</rt></ruby>', romaji: 'kō no mono', zh: '醬菜', en: 'pickles', desc: '這是搭配白飯的一碟醬菜，清脆爽口、解膩開胃。' },
+        { emoji: '🍇', jp: '水菓子（果物）', say: 'みずがし（くだもの）', ruby: '<ruby>水菓子<rt>みずがし</rt></ruby>（<ruby>果物<rt>くだもの</rt></ruby>）', romaji: 'mizugashi (kudamono)', zh: '當季水果', en: 'fresh fruit', desc: '這是餐後的當季水果，清爽多汁，為一餐做溫和的收尾。' },
+        { emoji: '🍵', jp: '甘味・抹茶', say: 'かんみ・まっちゃ', ruby: '<ruby>甘味<rt>かんみ</rt></ruby>・<ruby>抹茶<rt>まっちゃ</rt></ruby>', romaji: 'kanmi / matcha', zh: '甜點與抹茶', en: 'sweets & matcha', desc: '這是最後奉上的甜點與一碗抹茶，微苦回甘為整場會席畫下句點。' }
       ]
     }
   ],
