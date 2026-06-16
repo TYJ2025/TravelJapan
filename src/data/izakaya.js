@@ -145,20 +145,88 @@ export const izakaya = {
   ],
   menu: [
     {
-      title: 'ドリンク · Drinks',
+      title: 'ビール · Beer',
       items: [
-        { emoji: '🍺', jp: '生ビール', say: 'なまビール', ruby: '<ruby>生<rt>なま</rt></ruby>ビール', romaji: 'nama-bīru', zh: '生啤酒', en: 'draft beer' },
-        { emoji: '🍺', jp: 'メガジョッキ', ruby: 'メガジョッキ', romaji: 'mega jokki', zh: '超大杯啤酒', en: 'mega mug beer' },
-        { emoji: '🥃', jp: 'ハイボール', ruby: 'ハイボール', romaji: 'haibōru', zh: '高球調酒', en: 'highball' },
-        { emoji: '🥃', jp: 'メガハイボール', ruby: 'メガハイボール', romaji: 'mega haibōru', zh: '超大杯高球', en: 'mega highball' },
-        { emoji: '🍋', jp: 'レモンサワー', ruby: 'レモンサワー', romaji: 'remon sawā', zh: '檸檬沙瓦', en: 'lemon sour' },
-        { emoji: '🍋', jp: 'メガレモンサワー', ruby: 'メガレモンサワー', romaji: 'mega remon sawā', zh: '超大杯檸檬沙瓦', en: 'mega lemon sour' },
-        { emoji: '🥛', jp: 'カルピスサワー', ruby: 'カルピスサワー', romaji: 'karupisu sawā', zh: '可爾必思沙瓦', en: 'Calpis sour' },
-        { emoji: '🍇', jp: '巨峰サワー', say: 'きょほうサワー', ruby: '<ruby>巨峰<rt>きょほう</rt></ruby>サワー', romaji: 'kyohō sawā', zh: '巨峰葡萄沙瓦', en: 'kyoho grape sour' },
-        { emoji: '🍶', jp: '日本酒', ruby: '<ruby>日本酒<rt>にほんしゅ</rt></ruby>', romaji: 'nihonshu', zh: '日本酒', en: 'sake' },
-        { emoji: '🍶', jp: '焼酎', ruby: '<ruby>焼酎<rt>しょうちゅう</rt></ruby>', romaji: 'shōchū', zh: '燒酎', en: 'shochu' },
-        { emoji: '🧃', jp: 'ミックスジュース', ruby: 'ミックスジュース', romaji: 'mikkusu jūsu', zh: '綜合果汁', en: 'mixed juice' },
-        { emoji: '🍵', jp: 'ウーロン茶', ruby: 'ウーロン<ruby>茶<rt>ちゃ</rt></ruby>', romaji: 'ūron-cha', zh: '烏龍茶', en: 'oolong tea' }
+        { emoji: '🍺', jp: '生ビール', say: 'なまビール', ruby: '<ruby>生<rt>なま</rt></ruby>ビール', romaji: 'nama-bīru', zh: '生啤酒', en: 'draft beer', desc: '最經典的桶裝生啤，冰涼暢快。' },
+        { emoji: '🍺', jp: 'メガジョッキ', ruby: 'メガジョッキ', romaji: 'mega jokki', zh: '超大杯生啤', en: 'mega mug beer', desc: '超大容量啤酒杯，份量十足。' },
+        { emoji: '🍺', jp: '瓶ビール', say: 'びんビール', ruby: '<ruby>瓶<rt>びん</rt></ruby>ビール', romaji: 'bin-bīru', zh: '瓶裝啤酒', en: 'bottled beer', desc: '瓶裝啤酒，常見大瓶分著倒。' },
+        { emoji: '🍺', jp: '黒ビール', say: 'くろビール', ruby: '<ruby>黒<rt>くろ</rt></ruby>ビール', romaji: 'kuro-bīru', zh: '黑啤酒', en: 'dark beer', desc: '深焙麥芽釀造，香氣濃醇微苦。' },
+        { emoji: '🍺', jp: 'ノンアルコールビール', ruby: 'ノンアルコールビール', romaji: 'non-arukōru bīru', zh: '無酒精啤酒', en: 'non-alcoholic beer', desc: '不含酒精的啤酒風味飲料。' }
+      ]
+    },
+    {
+      title: 'サワー・酎ハイ · Sours & chuhai',
+      items: [
+        { emoji: '🍋', jp: 'レモンサワー', ruby: 'レモンサワー', romaji: 'remon sawā', zh: '檸檬沙瓦', en: 'lemon sour', desc: '燒酎兌蘇打加檸檬，清爽解膩、最受歡迎。' },
+        { emoji: '🍋', jp: 'メガレモンサワー', ruby: 'メガレモンサワー', romaji: 'mega remon sawā', zh: '超大杯檸檬沙瓦', en: 'mega lemon sour', desc: '超大杯的檸檬沙瓦。' },
+        { emoji: '🟢', jp: 'ライムサワー', ruby: 'ライムサワー', romaji: 'raimu sawā', zh: '萊姆沙瓦', en: 'lime sour', desc: '萊姆風味的沙瓦，清新微酸。' },
+        { emoji: '🍊', jp: 'グレープフルーツサワー', ruby: 'グレープフルーツサワー', romaji: 'gurēpufurūtsu sawā', zh: '葡萄柚沙瓦', en: 'grapefruit sour', desc: '葡萄柚果香，微苦回甘。' },
+        { emoji: '🥛', jp: 'カルピスサワー', ruby: 'カルピスサワー', romaji: 'karupisu sawā', zh: '可爾必思沙瓦', en: 'Calpis sour', desc: '加可爾必思，酸甜順口好入喉。' },
+        { emoji: '🍇', jp: '巨峰サワー', say: 'きょほうサワー', ruby: '<ruby>巨峰<rt>きょほう</rt></ruby>サワー', romaji: 'kyohō sawā', zh: '巨峰葡萄沙瓦', en: 'kyoho grape sour', desc: '巨峰葡萄風味，香甜多汁。' },
+        { emoji: '🍵', jp: 'ウーロンハイ', ruby: 'ウーロンハイ', romaji: 'ūron-hai', zh: '烏龍燒酎', en: 'oolong-shochu highball', desc: '燒酎兌烏龍茶，順口不甜。' },
+        { emoji: '🍵', jp: '緑茶ハイ', say: 'りょくちゃハイ', ruby: '<ruby>緑茶<rt>りょくちゃ</rt></ruby>ハイ', romaji: 'ryokucha-hai', zh: '綠茶燒酎', en: 'green-tea highball', desc: '燒酎兌綠茶，清爽回甘。' }
+      ]
+    },
+    {
+      title: 'ハイボール・ウイスキー · Highball & whisky',
+      items: [
+        { emoji: '🥃', jp: 'ハイボール', ruby: 'ハイボール', romaji: 'haibōru', zh: '威士忌蘇打（高球）', en: 'highball', desc: '威士忌兌蘇打水，清爽暢快。' },
+        { emoji: '🥃', jp: 'メガハイボール', ruby: 'メガハイボール', romaji: 'mega haibōru', zh: '超大杯高球', en: 'mega highball', desc: '超大杯的威士忌蘇打。' },
+        { emoji: '🥤', jp: 'コークハイ', ruby: 'コークハイ', romaji: 'kōku-hai', zh: '可樂高球', en: 'whisky & cola', desc: '威士忌兌可樂，甜順好喝。' },
+        { emoji: '🫚', jp: 'ジンジャーハイ', ruby: 'ジンジャーハイ', romaji: 'jinjā-hai', zh: '薑汁高球', en: 'whisky & ginger ale', desc: '威士忌兌薑汁汽水，辛香爽口。' },
+        { emoji: '🥃', jp: 'ウイスキー（ロック）', ruby: 'ウイスキー（ロック）', romaji: 'uisukī (rokku)', zh: '威士忌（加冰）', en: 'whisky on the rocks', desc: '純威士忌加大冰塊，慢慢品飲。' },
+        { emoji: '🥃', jp: 'ウイスキー（水割り）', say: 'ウイスキー（みずわり）', ruby: 'ウイスキー（<ruby>水割<rt>みずわ</rt></ruby>り）', romaji: 'uisukī (mizuwari)', zh: '威士忌（加水）', en: 'whisky with water', desc: '威士忌加水稀釋，順口易飲。' }
+      ]
+    },
+    {
+      title: '焼酎・泡盛 · Shochu & awamori',
+      items: [
+        { emoji: '🍶', jp: '芋焼酎', say: 'いもじょうちゅう', ruby: '<ruby>芋焼酎<rt>いもじょうちゅう</rt></ruby>', romaji: 'imo-jōchū', zh: '地瓜燒酎', en: 'sweet-potato shochu', desc: '以地瓜釀造，香氣濃郁有個性。' },
+        { emoji: '🍶', jp: '麦焼酎', say: 'むぎじょうちゅう', ruby: '<ruby>麦焼酎<rt>むぎじょうちゅう</rt></ruby>', romaji: 'mugi-jōchū', zh: '麥燒酎', en: 'barley shochu', desc: '以大麥釀造，口感清爽柔順。' },
+        { emoji: '🍶', jp: '米焼酎', say: 'こめじょうちゅう', ruby: '<ruby>米焼酎<rt>こめじょうちゅう</rt></ruby>', romaji: 'kome-jōchū', zh: '米燒酎', en: 'rice shochu', desc: '以米釀造，溫潤淡雅。' },
+        { emoji: '🌺', jp: '泡盛（ロック）', say: 'あわもり（ロック）', ruby: '<ruby>泡盛<rt>あわもり</rt></ruby>（ロック）', romaji: 'awamori (rokku)', zh: '泡盛（加冰）', en: 'awamori on the rocks', desc: '沖繩特產蒸餾酒，以泰國米製成、酒勁強。' },
+        { emoji: '🌺', jp: '泡盛（水割り）', say: 'あわもり（みずわり）', ruby: '<ruby>泡盛<rt>あわもり</rt></ruby>（<ruby>水割<rt>みずわ</rt></ruby>り）', romaji: 'awamori (mizuwari)', zh: '泡盛（加水）', en: 'awamori with water', desc: '泡盛加水稀釋，較好入口。' },
+        { emoji: '🏺', jp: '古酒', say: 'クース', ruby: '<ruby>古酒<rt>クース</rt></ruby>', romaji: 'kūsu', zh: '泡盛陳年古酒', en: 'aged awamori', desc: '熟成三年以上的泡盛，圓潤香醇。' }
+      ]
+    },
+    {
+      title: '日本酒 · Sake',
+      items: [
+        { emoji: '🍶', jp: '冷酒', say: 'れいしゅ', ruby: '<ruby>冷酒<rt>れいしゅ</rt></ruby>', romaji: 'reishu', zh: '冷酒', en: 'chilled sake', desc: '冰鎮的日本酒，口感清爽。' },
+        { emoji: '♨️', jp: '熱燗', say: 'あつかん', ruby: '<ruby>熱燗<rt>あつかん</rt></ruby>', romaji: 'atsukan', zh: '熱清酒', en: 'warm sake', desc: '溫熱的日本酒，香氣更醇厚。' },
+        { emoji: '🍶', jp: '純米酒', say: 'じゅんまいしゅ', ruby: '<ruby>純米酒<rt>じゅんまいしゅ</rt></ruby>', romaji: 'junmai-shu', zh: '純米酒', en: 'junmai sake', desc: '純米釀造，米香飽滿、口感扎實。' },
+        { emoji: '🍶', jp: '大吟醸', say: 'だいぎんじょう', ruby: '<ruby>大吟醸<rt>だいぎんじょう</rt></ruby>', romaji: 'daiginjō', zh: '大吟釀', en: 'daiginjo sake', desc: '高度精米的高級清酒，香氣華麗。' }
+      ]
+    },
+    {
+      title: 'ワイン · Wine',
+      items: [
+        { emoji: '🍷', jp: '赤ワイン', say: 'あかワイン', ruby: '<ruby>赤<rt>あか</rt></ruby>ワイン', romaji: 'aka-wain', zh: '紅酒', en: 'red wine', desc: '紅葡萄酒，單寧與果香、配肉料理。' },
+        { emoji: '🥂', jp: '白ワイン', say: 'しろワイン', ruby: '<ruby>白<rt>しろ</rt></ruby>ワイン', romaji: 'shiro-wain', zh: '白酒（白葡萄酒）', en: 'white wine', desc: '白葡萄酒，清爽果香、配海鮮。' },
+        { emoji: '🍾', jp: 'スパークリングワイン', ruby: 'スパークリングワイン', romaji: 'supākuringu wain', zh: '氣泡酒', en: 'sparkling wine', desc: '帶氣泡的葡萄酒，清新爽口。' },
+        { emoji: '🍷', jp: 'グラスワイン', ruby: 'グラスワイン', romaji: 'gurasu wain', zh: '單杯葡萄酒', en: 'glass of wine', desc: '以單杯計的葡萄酒，紅白可選。' }
+      ]
+    },
+    {
+      title: 'カクテル · Cocktails',
+      items: [
+        { emoji: '🍸', jp: 'カシスオレンジ', ruby: 'カシスオレンジ', romaji: 'kashisu orenji', zh: '黑醋栗柳橙', en: 'cassis & orange', desc: '黑醋栗利口酒加柳橙汁，酸甜好入口。' },
+        { emoji: '🍸', jp: 'カシスソーダ', ruby: 'カシスソーダ', romaji: 'kashisu sōda', zh: '黑醋栗蘇打', en: 'cassis & soda', desc: '黑醋栗利口酒兌蘇打，清爽。' },
+        { emoji: '🍸', jp: 'ジントニック', ruby: 'ジントニック', romaji: 'jin tonikku', zh: '琴通寧', en: 'gin & tonic', desc: '琴酒加通寧水與萊姆，清爽微苦。' },
+        { emoji: '🌿', jp: 'モヒート', ruby: 'モヒート', romaji: 'mohīto', zh: '莫希托', en: 'mojito', desc: '蘭姆酒加薄荷、萊姆與蘇打。' },
+        { emoji: '🍹', jp: 'カンパリソーダ', ruby: 'カンパリソーダ', romaji: 'kanpari sōda', zh: '金巴利蘇打', en: 'Campari & soda', desc: '金巴利兌蘇打，微苦帶草本香。' },
+        { emoji: '🍑', jp: 'ファジーネーブル', ruby: 'ファジーネーブル', romaji: 'fajī nēburu', zh: '蜜桃柳橙', en: 'fuzzy navel', desc: '水蜜桃利口酒加柳橙汁，香甜易飲。' }
+      ]
+    },
+    {
+      title: 'ソフトドリンク · Soft drinks',
+      items: [
+        { emoji: '🍵', jp: 'ウーロン茶', ruby: 'ウーロン<ruby>茶<rt>ちゃ</rt></ruby>', romaji: 'ūron-cha', zh: '烏龍茶', en: 'oolong tea' },
+        { emoji: '🍵', jp: '緑茶', say: 'りょくちゃ', ruby: '<ruby>緑茶<rt>りょくちゃ</rt></ruby>', romaji: 'ryokucha', zh: '綠茶', en: 'green tea' },
+        { emoji: '🥤', jp: 'コーラ', ruby: 'コーラ', romaji: 'kōra', zh: '可樂', en: 'cola' },
+        { emoji: '🫚', jp: 'ジンジャーエール', ruby: 'ジンジャーエール', romaji: 'jinjā ēru', zh: '薑汁汽水', en: 'ginger ale' },
+        { emoji: '🍊', jp: 'オレンジジュース', ruby: 'オレンジジュース', romaji: 'orenji jūsu', zh: '柳橙汁', en: 'orange juice' },
+        { emoji: '🧃', jp: 'ミックスジュース', ruby: 'ミックスジュース', romaji: 'mikkusu jūsu', zh: '綜合果汁', en: 'mixed juice' }
       ]
     },
     {
