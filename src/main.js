@@ -277,6 +277,17 @@ function renderPhraseRow(p) {
   en.textContent = p.en
   text.append(jp, zh, en)
 
+  // Optional 丁寧形 (desu/masu) contrast, for casual phrases that have one.
+  if (p.polite) {
+    const polite = el('div', 'phrase-polite')
+    const tag = el('span', 'polite-tag')
+    tag.textContent = '丁寧'
+    const pjp = el('span', 'polite-jp op-jp')
+    pjp.innerHTML = p.polite.ruby
+    polite.append(tag, pjp)
+    text.appendChild(polite)
+  }
+
   const controls = el('div', 'controls')
   const listenBtn = el('button', 'chip')
   listenBtn.innerHTML = '🔊'
@@ -290,6 +301,18 @@ function renderPhraseRow(p) {
   const feedback = el('div', 'feedback')
   speakBtn.addEventListener('click', () => practiceLine(p, speakBtn, feedback))
   controls.append(listenBtn, speakBtn)
+
+  // Hear the polite form too, when present.
+  if (p.polite) {
+    const politeBtn = el('button', 'chip')
+    politeBtn.innerHTML = '🔊 丁寧'
+    politeBtn.addEventListener('click', async () => {
+      politeBtn.classList.add('busy')
+      await speak(p.polite.say || p.polite.jp, { rate: prefs.rate })
+      politeBtn.classList.remove('busy')
+    })
+    controls.appendChild(politeBtn)
+  }
 
   row.append(text, controls, feedback)
   return row

@@ -355,6 +355,29 @@ body {
   font-size: 17px;
   line-height: 1.8;
 }
+.phrase-polite {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+}
+.polite-tag {
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--staff);
+  background: var(--staff-soft);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+.phrase-polite .polite-jp {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted);
+}
 .phrase-row .controls {
   margin-top: 6px;
 }

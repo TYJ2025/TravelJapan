@@ -14,10 +14,12 @@ import { fishmarket } from './fishmarket.js'
 import { localfood } from './localfood.js'
 import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
+import { colloquial } from './colloquial.js'
 
 // Ordered list of all practice scenarios, shown on the home screen.
 export const scenarios = [
   restaurant,
+  colloquial,
   sushi,
   izakaya,
   yakitori,
