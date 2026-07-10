@@ -1,5 +1,4 @@
 import { restaurant } from './restaurant.js'
-import { phone } from './phone.js'
 import { izakaya } from './izakaya.js'
 import { sushi } from './sushi.js'
 import { yakitori } from './yakitori.js'
@@ -15,13 +14,11 @@ import { fishmarket } from './fishmarket.js'
 import { localfood } from './localfood.js'
 import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
-import { colloquial } from './colloquial.js'
+import { transport } from './transport.js'
 
 // Ordered list of all practice scenarios, shown on the home screen.
 export const scenarios = [
   restaurant,
-  phone,
-  colloquial,
   sushi,
   izakaya,
   yakitori,
@@ -35,6 +32,7 @@ export const scenarios = [
   okinawa,
   fishmarket,
   localfood,
+  transport,
   allergy,
   dietary
 ]
