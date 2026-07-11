@@ -1,5 +1,5 @@
 import './style.css'
-import { scenarios, getScenario } from './data/scenarios.js'
+import { scenarioGroups, getScenario } from './data/scenarios.js'
 import {
   speak,
   stopSpeaking,
@@ -32,6 +32,7 @@ function savePrefs() {
 }
 
 const app = document.getElementById('app')
+const HOME_GROUP_KEY = 'tj-home-group'
 
 // ---------------------------------------------------------------------------
 // Routing: the URL hash selects a scenario (e.g. #sushi). Empty = home.
@@ -66,13 +67,23 @@ function renderHome() {
   const header = el('header', 'header')
   header.innerHTML = `
     <div class="brand">旅の日本語</div>
-    <h1>🍱 Travel Japanese</h1>
-    <p class="subtitle">Practise ordering food — listening, speaking & reading. Pick a place to start.</p>
+    <h1>Travel Japanese</h1>
+    <p class="subtitle">Practice by situation — listening, speaking & reading.</p>
   `
   app.appendChild(header)
 
+  const group = activeHomeGroup()
+  app.appendChild(renderHomeTabs(group.id))
+
+  const note = el('div', 'home-note')
+  note.innerHTML = `
+    <div class="home-note-title">${group.icon} ${group.title}</div>
+    <div class="home-note-desc">${group.description}</div>
+  `
+  app.appendChild(note)
+
   const grid = el('div', 'home-grid')
-  scenarios.forEach((s) => {
+  group.scenarios.forEach((s) => {
     const card = el('a', 'scenario-card')
     card.href = `#${s.id}`
     card.innerHTML = `
@@ -90,6 +101,30 @@ function renderHome() {
   app.appendChild(grid)
 
   app.appendChild(renderFooter())
+}
+
+function activeHomeGroup() {
+  const saved = localStorage.getItem(HOME_GROUP_KEY)
+  return scenarioGroups.find((group) => group.id === saved) || scenarioGroups[0]
+}
+
+function renderHomeTabs(activeId) {
+  const tabs = el('div', 'home-tabs')
+  scenarioGroups.forEach((group) => {
+    const b = el('button', `home-tab${group.id === activeId ? ' on' : ''}`)
+    b.type = 'button'
+    b.innerHTML = `
+      <span class="home-tab-icon">${group.icon}</span>
+      <span class="home-tab-label">${group.label}</span>
+      <span class="home-tab-count">${group.scenarios.length}</span>
+    `
+    b.addEventListener('click', () => {
+      localStorage.setItem(HOME_GROUP_KEY, group.id)
+      render()
+    })
+    tabs.appendChild(b)
+  })
+  return tabs
 }
 
 // ---------------------------------------------------------------------------

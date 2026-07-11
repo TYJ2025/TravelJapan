@@ -16,8 +16,7 @@ import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
 import { transport } from './transport.js'
 
-// Ordered list of all practice scenarios, shown on the home screen.
-export const scenarios = [
+export const foodScenarios = [
   restaurant,
   sushi,
   izakaya,
@@ -32,10 +31,35 @@ export const scenarios = [
   okinawa,
   fishmarket,
   localfood,
-  transport,
   allergy,
   dietary
 ]
+
+export const transportScenarios = [
+  transport
+]
+
+export const scenarioGroups = [
+  {
+    id: 'food',
+    icon: '🍱',
+    label: '食物 · Food',
+    title: '食べる',
+    description: '餐廳、居酒屋、壽司、便當、過敏與飲食需求。',
+    scenarios: foodScenarios
+  },
+  {
+    id: 'transport',
+    icon: '🚕',
+    label: '交通 · Transport',
+    title: '移動する',
+    description: '計程車、車站、IC 卡、公車與問路。',
+    scenarios: transportScenarios
+  }
+]
+
+// Ordered list of all practice scenarios, used by hash routing.
+export const scenarios = scenarioGroups.flatMap((group) => group.scenarios)
 
 export function getScenario(id) {
   return scenarios.find((s) => s.id === id)
