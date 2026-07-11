@@ -3,3 +3,7 @@ dist
 .DS_Store
 *.local
 .vite
+.npm-cache/
+.vercel/
+screenshots/
+test-results/
