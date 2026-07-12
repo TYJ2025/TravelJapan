@@ -74,9 +74,9 @@ export const daily = {
     {
       speaker: 'you',
       jp: '台北101に行ったり、温泉に入ったりできます。',
-      say: 'たいぺいいちまるいちにいったり、おんせんにはいったりできます。',
+      say: 'たいぺいワンオーワンにいったり、おんせんにはいったりできます。',
       ruby: '<ruby>台北<rt>たいぺい</rt></ruby>101に<ruby>行<rt>い</rt></ruby>ったり、<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったりできます。',
-      romaji: 'Taipei ichi-maru-ichi ni ittari, onsen ni haittari dekimasu.',
+      romaji: 'Taipei wan ō wan ni ittari, onsen ni haittari dekimasu.',
       zh: '可以去台北 101，也可以泡溫泉。',
       en: 'You can visit Taipei 101 and enjoy hot springs.'
     },
@@ -141,7 +141,7 @@ export const daily = {
     {
       title: 'おすすめの場所 · Places to visit',
       items: [
-        { jp: '台北101に行けます。', say: 'たいぺいいちまるいちにいけます。', ruby: '<ruby>台北<rt>たいぺい</rt></ruby>101に<ruby>行<rt>い</rt></ruby>けます。', zh: '可以去台北 101。', en: 'You can visit Taipei 101.' },
+        { jp: '台北101に行けます。', say: 'たいぺいワンオーワンにいけます。', ruby: '<ruby>台北<rt>たいぺい</rt></ruby>101に<ruby>行<rt>い</rt></ruby>けます。', zh: '可以去台北 101。', en: 'You can visit Taipei 101.' },
         { jp: '温泉に入れます。', say: 'おんせんにはいれます。', ruby: '<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>れます。', zh: '可以泡溫泉。', en: 'You can enjoy hot springs.' },
         { jp: '阿里山で日の出を見られます。', say: 'ありさんでひのでをみられます。', ruby: '<ruby>阿里山<rt>ありさん</rt></ruby>で<ruby>日<rt>ひ</rt></ruby>の<ruby>出<rt>で</rt></ruby>を<ruby>見<rt>み</rt></ruby>られます。', zh: '可以在阿里山看日出。', en: 'You can watch the sunrise in Alishan.' },
         { jp: '花蓮で海や山を楽しめます。', say: 'かれんでうみややまをたのしめます。', ruby: '<ruby>花蓮<rt>かれん</rt></ruby>で<ruby>海<rt>うみ</rt></ruby>や<ruby>山<rt>やま</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しめます。', zh: '可以在花蓮享受海和山。', en: 'You can enjoy the sea and mountains in Hualien.' },
