@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 // so the build needs to know assets live under /TravelJapan/.
 // In local dev (npm run dev) the base is '/' so everything works at localhost.
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/TravelJapan/' : '/',
+  base: process.env.GITHUB_ACTIONS ? '/TravelJapan/' : '/',
   server: {
     host: true // lets you open the dev server on your phone via your computer's LAN IP
   }
