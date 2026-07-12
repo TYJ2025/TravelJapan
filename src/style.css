@@ -97,6 +97,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.home-tab:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .home-tab.on {
   background: var(--accent);
   border-color: var(--accent);

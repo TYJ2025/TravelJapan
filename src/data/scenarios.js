@@ -18,6 +18,7 @@ import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
 import { hotelCheckin } from './hotelCheckin.js'
 import { convenience } from './convenience.js'
+import { daily } from './daily.js'
 
 export const foodScenarios = [
   restaurant,
@@ -49,6 +50,10 @@ export const hotelScenarios = [
 
 export const convenienceScenarios = [
   convenience
+]
+
+export const dailyScenarios = [
+  daily
 ]
 
 export const scenarioGroups = [
@@ -83,6 +88,14 @@ export const scenarioGroups = [
     title: 'コンビニ',
     description: '買餐點、加熱、袋子、付款與店內服務。',
     scenarios: convenienceScenarios
+  },
+  {
+    id: 'daily',
+    icon: '💬',
+    label: '日常 · Everyday',
+    title: '日常会話',
+    description: '自我介紹、來自台灣、台灣美食與推薦景點。',
+    scenarios: dailyScenarios
   }
 ]
 
