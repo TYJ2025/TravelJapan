@@ -507,21 +507,22 @@ function toggle(label, key) {
 
 function renderDialogue(scenario) {
   const list = el('div', 'dialogue')
-  scenario.lines.forEach((line, i) => list.appendChild(renderLine(line, i)))
+  scenario.lines.forEach((line, i) => list.appendChild(renderLine(line, i, scenario)))
   return list
 }
 
-function renderLine(line, index) {
+function renderLine(line, index, scenario) {
   const row = el('div', `line line-${line.speaker}`)
   row.dataset.index = String(index)
 
+  const meta = speakerMeta(line, scenario)
   const avatar = el('div', 'avatar')
-  avatar.textContent = line.speaker === 'staff' ? '🧑‍🍳' : '🙂'
+  avatar.textContent = meta.avatar
 
   const bubble = el('div', 'bubble')
 
   const who = el('div', 'who')
-  who.textContent = line.speaker === 'staff' ? '店員 · Staff' : 'あなた · You'
+  who.textContent = meta.label
 
   const jp = el('div', 'jp')
   jp.innerHTML = line.ruby
@@ -572,6 +573,19 @@ function renderLine(line, index) {
 
   row.append(avatar, bubble)
   return row
+}
+
+function speakerMeta(line, scenario) {
+  if (line.speaker === 'staff') {
+    return {
+      avatar: scenario.staffAvatar || '🧑‍🍳',
+      label: scenario.staffLabel || '店員 · Staff'
+    }
+  }
+  return {
+    avatar: scenario.youAvatar || '🙂',
+    label: scenario.youLabel || 'あなた · You'
+  }
 }
 
 async function practiceLine(line, btn, feedback) {

@@ -5,6 +5,8 @@ export const transport = {
   title: 'Taxi & Getting Around',
   titleJp: '交通・タクシー',
   emoji: '🚕',
+  staffAvatar: '🚕',
+  staffLabel: '運転手 · Driver',
   description: 'A full taxi ride, plus phrases for trains, IC cards, buses and directions.',
   lines: [
     {

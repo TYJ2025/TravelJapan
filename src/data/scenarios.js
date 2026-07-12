@@ -15,6 +15,7 @@ import { localfood } from './localfood.js'
 import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
 import { transport } from './transport.js'
+import { taxiDirections } from './taxiDirections.js'
 
 export const foodScenarios = [
   restaurant,
@@ -36,7 +37,8 @@ export const foodScenarios = [
 ]
 
 export const transportScenarios = [
-  transport
+  transport,
+  taxiDirections
 ]
 
 export const scenarioGroups = [
