@@ -16,6 +16,7 @@ import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
 import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
+import { hotelCheckin } from './hotelCheckin.js'
 
 export const foodScenarios = [
   restaurant,
@@ -41,6 +42,10 @@ export const transportScenarios = [
   taxiDirections
 ]
 
+export const hotelScenarios = [
+  hotelCheckin
+]
+
 export const scenarioGroups = [
   {
     id: 'food',
@@ -57,6 +62,14 @@ export const scenarioGroups = [
     title: '移動する',
     description: '計程車、車站、IC 卡、公車與問路。',
     scenarios: transportScenarios
+  },
+  {
+    id: 'hotel',
+    icon: '🏨',
+    label: '飯店 · Hotel',
+    title: '泊まる',
+    description: '入住、早餐、Wi-Fi、寄放行李與退房時間。',
+    scenarios: hotelScenarios
   }
 ]
 
