@@ -61,7 +61,7 @@ export const hotelCheckin = {
     {
       speaker: 'staff',
       jp: 'ご宿泊は二泊で、禁煙のお部屋ですね。',
-      say: 'ごしゅくはくはにはくで、きんえんのおへやですね。',
+      say: 'ごしゅくはくわにはくで、きんえんのおへやですね。',
       ruby: 'ご<ruby>宿泊<rt>しゅくはく</rt></ruby>は<ruby>二泊<rt>にはく</rt></ruby>で、<ruby>禁煙<rt>きんえん</rt></ruby>のお<ruby>部屋<rt>へや</rt></ruby>ですね。',
       romaji: 'Go-shukuhaku wa ni-haku de, kin-en no oheya desu ne.',
       zh: '您住宿兩晚，是禁菸房對嗎？',
@@ -79,7 +79,7 @@ export const hotelCheckin = {
     {
       speaker: 'staff',
       jp: '朝食は七時から十時まで、一階のレストランでございます。',
-      say: 'ちょうしょくはしちじからじゅうじまで、いっかいのレストランでございます。',
+      say: 'ちょうしょくわしちじからじゅうじまで、いっかいのレストランでございます。',
       ruby: '<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>七時<rt>しちじ</rt></ruby>から<ruby>十時<rt>じゅうじ</rt></ruby>まで、<ruby>一階<rt>いっかい</rt></ruby>のレストランでございます。',
       romaji: 'Chōshoku wa shichi-ji kara jū-ji made, ikkai no resutoran de gozaimasu.',
       zh: '早餐是七點到十點，在一樓餐廳。',
@@ -88,7 +88,7 @@ export const hotelCheckin = {
     {
       speaker: 'you',
       jp: '朝食は予約に含まれていますか？',
-      say: 'ちょうしょくはよやくにふくまれていますか？',
+      say: 'ちょうしょくわよやくにふくまれていますか？',
       ruby: '<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>予約<rt>よやく</rt></ruby>に<ruby>含<rt>ふく</rt></ruby>まれていますか？',
       romaji: 'Chōshoku wa yoyaku ni fukumarete imasu ka?',
       zh: '早餐包含在預約裡嗎？',
@@ -124,7 +124,7 @@ export const hotelCheckin = {
     {
       speaker: 'you',
       jp: 'チェックアウトは何時ですか？',
-      say: 'チェックアウトはなんじですか？',
+      say: 'チェックアウトわなんじですか？',
       ruby: 'チェックアウトは<ruby>何時<rt>なんじ</rt></ruby>ですか？',
       romaji: 'Chekku-auto wa nanji desu ka?',
       zh: '退房是幾點？',
@@ -133,7 +133,7 @@ export const hotelCheckin = {
     {
       speaker: 'staff',
       jp: 'チェックアウトは午前十一時です。',
-      say: 'チェックアウトはごぜんじゅういちじです。',
+      say: 'チェックアウトわごぜんじゅういちじです。',
       ruby: 'チェックアウトは<ruby>午前<rt>ごぜん</rt></ruby><ruby>十一時<rt>じゅういちじ</rt></ruby>です。',
       romaji: 'Chekku-auto wa gozen jūichi-ji desu.',
       zh: '退房時間是上午十一點。',
@@ -160,7 +160,7 @@ export const hotelCheckin = {
     {
       speaker: 'staff',
       jp: 'こちらがお部屋のカードキーです。お部屋は八〇三号室です。',
-      say: 'こちらがおへやのカードキーです。おへやははちまるさんごうしつです。',
+      say: 'こちらがおへやのカードキーです。おへやわはちまるさんごうしつです。',
       ruby: 'こちらがお<ruby>部屋<rt>へや</rt></ruby>のカードキーです。お<ruby>部屋<rt>へや</rt></ruby>は<ruby>八〇三号室<rt>はちまるさんごうしつ</rt></ruby>です。',
       romaji: 'Kochira ga oheya no kādo kī desu. Oheya wa hachi-maru-san-gōshitsu desu.',
       zh: '這是您的房卡。房間是 803 號房。',
@@ -189,11 +189,11 @@ export const hotelCheckin = {
     {
       title: '設備・時間 · Facilities and times',
       items: [
-        { jp: '朝食は付いていますか？', say: 'ちょうしょくはついていますか？', ruby: '<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>付<rt>つ</rt></ruby>いていますか？', zh: '有附早餐嗎？', en: 'Is breakfast included?' },
-        { jp: '朝食は何時からですか？', say: 'ちょうしょくはなんじからですか？', ruby: '<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>からですか？', zh: '早餐幾點開始？', en: 'What time does breakfast start?' },
+        { jp: '朝食は付いていますか？', say: 'ちょうしょくわついていますか？', ruby: '<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>付<rt>つ</rt></ruby>いていますか？', zh: '有附早餐嗎？', en: 'Is breakfast included?' },
+        { jp: '朝食は何時からですか？', say: 'ちょうしょくわなんじからですか？', ruby: '<ruby>朝食<rt>ちょうしょく</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>からですか？', zh: '早餐幾點開始？', en: 'What time does breakfast start?' },
         { jp: 'Wi-Fiのパスワードを教えてください。', say: 'ワイファイのパスワードをおしえてください。', ruby: 'Wi-Fiのパスワードを<ruby>教<rt>おし</rt></ruby>えてください。', zh: '請告訴我 Wi-Fi 密碼。', en: 'Please tell me the Wi-Fi password.' },
         { jp: 'エレベーターはどこですか？', ruby: 'エレベーターはどこですか？', zh: '電梯在哪裡？', en: 'Where is the elevator?' },
-        { jp: 'チェックアウトは何時ですか？', say: 'チェックアウトはなんじですか？', ruby: 'チェックアウトは<ruby>何時<rt>なんじ</rt></ruby>ですか？', zh: '退房是幾點？', en: 'What time is check-out?' }
+        { jp: 'チェックアウトは何時ですか？', say: 'チェックアウトわなんじですか？', ruby: 'チェックアウトは<ruby>何時<rt>なんじ</rt></ruby>ですか？', zh: '退房是幾點？', en: 'What time is check-out?' }
       ]
     },
     {

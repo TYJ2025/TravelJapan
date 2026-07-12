@@ -140,7 +140,7 @@ export const transport = {
       items: [
         { jp: '新宿までの切符を一枚ください。', ruby: '<ruby>新宿<rt>しんじゅく</rt></ruby>までの<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>一枚<rt>いちまい</rt></ruby>ください。', zh: '請給我一張到新宿的車票。', en: 'One ticket to Shinjuku, please.' },
         { jp: 'ICカードにチャージしたいです。', ruby: 'ICカードにチャージしたいです。', zh: '我想幫 IC 卡儲值。', en: "I'd like to top up my IC card." },
-        { jp: '渋谷へ行くには何線ですか？', say: 'しぶやへいくにはなにせんですか？', ruby: '<ruby>渋谷<rt>しぶや</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くには<ruby>何線<rt>なにせん</rt></ruby>ですか？', zh: '去澀谷要搭哪條線?', en: 'Which line goes to Shibuya?' },
+        { jp: '渋谷へ行くには何線ですか？', say: 'しぶやへいくにわなにせんですか？', ruby: '<ruby>渋谷<rt>しぶや</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くには<ruby>何線<rt>なにせん</rt></ruby>ですか？', zh: '去澀谷要搭哪條線?', en: 'Which line goes to Shibuya?' },
         { jp: '何番線ですか？', ruby: '<ruby>何番線<rt>なんばんせん</rt></ruby>ですか？', zh: '幾號月台?', en: 'Which platform?' },
         { jp: 'ここで乗り換えですか？', ruby: 'ここで<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>えですか？', zh: '在這裡換車嗎?', en: 'Do I transfer here?' },
         { jp: '次の駅で降ります。', ruby: '<ruby>次<rt>つぎ</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>で<ruby>降<rt>お</rt></ruby>ります。', zh: '我在下一站下車。', en: "I'll get off at the next station." }

@@ -11,7 +11,7 @@ export const taxiDirections = {
     {
       speaker: 'staff',
       jp: '目的地はこの住所でよろしいですか？',
-      say: 'もくてきちはこのじゅうしょでよろしいですか？',
+      say: 'もくてきちわこのじゅうしょでよろしいですか？',
       ruby: '<ruby>目的地<rt>もくてきち</rt></ruby>はこの<ruby>住所<rt>じゅうしょ</rt></ruby>でよろしいですか？',
       romaji: 'Mokutekichi wa kono jūsho de yoroshii desu ka?',
       zh: '目的地是這個地址，對嗎？',

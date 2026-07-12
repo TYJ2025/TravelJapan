@@ -27,7 +27,7 @@ export const convenience = {
     {
       speaker: 'staff',
       jp: 'お弁当は温めますか？',
-      say: 'おべんとうはあたためますか？',
+      say: 'おべんとうわあたためますか？',
       ruby: 'お<ruby>弁当<rt>べんとう</rt></ruby>は<ruby>温<rt>あたた</rt></ruby>めますか？',
       romaji: 'Obentō wa atatamemasu ka?',
       zh: '便當要加熱嗎？',
@@ -45,7 +45,7 @@ export const convenience = {
     {
       speaker: 'staff',
       jp: 'お箸はお付けしますか？',
-      say: 'おはしはおつけしますか？',
+      say: 'おはしわおつけしますか？',
       ruby: 'お<ruby>箸<rt>はし</rt></ruby>はお<ruby>付<rt>つ</rt></ruby>けしますか？',
       romaji: 'Ohashi wa otsuke shimasu ka?',
       zh: '需要附筷子嗎？',
@@ -63,7 +63,7 @@ export const convenience = {
     {
       speaker: 'staff',
       jp: 'レジ袋はご利用ですか？',
-      say: 'レジぶくろはごりようですか？',
+      say: 'レジぶくろわごりようですか？',
       ruby: 'レジ<ruby>袋<rt>ぶくろ</rt></ruby>はご<ruby>利用<rt>りよう</rt></ruby>ですか？',
       romaji: 'Reji-bukuro wa go-riyō desu ka?',
       zh: '需要購物袋嗎？',
@@ -81,7 +81,7 @@ export const convenience = {
     {
       speaker: 'staff',
       jp: 'お会計は八百二十円です。',
-      say: 'おかいけいははっぴゃくにじゅうえんです。',
+      say: 'おかいけいわはっぴゃくにじゅうえんです。',
       ruby: 'お<ruby>会計<rt>かいけい</rt></ruby>は<ruby>八百二十円<rt>はっぴゃくにじゅうえん</rt></ruby>です。',
       romaji: 'Okaikei wa happyaku nijū en desu.',
       zh: '一共是 820 日圓。',
@@ -116,7 +116,7 @@ export const convenience = {
     {
       speaker: 'staff',
       jp: 'レシートはご利用ですか？',
-      say: 'レシートはごりようですか？',
+      say: 'レシートわごりようですか？',
       ruby: 'レシートはご<ruby>利用<rt>りよう</rt></ruby>ですか？',
       romaji: 'Reshīto wa go-riyō desu ka?',
       zh: '需要收據嗎？',
@@ -166,8 +166,8 @@ export const convenience = {
         { jp: 'ATMはどこですか？', ruby: 'ATMはどこですか？', zh: 'ATM 在哪裡？', en: 'Where is the ATM?' },
         { jp: 'トイレはありますか？', ruby: 'トイレはありますか？', zh: '有洗手間嗎？', en: 'Is there a restroom?' },
         { jp: 'コピー機はどこですか？', ruby: 'コピー<ruby>機<rt>き</rt></ruby>はどこですか？', zh: '影印機在哪裡？', en: 'Where is the copy machine?' },
-        { jp: 'この商品はありますか？', say: 'このしょうひんはありますか？', ruby: 'この<ruby>商品<rt>しょうひん</rt></ruby>はありますか？', zh: '有這個商品嗎？', en: 'Do you have this item?' },
-        { jp: '充電器はありますか？', say: 'じゅうでんきはありますか？', ruby: '<ruby>充電器<rt>じゅうでんき</rt></ruby>はありますか？', zh: '有充電器嗎？', en: 'Do you have a charger?' }
+        { jp: 'この商品はありますか？', say: 'このしょうひんわありますか？', ruby: 'この<ruby>商品<rt>しょうひん</rt></ruby>はありますか？', zh: '有這個商品嗎？', en: 'Do you have this item?' },
+        { jp: '充電器はありますか？', say: 'じゅうでんきわありますか？', ruby: '<ruby>充電器<rt>じゅうでんき</rt></ruby>はありますか？', zh: '有充電器嗎？', en: 'Do you have a charger?' }
       ]
     }
   ]
