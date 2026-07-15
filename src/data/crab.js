@@ -156,12 +156,31 @@ export const crab = {
   ],
   menu: [
     {
-      title: 'かにの種類 · Crab varieties',
+      title: 'ブランドずわいがに · Regional snow-crab brands',
       items: [
-        { emoji: '🦀', jp: 'ずわいがに', ruby: 'ずわいがに', romaji: 'zuwai-gani', zh: '松葉蟹／雪蟹', en: 'snow crab', desc: '肉質細緻、甜味清雅，是日本冬季最具代表性的食用蟹。' },
-        { emoji: '🦀', jp: 'タラバガニ', ruby: 'タラバガニ', romaji: 'taraba-gani', zh: '帝王蟹', en: 'king crab', desc: '蟹腳粗大、肉質飽滿有彈性，適合烤或水煮。' },
-        { emoji: '🦀', jp: '毛ガニ', say: 'けがに', ruby: '<ruby>毛<rt>け</rt></ruby>ガニ', romaji: 'ke-gani', zh: '毛蟹', en: 'horsehair crab', desc: '蟹肉細嫩，蟹膏濃郁鮮甜，常整隻水煮供應。' },
-        { emoji: '🦀', jp: '花咲ガニ', say: 'はなさきがに', ruby: '<ruby>花咲<rt>はなさき</rt></ruby>ガニ', romaji: 'hanasaki-gani', zh: '花咲蟹', en: 'hanasaki crab', desc: '北海道特色蟹種，風味濃厚，肉質緊實且帶鮮明海味。' }
+        { emoji: '🦀', jp: 'ずわいがに', ruby: 'ずわいがに', romaji: 'zuwai-gani', zh: '雪蟹／楚蟹', en: 'snow crab', desc: '日本冬季最具代表性的食用蟹，肉質細緻、甜味清雅；各產地會以不同品牌名販售。' },
+        { emoji: '🏷️', jp: '越前がに', say: 'えちぜんがに', ruby: '<ruby>越前<rt>えちぜん</rt></ruby>がに', romaji: 'echizen-gani', zh: '越前蟹（福井）', en: 'Echizen snow crab', desc: '福井縣越前町等港口水揚げ的雄性ズワイガニ，為知名高級品牌蟹。' },
+        { emoji: '🏷️', jp: '松葉がに', say: 'まつばがに', ruby: '<ruby>松葉<rt>まつば</rt></ruby>がに', romaji: 'matsuba-gani', zh: '松葉蟹（山陰）', en: 'Matsuba snow crab', desc: '鳥取、島根等山陰地區水揚げ的雄性ズワイガニ，蟹肉飽滿、甜味高雅。' },
+        { emoji: '🏷️', jp: '加能ガニ', say: 'かのうがに', ruby: '<ruby>加能<rt>かのう</rt></ruby>ガニ', romaji: 'kanō-gani', zh: '加能蟹（石川）', en: 'Kanō snow crab', desc: '石川縣水揚げ的雄性ズワイガニ品牌，常可在金澤等地的冬季菜單看到。' },
+        { emoji: '🏷️', jp: '間人ガニ', say: 'たいざがに', ruby: '<ruby>間人<rt>たいざ</rt></ruby>ガニ', romaji: 'taiza-gani', zh: '間人蟹（京都丹後）', en: 'Taiza snow crab', desc: '京都丹後半島間人港水揚げ的松葉蟹品牌，產量少、屬高級選擇。' }
+      ]
+    },
+    {
+      title: '雌がに・紅ずわい · Female and red snow crab',
+      items: [
+        { emoji: '🦀', jp: 'セコガニ', ruby: 'セコガニ', romaji: 'seko-gani', zh: '雌雪蟹（セコ蟹）', en: 'female snow crab', desc: '山陰一帶對雌性ズワイガニ的常見稱呼，體型較小但外子與內子風味濃郁。' },
+        { emoji: '🦀', jp: '香箱ガニ', say: 'こうばこがに', ruby: '<ruby>香箱<rt>こうばこ</rt></ruby>ガニ', romaji: 'kōbako-gani', zh: '香箱蟹（石川雌雪蟹）', en: 'Kōbako crab', desc: '石川縣對雌性ズワイガニ的稱呼，常見卵與蟹膏，是金澤冬季限定的熱門食材。' },
+        { emoji: '🦀', jp: 'ベニズワイガニ', say: 'べにずわいがに', ruby: 'ベニズワイガニ', romaji: 'beni-zuwai-gani', zh: '紅雪蟹', en: 'red snow crab', desc: '深海蟹種，蟹肉含水量較高、甜味明顯，常作為較容易入手的蟹料理選擇。' }
+      ]
+    },
+    {
+      title: '北海道・地方のかに · Hokkaido and regional crabs',
+      items: [
+        { emoji: '🦀', jp: 'タラバガニ', ruby: 'タラバガニ', romaji: 'taraba-gani', zh: '帝王蟹', en: 'king crab', desc: '蟹腳粗大、肉質飽滿有彈性，適合烤或水煮；在分類上與寄居蟹較接近。' },
+        { emoji: '🦀', jp: '毛ガニ', say: 'けがに', ruby: '<ruby>毛<rt>け</rt></ruby>ガニ', romaji: 'ke-gani', zh: '毛蟹', en: 'horsehair crab', desc: '北海道代表蟹種，蟹肉細嫩，蟹膏濃郁鮮甜，常整隻水煮供應。' },
+        { emoji: '🦀', jp: '花咲ガニ', say: 'はなさきがに', ruby: '<ruby>花咲<rt>はなさき</rt></ruby>ガニ', romaji: 'hanasaki-gani', zh: '花咲蟹', en: 'hanasaki crab', desc: '北海道根室周邊特色蟹種，風味濃厚，肉質緊實且帶鮮明海味。' },
+        { emoji: '🦀', jp: 'ワタリガニ', ruby: 'ワタリガニ', romaji: 'watari-gani', zh: '梭子蟹／渡蟹', en: 'swimming crab', desc: '日本也常稱ガザミ，適合做味噌湯、義大利麵或蒸煮，抱卵期前後特別受歡迎。' },
+        { emoji: '🕷️', jp: 'タカアシガニ', say: 'たかあしがに', ruby: 'タカアシガニ', romaji: 'takaashi-gani', zh: '高腳蟹', en: 'Japanese spider crab', desc: '駿河灣、伊豆一帶可見的大型蟹種，腳長醒目，常以水煮或燒烤呈現。' }
       ]
     },
     {
