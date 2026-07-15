@@ -24,6 +24,7 @@ import { convenience } from './convenience.js'
 import { supermarket } from './supermarket.js'
 import { pharmacy } from './pharmacy.js'
 import { daily } from './daily.js'
+import { colloquial } from './colloquial.js'
 
 export const foodScenarios = [
   restaurant,
@@ -70,6 +71,10 @@ export const healthScenarios = [
 
 export const dailyScenarios = [
   daily
+]
+
+export const shortPhraseScenarios = [
+  colloquial
 ]
 
 export const scenarioGroups = [
@@ -128,6 +133,14 @@ export const scenarioGroups = [
     title: '日常会話',
     description: '自我介紹、來自台灣、台灣美食與推薦景點。',
     scenarios: dailyScenarios
+  },
+  {
+    id: 'short-phrases',
+    icon: '💬',
+    label: '生活短句 · Phrases',
+    title: '毎日のひとこと',
+    description: '日常與旅行的超短句，並對照自然口語與丁寧說法。',
+    scenarios: shortPhraseScenarios
   }
 ]
 

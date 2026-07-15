@@ -210,10 +210,10 @@ const toLine = (it) => ({
 
 export const colloquial = {
   id: 'colloquial',
-  title: 'Everyday Colloquial',
-  titleJp: '日常の口語表現',
+  title: 'Everyday Short Phrases',
+  titleJp: '毎日のひとこと',
   emoji: '💬',
-  description: 'Casual spoken Japanese & quick travel phrases — with the polite (desu/masu) version of each.',
+  description: 'Short daily and travel phrases, with a polite alternative for each casual expression.',
   lines: [...daily, ...travel].map(toLine),
   phrases: [
     { title: '日常口語 · Casual', items: daily },
