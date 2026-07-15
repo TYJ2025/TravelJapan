@@ -15,6 +15,7 @@ import { localfood } from './localfood.js'
 import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
 import { crab } from './crab.js'
+import { seafood } from './seafood.js'
 import { airport } from './airport.js'
 import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
@@ -43,7 +44,8 @@ export const foodScenarios = [
   localfood,
   allergy,
   dietary,
-  crab
+  crab,
+  seafood
 ]
 
 export const transportScenarios = [
