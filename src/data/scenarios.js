@@ -14,10 +14,15 @@ import { fishmarket } from './fishmarket.js'
 import { localfood } from './localfood.js'
 import { allergy } from './allergy.js'
 import { dietary } from './dietary.js'
+import { crab } from './crab.js'
+import { airport } from './airport.js'
 import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
+import { shinkansen } from './shinkansen.js'
 import { hotelCheckin } from './hotelCheckin.js'
 import { convenience } from './convenience.js'
+import { supermarket } from './supermarket.js'
+import { pharmacy } from './pharmacy.js'
 import { daily } from './daily.js'
 
 export const foodScenarios = [
@@ -36,12 +41,18 @@ export const foodScenarios = [
   fishmarket,
   localfood,
   allergy,
-  dietary
+  dietary,
+  crab
 ]
 
 export const transportScenarios = [
   transport,
-  taxiDirections
+  taxiDirections,
+  shinkansen
+]
+
+export const airportScenarios = [
+  airport
 ]
 
 export const hotelScenarios = [
@@ -49,7 +60,12 @@ export const hotelScenarios = [
 ]
 
 export const convenienceScenarios = [
-  convenience
+  convenience,
+  supermarket
+]
+
+export const healthScenarios = [
+  pharmacy
 ]
 
 export const dailyScenarios = [
@@ -70,8 +86,16 @@ export const scenarioGroups = [
     icon: '🚕',
     label: '交通 · Transport',
     title: '移動する',
-    description: '計程車、車站、IC 卡、公車與問路。',
+    description: '計程車、車站、IC 卡、公車、問路與新幹線。',
     scenarios: transportScenarios
+  },
+  {
+    id: 'airport',
+    icon: '✈️',
+    label: '機場 · Airport',
+    title: '空港',
+    description: '入境審查、行李提領與機場服務。',
+    scenarios: airportScenarios
   },
   {
     id: 'hotel',
@@ -83,11 +107,19 @@ export const scenarioGroups = [
   },
   {
     id: 'convenience',
-    icon: '🏪',
-    label: '便利商店 · Store',
-    title: 'コンビニ',
-    description: '買餐點、加熱、袋子、付款與店內服務。',
+    icon: '🛒',
+    label: '購物 · Shopping',
+    title: '買い物',
+    description: '便利商店與超市：找商品、加熱、袋子與付款。',
     scenarios: convenienceScenarios
+  },
+  {
+    id: 'health',
+    icon: '💊',
+    label: '健康 · Health',
+    title: '薬局・病院',
+    description: '藥局、常見症狀、藥物注意事項與就醫求助。',
+    scenarios: healthScenarios
   },
   {
     id: 'daily',
