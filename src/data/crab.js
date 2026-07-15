@@ -153,5 +153,39 @@ export const crab = {
         { jp: '取り皿をもう一枚ください。', say: 'とりざらをもういちまいください。', ruby: '<ruby>取<rt>と</rt></ruby>り<ruby>皿<rt>ざら</rt></ruby>をもう<ruby>一枚<rt>いちまい</rt></ruby>ください。', zh: '請再給我一個分食盤。', en: 'One more small plate, please.' }
       ]
     }
+  ],
+  menu: [
+    {
+      title: 'かにの種類 · Crab varieties',
+      items: [
+        { emoji: '🦀', jp: 'ずわいがに', ruby: 'ずわいがに', romaji: 'zuwai-gani', zh: '松葉蟹／雪蟹', en: 'snow crab', desc: '肉質細緻、甜味清雅，是日本冬季最具代表性的食用蟹。' },
+        { emoji: '🦀', jp: 'タラバガニ', ruby: 'タラバガニ', romaji: 'taraba-gani', zh: '帝王蟹', en: 'king crab', desc: '蟹腳粗大、肉質飽滿有彈性，適合烤或水煮。' },
+        { emoji: '🦀', jp: '毛ガニ', say: 'けがに', ruby: '<ruby>毛<rt>け</rt></ruby>ガニ', romaji: 'ke-gani', zh: '毛蟹', en: 'horsehair crab', desc: '蟹肉細嫩，蟹膏濃郁鮮甜，常整隻水煮供應。' },
+        { emoji: '🦀', jp: '花咲ガニ', say: 'はなさきがに', ruby: '<ruby>花咲<rt>はなさき</rt></ruby>ガニ', romaji: 'hanasaki-gani', zh: '花咲蟹', en: 'hanasaki crab', desc: '北海道特色蟹種，風味濃厚，肉質緊實且帶鮮明海味。' }
+      ]
+    },
+    {
+      title: '定番のかに料理 · Classic crab dishes',
+      items: [
+        { emoji: '🦀', jp: 'かに刺し', say: 'かにさし', ruby: 'かに<ruby>刺<rt>さ</rt></ruby>し', romaji: 'kani-sashi', zh: '生蟹肉', en: 'raw crab sashimi', desc: '新鮮蟹肉生食，口感柔滑、甜味明顯；介意生食可改熟食。' },
+        { emoji: '♨️', jp: '茹でがに', say: 'ゆでがに', ruby: '<ruby>茹<rt>ゆ</rt></ruby>でがに', romaji: 'yude-gani', zh: '水煮螃蟹', en: 'boiled crab', desc: '最能品嘗蟹肉原味的做法，通常直接搭配醋或蟹醋。' },
+        { emoji: '🔥', jp: '焼きがに', say: 'やきがに', ruby: '<ruby>焼<rt>や</rt></ruby>きがに', romaji: 'yaki-gani', zh: '烤蟹', en: 'grilled crab', desc: '炭火或烤網加熱，蟹肉香氣更濃、甜味更集中。' },
+        { emoji: '♨️', jp: '蒸しがに', say: 'むしがに', ruby: '<ruby>蒸<rt>む</rt></ruby>しがに', romaji: 'mushi-gani', zh: '蒸蟹', en: 'steamed crab', desc: '以蒸氣保留水分與鮮甜，肉質柔嫩、味道較清爽。' },
+        { emoji: '🥘', jp: 'かにしゃぶ', ruby: 'かにしゃぶ', romaji: 'kani-shabu', zh: '蟹肉涮涮鍋', en: 'crab shabu-shabu', desc: '將薄蟹肉在高湯中快速涮熟，口感細緻、最適合共享。' },
+        { emoji: '🍲', jp: 'かに鍋', say: 'かになべ', ruby: 'かに<ruby>鍋<rt>なべ</rt></ruby>', romaji: 'kani-nabe', zh: '蟹鍋', en: 'crab hot pot', desc: '以蟹、高湯與蔬菜同煮，最後常用湯底做雜炊。' }
+      ]
+    },
+    {
+      title: '一品・しめ · Sides and finishers',
+      items: [
+        { emoji: '🟤', jp: 'かに味噌', say: 'かにみそ', ruby: 'かに<ruby>味噌<rt>みそ</rt></ruby>', romaji: 'kani-miso', zh: '蟹膏', en: 'crab tomalley', desc: '蟹的內臟醬，味道濃郁鮮香，適合配清酒或拌飯。' },
+        { emoji: '🔥', jp: 'かに甲羅焼き', say: 'かにこうらやき', ruby: 'かに<ruby>甲羅焼<rt>こうらや</rt></ruby>き', romaji: 'kani kōra-yaki', zh: '烤蟹殼', en: 'grilled crab shell', desc: '將蟹膏、蟹肉等放在蟹殼上烤，香氣濃厚。' },
+        { emoji: '🥟', jp: 'かにクリームコロッケ', ruby: 'かにクリームコロッケ', romaji: 'kani kurīmu korokke', zh: '蟹肉奶油可樂餅', en: 'crab cream croquette', desc: '外酥內滑的奶油蟹肉餡，適合不吃生食或帶小孩時點用。' },
+        { emoji: '🍚', jp: 'かに雑炊', say: 'かにぞうすい', ruby: 'かに<ruby>雑炊<rt>ぞうすい</rt></ruby>', romaji: 'kani zōsui', zh: '蟹雜炊', en: 'crab rice porridge', desc: '用蟹鍋高湯加入白飯與蛋煮成，是鍋物最經典的收尾。' },
+        { emoji: '🍚', jp: 'かに釜飯', say: 'かにかまめし', ruby: 'かに<ruby>釜飯<rt>かまめし</rt></ruby>', romaji: 'kani kamameshi', zh: '蟹肉釜飯', en: 'crab pot rice', desc: '蟹肉與高湯在小鍋中炊煮，米飯吸收蟹的鮮味。' },
+        { emoji: '🍱', jp: 'かに会席', say: 'かにかいせき', ruby: 'かに<ruby>会席<rt>かいせき</rt></ruby>', romaji: 'kani kaiseki', zh: '螃蟹會席套餐', en: 'crab kaiseki course', desc: '包含多種蟹料理的套餐，常有刺身、烤蟹、蟹鍋與雜炊。' },
+        { emoji: '🦀', jp: 'かに尽くしコース', say: 'かにづくしコース', ruby: 'かに<ruby>尽<rt>づ</rt></ruby>くしコース', romaji: 'kani-zukushi kōsu', zh: '全蟹料理套餐', en: 'all-crab course', desc: '以不同蟹種與烹調法組成的全蟹套餐，適合首次體驗蟹料理。' }
+      ]
+    }
   ]
 }
