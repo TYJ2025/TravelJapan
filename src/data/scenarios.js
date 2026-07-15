@@ -23,6 +23,7 @@ import { shinkansen } from './shinkansen.js'
 import { hotelCheckin } from './hotelCheckin.js'
 import { convenience } from './convenience.js'
 import { supermarket } from './supermarket.js'
+import { traditionalMarket } from './traditionalMarket.js'
 import { pharmacy } from './pharmacy.js'
 import { daily } from './daily.js'
 import { colloquial } from './colloquial.js'
@@ -62,9 +63,10 @@ export const hotelScenarios = [
   hotelCheckin
 ]
 
-export const convenienceScenarios = [
+export const shoppingScenarios = [
   convenience,
-  supermarket
+  supermarket,
+  traditionalMarket
 ]
 
 export const healthScenarios = [
@@ -117,8 +119,8 @@ export const scenarioGroups = [
     icon: '🛒',
     label: '購物 · Shopping',
     title: '買い物',
-    description: '便利商店與超市：找商品、加熱、袋子與付款。',
-    scenarios: convenienceScenarios
+    description: '便利商店、超市與傳統市場：找商品、加熱、袋子與付款。',
+    scenarios: shoppingScenarios
   },
   {
     id: 'health',

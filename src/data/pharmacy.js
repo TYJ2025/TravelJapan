@@ -7,6 +7,9 @@ export const pharmacy = {
   staffAvatar: '💊',
   staffLabel: '薬剤師 · Pharmacist',
   description: 'Explain common symptoms, ask about medicine and understand important precautions.',
+  menuTabLabel: '品項 · Items',
+  menuIntro: '🔊 聽發音 · 🎤 練習品項 · 藥品名稱僅供溝通；購買前請向藥劑師確認是否適合自己。',
+  menuPatternLabel: '購買與詢問句型 · Purchase and question patterns',
   lines: [
     {
       speaker: 'staff',
@@ -132,6 +135,32 @@ export const pharmacy = {
         { jp: '病院を紹介してもらえますか？', say: 'びょういんをしょうかいしてもらえますか？', ruby: '<ruby>病院<rt>びょういん</rt></ruby>を<ruby>紹介<rt>しょうかい</rt></ruby>してもらえますか？', zh: '可以幫我介紹醫院嗎？', en: 'Could you recommend a hospital?' },
         { jp: '英語が話せる医者はいますか？', say: 'えいごがはなせるいしゃわいますか？', ruby: '<ruby>英語<rt>えいご</rt></ruby>が<ruby>話<rt>はな</rt></ruby>せる<ruby>医者<rt>いしゃ</rt></ruby>はいますか？', zh: '有會說英文的醫生嗎？', en: 'Is there a doctor who speaks English?' },
         { jp: '救急車を呼んでください。', say: 'きゅうきゅうしゃをよんでください。', ruby: '<ruby>救急車<rt>きゅうきゅうしゃ</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>んでください。', zh: '請叫救護車。', en: 'Please call an ambulance.' }
+      ]
+    }
+  ],
+  menu: [
+    {
+      title: '市販薬の種類 · Common OTC categories',
+      items: [
+        { emoji: '💊', jp: '風邪薬', say: 'かぜぐすり', ruby: '<ruby>風邪薬<rt>かぜぐすり</rt></ruby>', romaji: 'kazegusuri', zh: '感冒藥', en: 'cold medicine', desc: '請向藥劑師說明症狀、過敏史與正在使用的藥物，再確認適合的品項。' },
+        { emoji: '💊', jp: '解熱鎮痛薬', say: 'げねつちんつうやく', ruby: '<ruby>解熱<rt>げねつ</rt></ruby><ruby>鎮痛薬<rt>ちんつうやく</rt></ruby>', romaji: 'genetsu chintsūyaku', zh: '退燒止痛藥', en: 'fever and pain reliever', desc: '若要購買退燒或止痛類產品，請先告知症狀與其他正在使用的藥物。' },
+        { emoji: '💊', jp: '胃腸薬', say: 'いちょうやく', ruby: '<ruby>胃腸薬<rt>いちょうやく</rt></ruby>', romaji: 'ichōyaku', zh: '腸胃藥', en: 'stomach medicine', desc: '可描述胃痛、胃脹或消化不適；症狀嚴重或持續時應就醫。' },
+        { emoji: '💊', jp: '下痢止め', say: 'げりどめ', ruby: '<ruby>下痢<rt>げり</rt></ruby>止め', romaji: 'geri-dome', zh: '止瀉藥', en: 'anti-diarrheal medicine', desc: '腹瀉伴隨高燒、血便或嚴重脫水時，應尋求醫療協助而非自行處理。' },
+        { emoji: '💊', jp: '酔い止め', say: 'よいどめ', ruby: '<ruby>酔<rt>よ</rt></ruby>い止め', romaji: 'yoi-dome', zh: '暈車／暈船藥', en: 'motion-sickness medicine', desc: '可詢問是否容易嗜睡；需要開車或操作設備時尤其應向藥劑師確認。' },
+        { emoji: '💧', jp: '目薬', say: 'めぐすり', ruby: '<ruby>目薬<rt>めぐすり</rt></ruby>', romaji: 'megusuri', zh: '眼藥水', en: 'eye drops', desc: '可說明乾澀、疲勞或過敏等情況；眼痛、視力改變等應及早就醫。' },
+        { emoji: '💊', jp: 'アレルギーの薬', say: 'アレルギーのくすり', ruby: 'アレルギーの<ruby>薬<rt>くすり</rt></ruby>', romaji: 'arerugī no kusuri', zh: '過敏藥', en: 'allergy medicine', desc: '部分產品可能使人嗜睡；請告知藥劑師是否需開車及目前服用的藥物。' }
+      ]
+    },
+    {
+      title: 'ケア用品 · Care essentials',
+      items: [
+        { emoji: '🌡️', jp: '体温計', say: 'たいおんけい', ruby: '<ruby>体温計<rt>たいおんけい</rt></ruby>', romaji: 'taionkei', zh: '體溫計', en: 'thermometer', desc: '可用於確認是否發燒；高燒或持續不適時應考慮就醫。' },
+        { emoji: '🩹', jp: '絆創膏', say: 'ばんそうこう', ruby: '<ruby>絆創膏<rt>ばんそうこう</rt></ruby>', romaji: 'bansōkō', zh: 'OK 繃／創可貼', en: 'adhesive bandages', desc: '適合小擦傷的基本用品；傷口深、污染或持續出血時應就醫。' },
+        { emoji: '🧴', jp: '消毒液', say: 'しょうどくえき', ruby: '<ruby>消毒液<rt>しょうどくえき</rt></ruby>', romaji: 'shōdoku-eki', zh: '消毒液', en: 'antiseptic solution', desc: '用於傷口周邊處理前，請先向藥劑師確認適用方式。' },
+        { emoji: '❄️', jp: '冷却シート', say: 'れいきゃくシート', ruby: '<ruby>冷却<rt>れいきゃく</rt></ruby>シート', romaji: 'reikyaku shīto', zh: '退熱貼／冷敷貼', en: 'cooling sheet', desc: '可作為舒緩用品，但不取代發燒或其他症狀的醫療評估。' },
+        { emoji: '🩹', jp: '湿布', say: 'しっぷ', ruby: '<ruby>湿布<rt>しっぷ</rt></ruby>', romaji: 'shippu', zh: '痠痛貼布', en: 'medicated patch', desc: '可先向藥劑師說明痠痛位置、皮膚狀況與過敏史。' },
+        { emoji: '🧴', jp: '日焼け止め', say: 'ひやけどめ', ruby: '<ruby>日焼<rt>ひや</rt></ruby>け止め', romaji: 'hiyake-dome', zh: '防曬乳', en: 'sunscreen', desc: '戶外旅遊常用；可依臉部、身體或敏感肌需求選擇。' },
+        { emoji: '🦟', jp: '虫よけスプレー', say: 'むしよけスプレー', ruby: '<ruby>虫<rt>むし</rt></ruby>よけスプレー', romaji: 'mushi-yoke supurē', zh: '防蚊噴霧', en: 'insect repellent', desc: '夏季與戶外行程常用；請依包裝與年齡／使用部位說明選擇。' }
       ]
     }
   ]

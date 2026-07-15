@@ -146,7 +146,7 @@ function renderScenario(scenario) {
 // Only shown when the scenario has more than one view.
 function renderTabs(scenario) {
   const views = [['dialogue', '会話 · Dialogue']]
-  if (scenario.menu) views.push(['menu', 'メニュー · Menu'])
+  if (scenario.menu) views.push(['menu', scenario.menuTabLabel || 'メニュー · Menu'])
   if (scenario.phrases) views.push(['phrases', 'フレーズ · Phrases'])
   if (views.length === 1) return el('div', 'tabs-empty')
 
@@ -182,13 +182,13 @@ function renderPhrases(scenario) {
 function renderMenu(scenario) {
   const wrap = el('div', 'menu')
   const intro = el('p', 'menu-intro')
-  intro.innerHTML = '🔊 聽發音 · 🎤 練習菜名 · 點一下料理展開更多點餐句型 (tap a dish for ordering patterns)'
+  intro.textContent = scenario.menuIntro || '🔊 聽發音 · 🎤 練習菜名 · 點一下料理展開更多點餐句型 (tap a dish for ordering patterns)'
   wrap.appendChild(intro)
   scenario.menu.forEach((section) => {
     const title = el('div', 'menu-section-title')
     title.textContent = section.title
     wrap.appendChild(title)
-    section.items.forEach((item) => wrap.appendChild(renderMenuItem(item)))
+    section.items.forEach((item) => wrap.appendChild(renderMenuItem(item, scenario)))
   })
   return wrap
 }
@@ -242,7 +242,7 @@ function orderPatterns(item) {
   ]
 }
 
-function renderMenuItem(item) {
+function renderMenuItem(item, scenario) {
   const card = el('div', 'menu-item')
 
   const head = el('div', 'menu-head')
@@ -291,7 +291,7 @@ function renderMenuItem(item) {
   // Expanded panel: several advanced ordering patterns.
   const panel = el('div', 'phrases')
   const panelHint = el('div', 'phrases-hint')
-  panelHint.textContent = '點餐句型 · Ordering patterns'
+  panelHint.textContent = scenario.menuPatternLabel || '點餐句型 · Ordering patterns'
   panel.appendChild(panelHint)
   orderPatterns(item).forEach((p) => panel.appendChild(renderPhraseRow(p)))
 
