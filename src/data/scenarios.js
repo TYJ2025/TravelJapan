@@ -17,17 +17,21 @@ import { dietary } from './dietary.js'
 import { crab } from './crab.js'
 import { seafood } from './seafood.js'
 import { airport } from './airport.js'
+import { inflight } from './inflight.js'
 import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
 import { shinkansen } from './shinkansen.js'
+import { trainAnnouncements } from './trainAnnouncements.js'
 import { hotelCheckin } from './hotelCheckin.js'
 import { convenience } from './convenience.js'
 import { supermarket } from './supermarket.js'
 import { departmentFoodHall } from './departmentFoodHall.js'
+import { drugstore } from './drugstore.js'
 import { traditionalMarket } from './traditionalMarket.js'
 import { pharmacy } from './pharmacy.js'
 import { daily } from './daily.js'
 import { colloquial } from './colloquial.js'
+import { onomatopoeia } from './onomatopoeia.js'
 
 export const foodScenarios = [
   restaurant,
@@ -53,11 +57,13 @@ export const foodScenarios = [
 export const transportScenarios = [
   transport,
   taxiDirections,
-  shinkansen
+  shinkansen,
+  trainAnnouncements
 ]
 
 export const airportScenarios = [
-  airport
+  airport,
+  inflight
 ]
 
 export const hotelScenarios = [
@@ -68,6 +74,7 @@ export const shoppingScenarios = [
   convenience,
   supermarket,
   departmentFoodHall,
+  drugstore,
   traditionalMarket
 ]
 
@@ -80,7 +87,8 @@ export const dailyScenarios = [
 ]
 
 export const shortPhraseScenarios = [
-  colloquial
+  colloquial,
+  onomatopoeia
 ]
 
 export const scenarioGroups = [
@@ -97,7 +105,7 @@ export const scenarioGroups = [
     icon: '🚕',
     label: '交通 · Transport',
     title: '移動する',
-    description: '計程車、車站、IC 卡、公車、問路與新幹線。',
+    description: '計程車、車站、IC 卡、公車、問路、新幹線與電車廣播。',
     scenarios: transportScenarios
   },
   {
@@ -105,7 +113,7 @@ export const scenarioGroups = [
     icon: '✈️',
     label: '機場 · Airport',
     title: '空港',
-    description: '入境審查、行李提領與機場服務。',
+    description: '機艙服務、入境審查、行李提領與機場服務。',
     scenarios: airportScenarios
   },
   {
@@ -121,7 +129,7 @@ export const scenarioGroups = [
     icon: '🛒',
     label: '購物 · Shopping',
     title: '買い物',
-    description: '便利商店、超市、百貨美食街與傳統市場：找商品、加熱、保冷與付款。',
+    description: '便利商店、超市、百貨美食街、藥妝店與傳統市場：找商品、保冷、免稅與付款。',
     scenarios: shoppingScenarios
   },
   {
@@ -145,7 +153,7 @@ export const scenarioGroups = [
     icon: '💬',
     label: '生活短句 · Phrases',
     title: '毎日のひとこと',
-    description: '日常與旅行的超短句，並對照自然口語與丁寧說法。',
+    description: '日常與旅行的超短句、自然口語／丁寧說法，以及擬音語與擬態語。',
     scenarios: shortPhraseScenarios
   }
 ]
