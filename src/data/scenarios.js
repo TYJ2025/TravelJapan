@@ -27,6 +27,7 @@ import { convenience } from './convenience.js'
 import { supermarket } from './supermarket.js'
 import { departmentFoodHall } from './departmentFoodHall.js'
 import { drugstore } from './drugstore.js'
+import { bicCamera } from './bicCamera.js'
 import { traditionalMarket } from './traditionalMarket.js'
 import { pharmacy } from './pharmacy.js'
 import { daily } from './daily.js'
@@ -75,6 +76,7 @@ export const shoppingScenarios = [
   supermarket,
   departmentFoodHall,
   drugstore,
+  bicCamera,
   traditionalMarket
 ]
 
@@ -129,7 +131,7 @@ export const scenarioGroups = [
     icon: '🛒',
     label: '購物 · Shopping',
     title: '買い物',
-    description: '便利商店、超市、百貨美食街、藥妝店與傳統市場：找商品、保冷、免稅與付款。',
+    description: '便利商店、超市、百貨美食街、藥妝店、Bic Camera 與傳統市場：找商品、相容性、免稅與付款。',
     scenarios: shoppingScenarios
   },
   {
