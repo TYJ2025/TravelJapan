@@ -23,6 +23,7 @@ import { taxiDirections } from './taxiDirections.js'
 import { shinkansen } from './shinkansen.js'
 import { trainAnnouncements } from './trainAnnouncements.js'
 import { hotelCheckin } from './hotelCheckin.js'
+import { onsen } from './onsen.js'
 import { convenience } from './convenience.js'
 import { supermarket } from './supermarket.js'
 import { departmentFoodHall } from './departmentFoodHall.js'
@@ -68,7 +69,8 @@ export const airportScenarios = [
 ]
 
 export const hotelScenarios = [
-  hotelCheckin
+  hotelCheckin,
+  onsen
 ]
 
 export const shoppingScenarios = [
@@ -123,7 +125,7 @@ export const scenarioGroups = [
     icon: '🏨',
     label: '飯店 · Hotel',
     title: '泊まる',
-    description: '入住、早餐、Wi-Fi、寄放行李與退房時間。',
+    description: '入住、早餐、Wi-Fi、寄放行李、退房與日歸溫泉規則。',
     scenarios: hotelScenarios
   },
   {
