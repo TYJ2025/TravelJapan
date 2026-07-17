@@ -17,6 +17,7 @@ import { dietary } from './dietary.js'
 import { crab } from './crab.js'
 import { seafood } from './seafood.js'
 import { airport } from './airport.js'
+import { airportCheckin } from './airportCheckin.js'
 import { inflight } from './inflight.js'
 import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
@@ -64,6 +65,7 @@ export const transportScenarios = [
 ]
 
 export const airportScenarios = [
+  airportCheckin,
   airport,
   inflight
 ]
@@ -117,7 +119,7 @@ export const scenarioGroups = [
     icon: '✈️',
     label: '機場 · Airport',
     title: '空港',
-    description: '機艙服務、入境審查、行李提領與機場服務。',
+    description: '辦理登機、機艙服務、入境審查、行李提領與機場服務。',
     scenarios: airportScenarios
   },
   {
