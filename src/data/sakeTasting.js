@@ -6,7 +6,7 @@ export const sakeTasting = {
   emoji: '🍶',
   staffAvatar: '🍶',
   staffLabel: '利酒師 · Sake Sommelier',
-  description: 'Taste Japanese sake, describe your preferences, ask about serving temperature and pair sake with food.',
+  description: 'Taste Japanese sake, read sake-label terminology, describe your preferences, ask about serving temperature and pair sake with food.',
   menuTabLabel: '清酒 · Sake',
   menuIntro: '🔊 聽發音 · 🎤 練習清酒名稱 · 點一下品項展開點酒句型',
   menuPatternLabel: '點酒句型 · Ordering patterns',
@@ -79,6 +79,42 @@ export const sakeTasting = {
       { jp: 'グラスでお願いします。', ruby: 'グラスでお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '請用杯裝。', en: 'By the glass, please.' },
       { jp: '地酒をおすすめしてください。', say: 'じざけをおすすめしてください。', ruby: '<ruby>地酒<rt>じざけ</rt></ruby>をおすすめしてください。', zh: '請推薦當地清酒。', en: 'Please recommend a local sake.' },
       { jp: 'お会計をお願いします。', say: 'おかいけいをおねがいします。', ruby: 'お<ruby>会計<rt>かいけい</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '麻煩結帳。', en: 'The bill, please.' }
+    ] },
+    { title: 'ラベルの基本 · Label basics', items: [
+      { jp: '精米歩合', say: 'せいまいぶあい', ruby: '<ruby>精米<rt>せいまい</rt></ruby><ruby>歩合<rt>ぶあい</rt></ruby>', zh: '精米步合：白米相對玄米的重量比例；60% 表示約磨去 40%。', en: 'Rice-polishing ratio: 60% means about 40% of the brown rice was polished away.' },
+      { jp: '酒造好適米', say: 'しゅぞうこうてきまい', ruby: '<ruby>酒造<rt>しゅぞう</rt></ruby><ruby>好適米<rt>こうてきまい</rt></ruby>', zh: '酒造好適米：適合釀清酒的米；酒標常見山田錦、五百万石等品種。', en: 'Sake-brewing rice: rice suited to making sake, such as Yamada Nishiki or Gohyakumangoku.' },
+      { jp: '日本酒度', say: 'にほんしゅど', ruby: '<ruby>日本酒度<rt>にほんしゅど</rt></ruby>', zh: '日本酒度：清酒比重指標；要和酸度一起看，不能單獨等同甜或辛口。', en: 'Sake meter value: a specific-gravity index; read it with acidity, not as sweetness alone.' },
+      { jp: '酸度', say: 'さんど', ruby: '<ruby>酸度<rt>さんど</rt></ruby>', zh: '酸度：酒標上的酸含量指標，常用來一起判讀清爽感與結構。', en: 'Acidity: a label indicator used with other values to read freshness and structure.' },
+      { jp: '特定名称酒', say: 'とくていめいしょうしゅ', ruby: '<ruby>特定名称酒<rt>とくていめいしょうしゅ</rt></ruby>', zh: '特定名稱酒：符合原料與製法標示規定的分類，如純米、吟釀與本釀造。', en: 'Specially designated sake: categories such as junmai, ginjo and honjozo defined by label standards.' }
+    ] },
+    { title: '製法・季節語 · Brewing and seasonal terms', items: [
+      { jp: '火入れ', say: 'ひいれ', ruby: '<ruby>火入<rt>ひい</rt></ruby>れ', zh: '火入：加熱殺菌並穩定酒質的處理。', en: 'Hi-ire: heat treatment that pasteurizes and stabilizes sake.' },
+      { jp: '原酒', say: 'げんしゅ', ruby: '<ruby>原酒<rt>げんしゅ</rt></ruby>', zh: '原酒：裝瓶前未加水調整的清酒；酒精度與風味常較集中。', en: 'Genshu: sake not diluted with water after pressing, often more concentrated.' },
+      { jp: '生詰酒', say: 'なまづめしゅ', ruby: '<ruby>生詰酒<rt>なまづめしゅ</rt></ruby>', zh: '生詰酒：儲藏前已火入，裝瓶時不再火入；不等於完全不加熱的生酒。', en: 'Namazume: heat-treated before storage but not again at bottling; it is not fully unpasteurized sake.' },
+      { jp: 'しぼりたて', say: 'しぼりたて', ruby: 'しぼりたて', zh: '搾りたて：剛壓榨完成、較早出貨的新酒，常帶新鮮感。', en: 'Shiboritake: freshly pressed new sake, usually released soon after pressing.' },
+      { jp: 'ひやおろし', say: 'ひやおろし', ruby: 'ひやおろし', zh: 'ひやおろし：火入儲藏後於秋季出貨的酒，通常有較圓潤的熟成感。', en: 'Hiyaoroshi: sake stored after pasteurization and released in autumn, often with a rounded maturity.' },
+      { jp: '無濾過', say: 'むろか', ruby: '<ruby>無濾過<rt>むろか</rt></ruby>', zh: '無濾過：常指未做活性碳濾過；實際處理方式仍依酒藏而異。', en: 'Muroka: commonly means no activated-carbon filtration; the exact process varies by brewery.' }
+    ] },
+    { title: '酒母・味わい · Starter and flavor terms', items: [
+      { jp: '酒母', say: 'しゅぼ', ruby: '<ruby>酒母<rt>しゅぼ</rt></ruby>', zh: '酒母：培養酵母的發酵基礎，也叫「もと」。', en: 'Shubo: the yeast starter that becomes the foundation for fermentation.' },
+      { jp: '生酛', say: 'きもと', ruby: '<ruby>生酛<rt>きもと</rt></ruby>', zh: '生酛：以傳統且費工方式製作的酒母。', en: 'Kimoto: a traditional, labor-intensive method of making the yeast starter.' },
+      { jp: '山廃', say: 'やまはい', ruby: '<ruby>山廃<rt>やまはい</rt></ruby>', zh: '山廢：省略生酛製程中「山卸し」操作的生酛系酒母。', en: 'Yamahai: a kimoto-family starter method that omits the yama-oroshi mashing step.' },
+      { jp: '吟醸香', say: 'ぎんじょうか', ruby: '<ruby>吟醸香<rt>ぎんじょうか</rt></ruby>', zh: '吟釀香：吟釀酒特有的華麗香氣，常讓人聯想到水果或花。', en: 'Ginjo aroma: the distinctive, often fruity or floral fragrance of ginjo sake.' },
+      { jp: '冷や', say: 'ひや', ruby: '<ruby>冷<rt>ひ</rt></ruby>や', zh: '冷や：常溫飲用；不是冷酒（冰飲）。', en: 'Hiya: sake served at room temperature, not chilled sake.' }
+    ] },
+    { title: '酒標を聞く · Ask about the label', items: [
+      { jp: '精米歩合は何パーセントですか？', say: 'せいまいぶあいわなんパーセントですか？', ruby: '<ruby>精米<rt>せいまい</rt></ruby><ruby>歩合<rt>ぶあい</rt></ruby>は<ruby>何<rt>なん</rt></ruby>パーセントですか？', zh: '精米步合是多少？', en: 'What is the rice-polishing ratio?' },
+      { jp: '使っている酒米は何ですか？', say: 'つかっているさかまいわなんですか？', ruby: '<ruby>使<rt>つか</rt></ruby>っている<ruby>酒米<rt>さかまい</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか？', zh: '使用的是哪一種酒米？', en: 'Which sake rice is used?' },
+      { jp: '日本酒度と酸度を教えてください。', say: 'にほんしゅどとさんどをおしえてください。', ruby: '<ruby>日本酒度<rt>にほんしゅど</rt></ruby>と<ruby>酸度<rt>さんど</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。', zh: '請告訴我日本酒度和酸度。', en: 'Please tell me the sake meter value and acidity.' },
+      { jp: 'これは生酒ですか？ 火入れしていますか？', say: 'これわなまざけですか？ ひいれしていますか？', ruby: 'これは<ruby>生酒<rt>なまざけ</rt></ruby>ですか？ <ruby>火入<rt>ひい</rt></ruby>れしていますか？', zh: '這是生酒嗎？有火入處理嗎？', en: 'Is this namazake? Has it been pasteurized?' },
+      { jp: '原酒ですか？', say: 'げんしゅですか？', ruby: '<ruby>原酒<rt>げんしゅ</rt></ruby>ですか？', zh: '這是原酒嗎？', en: 'Is this genshu?' },
+      { jp: '無濾過ですか？', say: 'むろかですか？', ruby: '<ruby>無濾過<rt>むろか</rt></ruby>ですか？', zh: '這是無濾過嗎？', en: 'Is this muroka?' }
+    ] },
+    { title: '飲み方を聞く · Ask about serving', items: [
+      { jp: '生酛ですか、山廃ですか？', say: 'きもとですか、やまはいですか？', ruby: '<ruby>生酛<rt>きもと</rt></ruby>ですか、<ruby>山廃<rt>やまはい</rt></ruby>ですか？', zh: '這是生酛還是山廢？', en: 'Is this kimoto or yamahai?' },
+      { jp: '冷や、つまり常温でも飲めますか？', say: 'ひや、つまりじょうおんでものめますか？', ruby: '<ruby>冷<rt>ひ</rt></ruby>や、つまり<ruby>常温<rt>じょうおん</rt></ruby>でも<ruby>飲<rt>の</rt></ruby>めますか？', zh: '可以用冷や，也就是常溫飲用嗎？', en: 'Can I have it hiya, meaning at room temperature?' },
+      { jp: 'お燗に向いていますか？', say: 'おかんにむいていますか？', ruby: 'お<ruby>燗<rt>かん</rt></ruby>に<ruby>向<rt>む</rt></ruby>いていますか？', zh: '適合加熱飲用嗎？', en: 'Is it suitable for warming?' },
+      { jp: '和らぎ水をください。', say: 'やわらぎみずをください。', ruby: '<ruby>和<rt>やわ</rt></ruby>らぎ<ruby>水<rt>みず</rt></ruby>をください。', zh: '請給我清酒間飲用的水。', en: 'Please give me water to drink alongside the sake.' }
     ] }
   ]
 }
