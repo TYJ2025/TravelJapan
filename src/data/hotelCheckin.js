@@ -6,7 +6,7 @@ export const hotelCheckin = {
   emoji: '🏨',
   staffAvatar: '🛎️',
   staffLabel: 'フロント · Front Desk',
-  description: 'Check in, confirm your booking, ask about breakfast, Wi-Fi, luggage and check-out time.',
+  description: 'Check in, confirm your booking, ask about breakfast, Wi-Fi, amenities, luggage and check-out time.',
   lines: [
     {
       speaker: 'staff',
@@ -123,6 +123,24 @@ export const hotelCheckin = {
     },
     {
       speaker: 'you',
+      jp: 'すみません。追加のタオルを二組と、枕を一つお願いできますか？',
+      say: 'すみません。ついかのタオルをふたくみと、まくらをひとつおねがいできますか？',
+      ruby: 'すみません。<ruby>追加<rt>ついか</rt></ruby>のタオルを<ruby>二組<rt>ふたくみ</rt></ruby>と、<ruby>枕<rt>まくら</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つお<ruby>願<rt>ねが</rt></ruby>いできますか？',
+      romaji: 'Sumimasen. Tsuika no taoru o futakumi to, makura o hitotsu onegai dekimasu ka?',
+      zh: '不好意思，可以再給我兩組毛巾和一個枕頭嗎？',
+      en: 'Excuse me, could I have two additional sets of towels and one pillow?'
+    },
+    {
+      speaker: 'staff',
+      jp: 'かしこまりました。お部屋へお持ちします。',
+      say: 'かしこまりました。おへやへおもちします。',
+      ruby: 'かしこまりました。お<ruby>部屋<rt>へや</rt></ruby>へお<ruby>持<rt>も</rt></ruby>ちします。',
+      romaji: 'Kashikomarimashita. Oheya e omochi shimasu.',
+      zh: '好的，我會送到您的房間。',
+      en: 'Certainly. I will bring them to your room.'
+    },
+    {
+      speaker: 'you',
       jp: 'チェックアウトは何時ですか？',
       say: 'チェックアウトわなんじですか？',
       ruby: 'チェックアウトは<ruby>何時<rt>なんじ</rt></ruby>ですか？',
@@ -204,6 +222,18 @@ export const hotelCheckin = {
         { jp: 'タクシーを呼んでもらえますか？', say: 'タクシーをよんでもらえますか？', ruby: 'タクシーを<ruby>呼<rt>よ</rt></ruby>んでもらえますか？', zh: '可以幫我叫計程車嗎？', en: 'Could you call a taxi for me?' },
         { jp: '領収書をください。', say: 'りょうしゅうしょをください。', ruby: '<ruby>領収書<rt>りょうしゅうしょ</rt></ruby>をください。', zh: '請給我收據。', en: 'Please give me a receipt.' },
         { jp: 'もう一枚カードキーをもらえますか？', say: 'もういちまいカードキーをもらえますか？', ruby: 'もう<ruby>一枚<rt>いちまい</rt></ruby>カードキーをもらえますか？', zh: '可以再給我一張房卡嗎？', en: 'Could I have one more key card?' }
+      ]
+    },
+    {
+      title: 'アメニティ · Amenities',
+      items: [
+        { jp: '追加のタオルを二組お願いします。', say: 'ついか の タオル を ふたくみ おねがいします。', ruby: '<ruby>追加<rt>ついか</rt></ruby>のタオルを<ruby>二組<rt>ふたくみ</rt></ruby>お<ruby>願<rt>ねが</rt></ruby>いします。', zh: '麻煩再給我兩組毛巾。', en: 'Two additional sets of towels, please.' },
+        { jp: '枕をもう一ついただけますか？', say: 'まくら を もう ひとつ いただけますか？', ruby: '<ruby>枕<rt>まくら</rt></ruby>をもう<ruby>一<rt>ひと</rt></ruby>ついただけますか？', zh: '可以再給我一個枕頭嗎？', en: 'Could I have one more pillow?' },
+        { jp: '毛布を一枚いただけますか？', say: 'もうふ を いちまい いただけますか？', ruby: '<ruby>毛布<rt>もうふ</rt></ruby>を<ruby>一枚<rt>いちまい</rt></ruby>いただけますか？', zh: '可以給我一條毛毯嗎？', en: 'Could I have a blanket, please?' },
+        { jp: '歯ブラシはありますか？', say: 'はブラシ は ありますか？', ruby: '<ruby>歯<rt>は</rt></ruby>ブラシはありますか？', zh: '有牙刷嗎？', en: 'Do you have a toothbrush?' },
+        { jp: 'ボディーソープを追加でお願いします。', say: 'ボディーソープ を ついか で おねがいします。', ruby: 'ボディーソープを<ruby>追加<rt>ついか</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '麻煩再補充沐浴乳。', en: 'Additional body soap, please.' },
+        { jp: '部屋着をもう一組いただけますか？', say: 'へやぎ を もう ひとくみ いただけますか？', ruby: '<ruby>部屋着<rt>へやぎ</rt></ruby>をもう<ruby>一組<rt>ひとくみ</rt></ruby>いただけますか？', zh: '可以再給我一套館內服嗎？', en: 'Could I have one more set of room wear?' },
+        { jp: 'アメニティはどこにありますか？', say: 'アメニティ は どこ に ありますか？', ruby: 'アメニティはどこにありますか？', zh: '備品放在哪裡？', en: 'Where are the amenities?' }
       ]
     }
   ]

@@ -23,10 +23,12 @@ import { inflight } from './inflight.js'
 import { transport } from './transport.js'
 import { taxiDirections } from './taxiDirections.js'
 import { shinkansen } from './shinkansen.js'
+import { limitedExpress } from './limitedExpress.js'
 import { trainAnnouncements } from './trainAnnouncements.js'
 import { hotelCheckin } from './hotelCheckin.js'
 import { onsen } from './onsen.js'
 import { convenience } from './convenience.js'
+import { paymentMethods } from './paymentMethods.js'
 import { supermarket } from './supermarket.js'
 import { departmentFoodHall } from './departmentFoodHall.js'
 import { drugstore } from './drugstore.js'
@@ -65,6 +67,7 @@ export const transportScenarios = [
   transport,
   taxiDirections,
   shinkansen,
+  limitedExpress,
   trainAnnouncements
 ]
 
@@ -81,6 +84,7 @@ export const hotelScenarios = [
 
 export const shoppingScenarios = [
   convenience,
+  paymentMethods,
   supermarket,
   departmentFoodHall,
   drugstore,
@@ -117,7 +121,7 @@ export const scenarioGroups = [
     icon: '🚕',
     label: '交通 · Transport',
     title: '移動する',
-    description: '計程車、車站、IC 卡、公車、問路、新幹線與電車廣播。',
+    description: '計程車、車站、IC 卡、公車、問路、新幹線、特急票券與電車廣播。',
     scenarios: transportScenarios
   },
   {
@@ -133,7 +137,7 @@ export const scenarioGroups = [
     icon: '🏨',
     label: '飯店 · Hotel',
     title: '泊まる',
-    description: '入住、早餐、Wi-Fi、寄放行李、退房與日歸溫泉規則。',
+    description: '入住、早餐、Wi-Fi、額外備品、寄放行李、退房與日歸溫泉規則。',
     scenarios: hotelScenarios
   },
   {
@@ -141,7 +145,7 @@ export const scenarioGroups = [
     icon: '🛒',
     label: '購物 · Shopping',
     title: '買い物',
-    description: '便利商店、超市、百貨美食街、藥妝店、Bic Camera 與傳統市場：找商品、相容性、免稅與付款。',
+    description: '便利商店、超市、百貨美食街、藥妝店、Bic Camera、無印良品、UNIQLO 與傳統市場：找商品、支付方式、自助結帳、相容性與免稅。',
     scenarios: shoppingScenarios
   },
   {

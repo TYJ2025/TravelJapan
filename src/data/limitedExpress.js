@@ -1,0 +1,51 @@
+// 新幹線・特急を区別する — distinguish train types and ticket components.
+export const limitedExpress = {
+  id: 'limited-express-tickets',
+  title: 'Shinkansen & Limited Express',
+  titleJp: '新幹線・特急の切符を確認する',
+  emoji: '🚆',
+  staffAvatar: '🚉',
+  staffLabel: '駅員 · Station Staff',
+  description: 'Tell Shinkansen and limited express trains apart, and confirm the base-fare ticket, express supplement and seat type.',
+  lines: [
+    { speaker: 'staff', jp: 'いらっしゃいませ。どちらまで行かれますか？', say: 'いらっしゃいませ。どちらまでいかれますか？', ruby: 'いらっしゃいませ。どちらまで<ruby>行<rt>い</rt></ruby>かれますか？', romaji: 'Irasshaimase. Dochira made ikaremasu ka?', zh: '歡迎光臨。您要前往哪裡？', en: 'Welcome. Where are you traveling to?' },
+    { speaker: 'you', jp: '大阪から城崎温泉まで行きたいです。', say: 'おおさかからきのさきおんせんまでいきたいです。', ruby: '<ruby>大阪<rt>おおさか</rt></ruby>から<ruby>城崎温泉<rt>きのさきおんせん</rt></ruby>まで<ruby>行<rt>い</rt></ruby>きたいです。', romaji: 'Ōsaka kara Kinosaki Onsen made ikitai desu.', zh: '我想從大阪前往城崎溫泉。', en: 'I would like to travel from Osaka to Kinosaki Onsen.' },
+    { speaker: 'staff', jp: 'こうのとりをご利用いただけます。こうのとりは新幹線ではなく、特急列車です。', say: 'こうのとりをごりよういただけます。こうのとりわしんかんせんでわなく、とっきゅうれっしゃです。', ruby: 'こうのとりをご<ruby>利用<rt>りよう</rt></ruby>いただけます。こうのとりは<ruby>新幹線<rt>しんかんせん</rt></ruby>ではなく、<ruby>特急列車<rt>とっきゅうれっしゃ</rt></ruby>です。', romaji: 'Kōnotori o go-riyō itadakemasu. Kōnotori wa shinkansen de wa naku, tokkyū ressha desu.', zh: '您可以搭こうのとり。它不是新幹線，而是特急列車。', en: 'You can take the Kounotori. It is a limited express train, not a Shinkansen.' },
+    { speaker: 'you', jp: '新幹線と特急は、切符が違いますか？', say: 'しんかんせんととっきゅうわ、きっぷがちがいますか？', ruby: '<ruby>新幹線<rt>しんかんせん</rt></ruby>と<ruby>特急<rt>とっきゅう</rt></ruby>は、<ruby>切符<rt>きっぷ</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>いますか？', romaji: 'Shinkansen to tokkyū wa, kippu ga chigaimasu ka?', zh: '新幹線和特急的車票不同嗎？', en: 'Are Shinkansen and limited express tickets different?' },
+    { speaker: 'staff', jp: '普通列車や快速は、基本的に乗車券で乗れます。特急には、乗車券のほかに特急券が必要です。', say: 'ふつうれっしゃやかいそくわ、きほんてきにじょうしゃけんでのれます。とっきゅうにわ、じょうしゃけんのほかにとっきゅうけんがひつようです。', ruby: '<ruby>普通列車<rt>ふつうれっしゃ</rt></ruby>や<ruby>快速<rt>かいそく</rt></ruby>は、<ruby>基本的<rt>きほんてき</rt></ruby>に<ruby>乗車券<rt>じょうしゃけん</rt></ruby>で<ruby>乗<rt>の</rt></ruby>れます。<ruby>特急<rt>とっきゅう</rt></ruby>には、<ruby>乗車券<rt>じょうしゃけん</rt></ruby>のほかに<ruby>特急券<rt>とっきゅうけん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。', romaji: 'Futsū ressha ya kaisoku wa, kihonteki ni jōshaken de noremasu. Tokkyū ni wa, jōshaken no hoka ni tokkyūken ga hitsuyō desu.', zh: '普通與快速列車原則上使用乘車券即可；特急除乘車券外，還需要特急券。', en: 'Local and rapid trains generally require a base-fare ticket. A limited express also requires a limited-express ticket.' },
+    { speaker: 'staff', jp: '新幹線に乗る場合は、乗車券に加えて新幹線特急券が必要です。予約商品によっては、二つが一つになっていることもあります。', say: 'しんかんせんにのるばあいわ、じょうしゃけんにくわえてしんかんせんとっきゅうけんがひつようです。よやくしょうひんによってわ、ふたつがひとつになっていることもあります。', ruby: '<ruby>新幹線<rt>しんかんせん</rt></ruby>に<ruby>乗<rt>の</rt></ruby>る<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>乗車券<rt>じょうしゃけん</rt></ruby>に<ruby>加<rt>くわ</rt></ruby>えて<ruby>新幹線特急券<rt>しんかんせんとっきゅうけん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。<ruby>予約商品<rt>よやくしょうひん</rt></ruby>によっては、<ruby>二<rt>ふた</rt></ruby>つが<ruby>一<rt>ひと</rt></ruby>つになっていることもあります。', romaji: 'Shinkansen ni noru baai wa, jōshaken ni kuwaete shinkansen tokkyūken ga hitsuyō desu. Yoyaku shōhin ni yotte wa, futatsu ga hitotsu ni natte iru koto mo arimasu.', zh: '搭乘新幹線時，除乘車券外需要新幹線特急券；部分預約商品會把兩者整合成一項。', en: 'For a Shinkansen, you need a Shinkansen limited-express ticket in addition to the base-fare ticket. Some reservation products combine them into one.' },
+    { speaker: 'you', jp: 'こうのとりは指定席でお願いします。', say: 'こうのとりわしていせきでおねがいします。', ruby: 'こうのとりは<ruby>指定席<rt>していせき</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。', romaji: 'Kōnotori wa shiteiseki de onegai shimasu.', zh: 'こうのとり我要指定席。', en: 'A reserved seat on the Kounotori, please.' },
+    { speaker: 'staff', jp: '承知しました。指定席は指定席特急券、自由席は自由席特急券になります。', say: 'しょうちしました。していせきわしていせきとっきゅうけん、じゆうせきわじゆうせきとっきゅうけんになります。', ruby: '<ruby>承知<rt>しょうち</rt></ruby>しました。<ruby>指定席<rt>していせき</rt></ruby>は<ruby>指定席特急券<rt>していせきとっきゅうけん</rt></ruby>、<ruby>自由席<rt>じゆうせき</rt></ruby>は<ruby>自由席特急券<rt>じゆうせきとっきゅうけん</rt></ruby>になります。', romaji: 'Shōchi shimashita. Shiteiseki wa shiteiseki tokkyūken, jiyūseki wa jiyūseki tokkyūken ni narimasu.', zh: '了解。指定席使用指定席特急券；自由席使用自由席特急券。', en: 'Certainly. A reserved seat uses a reserved-seat limited-express ticket; a non-reserved seat uses a non-reserved limited-express ticket.' },
+    { speaker: 'you', jp: '大きい荷物があるので、荷物置き場に近い席はありますか？', say: 'おおきいにもつがあるので、にもつおきばにちかいせきわありますか？', ruby: '<ruby>大<rt>おお</rt></ruby>きい<ruby>荷物<rt>にもつ</rt></ruby>があるので、<ruby>荷物置<rt>にもつお</rt></ruby>き<ruby>場<rt>ば</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い<ruby>席<rt>せき</rt></ruby>はありますか？', romaji: 'Ōkii nimotsu ga aru node, nimotsu okiba ni chikai seki wa arimasu ka?', zh: '我有大型行李，有靠近行李置放區的座位嗎？', en: 'I have large baggage. Is there a seat near the luggage area?' },
+    { speaker: 'staff', jp: '空席を確認します。荷物置き場の利用方法も、乗車前にご確認ください。', say: 'くうせきをかくにんします。にもつおきばのりようほうほうも、じょうしゃまえにごかくにんください。', ruby: '<ruby>空席<rt>くうせき</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>します。<ruby>荷物置<rt>にもつお</rt></ruby>き<ruby>場<rt>ば</rt></ruby>の<ruby>利用方法<rt>りようほうほう</rt></ruby>も、<ruby>乗車前<rt>じょうしゃまえ</rt></ruby>にご<ruby>確認<rt>かくにん</rt></ruby>ください。', romaji: 'Kūseki o kakunin shimasu. Nimotsu okiba no riyō hōhō mo, jōsha mae ni go-kakunin kudasai.', zh: '我確認一下空位。行李置放區的使用方式也請於上車前確認。', en: 'I will check availability. Please also confirm how to use the luggage area before boarding.' },
+    { speaker: 'staff', jp: 'こちらが乗車券と指定席特急券です。発車時刻と乗り場は、案内表示でもご確認ください。', say: 'こちらがじょうしゃけんとしていせきとっきゅうけんです。はっしゃじこくとのりばわ、あんないひょうじでもごかくにんください。', ruby: 'こちらが<ruby>乗車券<rt>じょうしゃけん</rt></ruby>と<ruby>指定席特急券<rt>していせきとっきゅうけん</rt></ruby>です。<ruby>発車時刻<rt>はっしゃじこく</rt></ruby>と<ruby>乗<rt>の</rt></ruby>り<ruby>場<rt>ば</rt></ruby>は、<ruby>案内表示<rt>あんないひょうじ</rt></ruby>でもご<ruby>確認<rt>かくにん</rt></ruby>ください。', romaji: 'Kochira ga jōshaken to shiteiseki tokkyūken desu. Hassha jikoku to noriba wa, annai hyōji demo go-kakunin kudasai.', zh: '這是乘車券和指定席特急券。發車時間與月台也請在資訊看板確認。', en: 'Here are your base-fare ticket and reserved-seat limited-express ticket. Please also check the departure time and platform on the information displays.' },
+    { speaker: 'you', jp: 'この列車は新幹線ではなく、特急こうのとりですね？', say: 'このれっしゃわしんかんせんでわなく、とっきゅうこうのとりですね？', ruby: 'この<ruby>列車<rt>れっしゃ</rt></ruby>は<ruby>新幹線<rt>しんかんせん</rt></ruby>ではなく、<ruby>特急<rt>とっきゅう</rt></ruby>こうのとりですね？', romaji: 'Kono ressha wa shinkansen de wa naku, tokkyū Kōnotori desu ne?', zh: '這班不是新幹線，而是特急こうのとり，對嗎？', en: 'This is not a Shinkansen but the limited express Kounotori, correct?' },
+    { speaker: 'staff', jp: 'はい、そのとおりです。お気をつけて行ってらっしゃいませ。', say: 'はい、そのとおりです。おきをつけていってらっしゃいませ。', ruby: 'はい、そのとおりです。お<ruby>気<rt>き</rt></ruby>をつけて<ruby>行<rt>い</rt></ruby>ってらっしゃいませ。', romaji: 'Hai, sono tōri desu. Oki o tsukete itterasshaimase.', zh: '是的，沒錯。祝您旅途愉快。', en: 'Yes, that is correct. Have a safe trip.' }
+  ],
+  phrases: [
+    { title: '車種を確認 · Confirm the train type', items: [
+      { jp: 'これは新幹線ですか？', say: 'これわしんかんせんですか？', ruby: 'これは<ruby>新幹線<rt>しんかんせん</rt></ruby>ですか？', zh: '這是新幹線嗎？', en: 'Is this a Shinkansen?' },
+      { jp: 'これは特急ですか？', say: 'これわとっきゅうですか？', ruby: 'これは<ruby>特急<rt>とっきゅう</rt></ruby>ですか？', zh: '這是特急嗎？', en: 'Is this a limited express?' },
+      { jp: '快速ですか、普通ですか？', say: 'かいそくですか、ふつうですか？', ruby: '<ruby>快速<rt>かいそく</rt></ruby>ですか、<ruby>普通<rt>ふつう</rt></ruby>ですか？', zh: '是快速還是普通車？', en: 'Is this a rapid or local train?' },
+      { jp: 'こうのとりは特急列車ですか？', say: 'こうのとりわとっきゅうれっしゃですか？', ruby: 'こうのとりは<ruby>特急列車<rt>とっきゅうれっしゃ</rt></ruby>ですか？', zh: 'こうのとり是特急列車嗎？', en: 'Is the Kounotori a limited express?' }
+    ] },
+    { title: '切符の種類 · Ticket types', items: [
+      { jp: '乗車券と特急券が必要ですか？', say: 'じょうしゃけんととっきゅうけんがひつようですか？', ruby: '<ruby>乗車券<rt>じょうしゃけん</rt></ruby>と<ruby>特急券<rt>とっきゅうけん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>ですか？', zh: '需要乘車券和特急券嗎？', en: 'Do I need a base-fare ticket and a limited-express ticket?' },
+      { jp: '新幹線特急券が必要ですか？', say: 'しんかんせんとっきゅうけんがひつようですか？', ruby: '<ruby>新幹線特急券<rt>しんかんせんとっきゅうけん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>ですか？', zh: '需要新幹線特急券嗎？', en: 'Do I need a Shinkansen limited-express ticket?' },
+      { jp: '指定席特急券をお願いします。', say: 'していせきとっきゅうけんをおねがいします。', ruby: '<ruby>指定席特急券<rt>していせきとっきゅうけん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '我要指定席特急券。', en: 'A reserved-seat limited-express ticket, please.' },
+      { jp: '自由席はありますか？', say: 'じゆうせきわありますか？', ruby: '<ruby>自由席<rt>じゆうせき</rt></ruby>はありますか？', zh: '有自由席嗎？', en: 'Are there non-reserved seats?' }
+    ] },
+    { title: '城崎温泉へ · Going to Kinosaki Onsen', items: [
+      { jp: '大阪から城崎温泉まで行きたいです。', say: 'おおさかからきのさきおんせんまでいきたいです。', ruby: '<ruby>大阪<rt>おおさか</rt></ruby>から<ruby>城崎温泉<rt>きのさきおんせん</rt></ruby>まで<ruby>行<rt>い</rt></ruby>きたいです。', zh: '我想從大阪前往城崎溫泉。', en: 'I would like to go from Osaka to Kinosaki Onsen.' },
+      { jp: 'こうのとりの指定席をお願いします。', say: 'こうのとりのしていせきをおねがいします。', ruby: 'こうのとりの<ruby>指定席<rt>していせき</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いします。', zh: '我要こうのとり的指定席。', en: 'A reserved seat on the Kounotori, please.' },
+      { jp: '城崎温泉まで乗り換えは必要ですか？', say: 'きのさきおんせんまでのりかえわひつようですか？', ruby: '<ruby>城崎温泉<rt>きのさきおんせん</rt></ruby>まで<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>えは<ruby>必要<rt>ひつよう</rt></ruby>ですか？', zh: '到城崎溫泉需要轉車嗎？', en: 'Do I need to transfer to reach Kinosaki Onsen?' },
+      { jp: '荷物置き場に近い席はありますか？', say: 'にもつおきばにちかいせきわありますか？', ruby: '<ruby>荷物置<rt>にもつお</rt></ruby>き<ruby>場<rt>ば</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い<ruby>席<rt>せき</rt></ruby>はありますか？', zh: '有靠近行李置放區的座位嗎？', en: 'Is there a seat near the luggage area?' }
+    ] },
+    { title: '時刻・乗り場 · Time and platform', items: [
+      { jp: '何時に出発しますか？', say: 'なんじにしゅっぱつしますか？', ruby: '<ruby>何時<rt>なんじ</rt></ruby>に<ruby>出発<rt>しゅっぱつ</rt></ruby>しますか？', zh: '幾點出發？', en: 'What time does it depart?' },
+      { jp: '何番線ですか？', say: 'なんばんせんですか？', ruby: '<ruby>何番線<rt>なんばんせん</rt></ruby>ですか？', zh: '是幾號月台？', en: 'Which platform is it?' },
+      { jp: 'この切符は二枚必要ですか？', say: 'このきっぷわにまいひつようですか？', ruby: 'この<ruby>切符<rt>きっぷ</rt></ruby>は<ruby>二枚<rt>にまい</rt></ruby><ruby>必要<rt>ひつよう</rt></ruby>ですか？', zh: '這趟需要兩張票嗎？', en: 'Do I need two tickets for this trip?' },
+      { jp: '案内表示を確認します。', say: 'あんないひょうじをかくにんします。', ruby: '<ruby>案内表示<rt>あんないひょうじ</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>します。', zh: '我會確認資訊看板。', en: 'I will check the information displays.' }
+    ] }
+  ]
+}
