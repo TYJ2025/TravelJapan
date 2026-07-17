@@ -1,14 +1,14 @@
-// デパ地下で買い物 — ordering deli food, bento and sweets at a department-store food hall.
+// デパ地下で買い物 — shopping deli food, bento, sweets and signature specialties in a department-store basement.
 export const departmentFoodHall = {
   id: 'department-store-food-hall',
-  title: 'Department Store Food Hall',
+  title: 'Depachika Shopping',
   titleJp: 'デパ地下で買い物',
   emoji: '🏬',
   staffAvatar: '🏬',
   staffLabel: '店員 · Food Hall Staff',
-  description: 'Order deli food by weight, choose bento and sweets, and ask about cooling and gift wrapping.',
-  menuTabLabel: '品項 · Items',
-  menuIntro: '🔊 聽發音 · 🎤 練習品項 · 點一下商品展開購買句型',
+  description: 'Shop a department-store basement (depachika): order deli food by weight, choose bento and sweets, and ask about cooling, gifts and store specialties.',
+  menuTabLabel: '品項・名物 · Items & specialties',
+  menuIntro: '🔊 聽發音 · 🎤 練習品項與百貨名物 · 點一下商品展開購買句型',
   menuPatternLabel: '購買句型 · Purchase patterns',
   lines: [
     {
@@ -191,6 +191,17 @@ export const departmentFoodHall = {
         { jp: '手提げ袋を一枚ください。', say: 'てさげぶくろをいちまいください。', ruby: '<ruby>手提<rt>てさ</rt></ruby>げ<ruby>袋<rt>ぶくろ</rt></ruby>を<ruby>一枚<rt>いちまい</rt></ruby>ください。', zh: '請給我一個提袋。', en: 'One carry bag, please.' },
         { jp: 'のしを付けてもらえますか？', say: 'のしをつけてもらえますか？', ruby: 'のしを<ruby>付<rt>つ</rt></ruby>けてもらえますか？', zh: '可以加上禮品熨斗紙嗎？', en: 'Could you add a noshi gift wrapper?' }
       ]
+    },
+    {
+      title: 'デパ地下の名物 · Finding store specialties',
+      items: [
+        { jp: 'このお店でしか買えない商品はありますか？', say: 'このおみせでしかかえないしょうひんわありますか？', ruby: 'このお<ruby>店<rt>みせ</rt></ruby>でしか<ruby>買<rt>か</rt></ruby>えない<ruby>商品<rt>しょうひん</rt></ruby>はありますか？', zh: '有只有這家店才買得到的商品嗎？', en: 'Do you have anything available only at this store?' },
+        { jp: '伊勢丹限定のお菓子はありますか？', say: 'いせたんげんていのおかしわありますか？', ruby: '<ruby>伊勢丹<rt>いせたん</rt></ruby><ruby>限定<rt>げんてい</rt></ruby>のお<ruby>菓子<rt>かし</rt></ruby>はありますか？', zh: '有伊勢丹限定的甜點嗎？', en: 'Do you have Isetan-exclusive sweets?' },
+        { jp: '日本橋三越限定の手土産を探しています。', say: 'にほんばしみつこしげんていのてみやげをさがしています。', ruby: '<ruby>日本橋三越<rt>にほんばしみつこし</rt></ruby><ruby>限定<rt>げんてい</rt></ruby>の<ruby>手土産<rt>てみやげ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しています。', zh: '我在找日本橋三越限定的伴手禮。', en: 'I am looking for a Nihombashi Mitsukoshi-exclusive gift.' },
+        { jp: '大丸東京で人気のお弁当はどれですか？', say: 'だいまるとうきょうでにんきのおべんとうわどれですか？', ruby: '<ruby>大丸東京<rt>だいまるとうきょう</rt></ruby>で<ruby>人気<rt>にんき</rt></ruby>のお<ruby>弁当<rt>べんとう</rt></ruby>はどれですか？', zh: '大丸東京最受歡迎的便當是哪一款？', en: 'Which bento is popular at Daimaru Tokyo?' },
+        { jp: '阪急うめだの名物を教えてください。', say: 'はんきゅううめだのめいぶつをおしえてください。', ruby: '<ruby>阪急<rt>はんきゅう</rt></ruby>うめだの<ruby>名物<rt>めいぶつ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。', zh: '請告訴我阪急梅田的名物。', en: 'Please tell me the specialties at Hankyu Umeda.' },
+        { jp: '冷蔵品と常温品を分けてください。', say: 'れいぞうひんとじょうおんひんをわけてください。', ruby: '<ruby>冷蔵品<rt>れいぞうひん</rt></ruby>と<ruby>常温品<rt>じょうおんひん</rt></ruby>を<ruby>分<rt>わ</rt></ruby>けてください。', zh: '請把冷藏品和常溫品分開包。', en: 'Please pack refrigerated and room-temperature items separately.' }
+      ]
     }
   ],
   menu: [
@@ -236,6 +247,42 @@ export const departmentFoodHall = {
         { emoji: '🧊', jp: '保冷剤', say: 'ほれいざい', ruby: '<ruby>保冷剤<rt>ほれいざい</rt></ruby>', romaji: 'horeizai', zh: '保冷劑', en: 'ice pack', desc: '購買冷藏甜點或熟食時，可依攜帶時間向店員索取。' },
         { emoji: '🛍️', jp: '手提げ袋', say: 'てさげぶくろ', ruby: '<ruby>手提<rt>てさ</rt></ruby>げ<ruby>袋<rt>ぶくろ</rt></ruby>', romaji: 'tesage-bukuro', zh: '提袋', en: 'carry bag', desc: '百貨櫃位常提供品牌提袋；冷藏食品可另外確認是否需要保冷袋。' },
         { emoji: '🎁', jp: '包装', say: 'ほうそう', ruby: '<ruby>包装<rt>ほうそう</rt></ruby>', romaji: 'hōsō', zh: '禮品包裝', en: 'gift wrapping', desc: '買伴手禮時可告知「贈答用」，並詢問包裝與熨斗紙服務。' }
+      ]
+    },
+    {
+      title: '伊勢丹新宿店 · Isetan Shinjuku specialties',
+      items: [
+        { emoji: '🍬', jp: 'グミッツェル', ruby: 'グミッツェル', romaji: 'gumittseru', zh: 'Gumitzel 脆皮軟糖', en: 'Gumitzel crunchy gummies', desc: '〈ヒトツブカンロ〉的招牌軟糖；外層酥脆、內層柔軟，適合常溫攜帶。' },
+        { emoji: '🐈', jp: 'ネコのトランプ缶', ruby: 'ネコのトランプ<ruby>缶<rt>かん</rt></ruby>', romaji: 'neko no toranpu kan', zh: '貓咪撲克牌鐵盒巧克力', en: 'cat playing-card chocolate tin', desc: '〈青山デカーボ〉伊勢丹新宿店限定；附貓咪公仔的巧克力禮盒。' },
+        { emoji: '🥐', jp: 'ミルフィユ', ruby: 'ミルフィユ', romaji: 'mirufiyu', zh: '千層酥禮盒', en: 'mille-feuille assortment', desc: '〈MILLI MILLI〉伊勢丹新宿店限定；以日式素材搭配精緻派皮的禮盒。' },
+        { emoji: '🍯', jp: 'デボンシャーハニーケーキ', ruby: 'デボンシャーハニーケーキ', romaji: 'debonshā hanī kēki', zh: '德文郡蜂蜜蛋糕', en: 'Devonshire honey cake', desc: '〈Mielurire〉伊勢丹新宿店限定；使用蜂蜜製作的濃郁奶油蛋糕。' }
+      ]
+    },
+    {
+      title: '日本橋三越本店 · Nihombashi Mitsukoshi specialties',
+      items: [
+        { emoji: '🍣', jp: '変わり志乃多八種', say: 'かわりしのだはっしゅ', ruby: '<ruby>変<rt>か</rt></ruby>わり<ruby>志乃多<rt>しのだ</rt></ruby><ruby>八種<rt>はっしゅ</rt></ruby>', romaji: 'kawari shinoda hasshu', zh: '八款變化豆皮壽司', en: 'eight assorted inari sushi', desc: '〈人形町志乃多寿司總本店〉日本橋三越限定；一次品嚐八種口味的豆皮壽司。' },
+        { emoji: '🍵', jp: '和の茶マカロン', say: 'わのちゃマカロン', ruby: '<ruby>和<rt>わ</rt></ruby>の<ruby>茶<rt>ちゃ</rt></ruby>マカロン', romaji: 'wa no cha makaron', zh: '和茶馬卡龍', en: 'Japanese tea macarons', desc: '〈日本橋 和の茶 伊藤園〉日本橋三越限定；抹茶甘納許帶出微苦茶香。' },
+        { emoji: '🫘', jp: 'ふくみ天平', say: 'ふくみてんびん', ruby: 'ふくみ<ruby>天平<rt>てんびん</rt></ruby>', romaji: 'fukumi tenbin', zh: 'Fukumi Tenbin 手作最中', en: 'Fukumi Tenbin make-your-own monaka', desc: '〈たねや〉的經典手作最中；將求肥紅豆餡夾入香脆餅殼後享用。' },
+        { emoji: '🍡', jp: '小形羊羹', say: 'こがたようかん', ruby: '<ruby>小形<rt>こがた</rt></ruby><ruby>羊羹<rt>ようかん</rt></ruby>', romaji: 'kogata yōkan', zh: '小形羊羹', en: 'mini yokan', desc: '〈とらや〉的獨立包裝羊羹；適合常溫攜帶與送禮。' }
+      ]
+    },
+    {
+      title: '大丸東京店 · Daimaru Tokyo specialties',
+      items: [
+        { emoji: '🍱', jp: 'シウマイ弁当', ruby: 'シウマイ<ruby>弁当<rt>べんとう</rt></ruby>', romaji: 'shūmai bentō', zh: '燒賣便當', en: 'shumai bento', desc: '〈崎陽軒〉的招牌便當；以經典燒賣為主角，適合搭新幹線時外帶。' },
+        { emoji: '🐟', jp: '銀だら西京焼弁当', say: 'ぎんだらさいきょうやきべんとう', ruby: '<ruby>銀<rt>ぎん</rt></ruby>だら<ruby>西京焼<rt>さいきょうやき</rt></ruby><ruby>弁当<rt>べんとう</rt></ruby>', romaji: 'gindara saikyōyaki bentō', zh: '銀鱈西京燒便當', en: 'miso-marinated black cod bento', desc: '〈築地 魚弁 味の浜藤〉的代表魚便當；脂香銀鱈搭配西京味噌風味。' },
+        { emoji: '🍤', jp: '天むす', say: 'てんむす', ruby: '<ruby>天<rt>てん</rt></ruby>むす', romaji: 'tenmusu', zh: '天婦羅飯糰', en: 'tempura rice balls', desc: '〈地雷也〉的一口大小蝦天婦羅飯糰，適合當點心或差入。' },
+        { emoji: '🥮', jp: '揚最中', say: 'あげもなか', ruby: '<ruby>揚最中<rt>あげもなか</rt></ruby>', romaji: 'age monaka', zh: '炸最中', en: 'fried monaka wafer', desc: '〈駒込 中里〉東京限定的胡麻油炸最中，外層帶鹹香；保存期很短，建議當日確認。' }
+      ]
+    },
+    {
+      title: '阪急うめだ本店 · Hankyu Umeda specialties',
+      items: [
+        { emoji: '🥟', jp: '豚まん', say: 'ぶたまん', ruby: '<ruby>豚<rt>ぶた</rt></ruby>まん', romaji: 'butaman', zh: '551 豬肉包', en: '551 pork bun', desc: '〈551蓬莱〉大阪名物；熱食與攜帶時間可在櫃位確認。' },
+        { emoji: '🥔', jp: 'グランカルビー', ruby: 'グランカルビー', romaji: 'guran karubī', zh: 'Grand Calbee 厚切洋芋片', en: 'Grand Calbee premium potato crisps', desc: '阪急梅田地下甜點區的熱門厚切洋芋片品牌，適合作常溫伴手禮。' },
+        { emoji: '🍘', jp: 'ハッピーターンズ', ruby: 'ハッピーターンズ', romaji: 'happī tānzu', zh: 'Happy Turns 風味米果', en: 'Happy Turns flavored rice crackers', desc: '阪急梅田常見的人氣米果禮盒，適合分送與常溫攜帶。' },
+        { emoji: '🥩', jp: '牛めし', say: 'ぎゅうめし', ruby: '<ruby>牛<rt>ぎゅう</rt></ruby>めし', romaji: 'gyūmeshi', zh: '牛肉飯便當', en: 'beef rice bento', desc: '〈牛めし つの田〉的牛肉飯便當；適合在關西旅程中外帶食用。' }
       ]
     }
   ]

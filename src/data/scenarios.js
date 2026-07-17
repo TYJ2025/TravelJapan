@@ -145,7 +145,7 @@ export const scenarioGroups = [
     icon: '🛒',
     label: '購物 · Shopping',
     title: '買い物',
-    description: '便利商店、超市、百貨美食街、藥妝店、Bic Camera、無印良品、UNIQLO 與傳統市場：找商品、支付方式、自助結帳、相容性與免稅。',
+    description: '便利商店、超市、百貨地下街（デパ地下）、藥妝店、Bic Camera、無印良品、UNIQLO 與傳統市場：找商品、支付方式、自助結帳、相容性與免稅。',
     scenarios: shoppingScenarios
   },
   {
