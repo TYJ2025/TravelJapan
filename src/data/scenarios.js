@@ -6,6 +6,7 @@ import { yakiniku } from './yakiniku.js'
 import { shabushabu } from './shabushabu.js'
 import { kappo } from './kappo.js'
 import { kaiseki } from './kaiseki.js'
+import { sakeTasting } from './sakeTasting.js'
 import { shokudo } from './shokudo.js'
 import { bento } from './bento.js'
 import { oden } from './oden.js'
@@ -30,6 +31,8 @@ import { supermarket } from './supermarket.js'
 import { departmentFoodHall } from './departmentFoodHall.js'
 import { drugstore } from './drugstore.js'
 import { bicCamera } from './bicCamera.js'
+import { muji } from './muji.js'
+import { uniqlo } from './uniqlo.js'
 import { traditionalMarket } from './traditionalMarket.js'
 import { pharmacy } from './pharmacy.js'
 import { daily } from './daily.js'
@@ -45,6 +48,7 @@ export const foodScenarios = [
   shabushabu,
   kappo,
   kaiseki,
+  sakeTasting,
   shokudo,
   bento,
   oden,
@@ -81,6 +85,8 @@ export const shoppingScenarios = [
   departmentFoodHall,
   drugstore,
   bicCamera,
+  muji,
+  uniqlo,
   traditionalMarket
 ]
 
@@ -101,7 +107,7 @@ export const scenarioGroups = [
   {
     id: 'food',
     icon: '🍱',
-    label: '食物 · Food',
+    label: '用餐 · Dining',
     title: '食べる',
     description: '餐廳、居酒屋、壽司、便當、過敏與飲食需求。',
     scenarios: foodScenarios

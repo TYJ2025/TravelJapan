@@ -191,6 +191,16 @@ export const seafood = {
         { emoji: '🍤', jp: '海鮮天ぷら', say: 'かいせんてんぷら', ruby: '<ruby>海鮮<rt>かいせん</rt></ruby>天ぷら', romaji: 'kaisen tenpura', zh: '海鮮天婦羅', en: 'seafood tempura', desc: '蝦、白身魚與蔬菜裹薄麵衣油炸，口感輕脆。' },
         { emoji: '🍲', jp: 'あら汁', say: 'あらじる', ruby: 'あら<ruby>汁<rt>じる</rt></ruby>', romaji: 'arajiru', zh: '魚骨味噌湯', en: 'fish-head miso soup', desc: '用魚頭與魚骨熬煮的味噌湯，鮮味濃厚，適合搭配海鮮丼。' }
       ]
+    },
+    {
+      title: '磯丸水産メニューから · Isomaru Suisan selections',
+      items: [
+        { emoji: '🛶', jp: '舟盛り', say: 'ふなもり', ruby: '<ruby>舟盛<rt>ふなも</rt></ruby>り', romaji: 'funamori', zh: '船盛生魚片拼盤', en: 'boat-shaped sashimi platter', desc: '磯丸水產的豪華船盛生魚片拼盤；內容依門市與進貨而異。' },
+        { emoji: '🍣', jp: '島寿司', say: 'しまずし', ruby: '<ruby>島寿司<rt>しまずし</rt></ruby>', romaji: 'shimazushi', zh: '島壽司（押壽司）', en: 'island-style pressed sushi', desc: '磯丸水產的押壽司品項，以白身魚與鮪魚的醬漬風味為特色。' },
+        { emoji: '🍣', jp: 'うなぎ押し寿司', say: 'うなぎおしずし', ruby: 'うなぎ<ruby>押<rt>お</rt></ruby>し<ruby>寿司<rt>ずし</rt></ruby>', romaji: 'unagi oshizushi', zh: '鰻魚押壽司', en: 'pressed eel sushi', desc: '磯丸水產菜單的鰻魚押壽司。' },
+        { emoji: '🐟', jp: '国産いわしのオイルサーディン', say: 'こくさんいわしのオイルサーディン', ruby: '<ruby>国産<rt>こくさん</rt></ruby>いわしのオイルサーディン', romaji: 'kokusan iwashi no oiru sādīn', zh: '國產沙丁魚油漬', en: 'Japanese sardines in oil', desc: '磯丸水產以熱騰騰的 ajillo 風格供應的沙丁魚品項。' },
+        { emoji: '🍞', jp: '磯丸のガーリックトースト', say: 'いそまるのガーリックトースト', ruby: '<ruby>磯丸<rt>いそまる</rt></ruby>のガーリックトースト', romaji: 'isomaru no gārikku tōsuto', zh: '磯丸蒜香吐司', en: 'Isomaru garlic toast', desc: '磯丸水產的蒜香吐司，可搭配海鮮料理。' }
+      ]
     }
   ]
 }

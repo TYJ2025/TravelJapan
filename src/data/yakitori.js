@@ -179,6 +179,23 @@ export const yakitori = {
         { emoji: '🍗', jp: '鶏の唐揚げ', say: 'とりのからあげ', ruby: '<ruby>鶏<rt>とり</rt></ruby>の<ruby>唐揚<rt>からあ</rt></ruby>げ', romaji: 'tori no kara-age', zh: '炸雞塊', en: 'fried chicken', desc: '日式炸雞，外酥內多汁，居酒屋必點。' },
         { emoji: '🍚', jp: '鶏スープ', say: 'とりスープ', ruby: '<ruby>鶏<rt>とり</rt></ruby>スープ', romaji: 'tori-sūpu', zh: '雞湯', en: 'chicken soup', desc: '雞高湯，溫順暖胃、收尾良伴。' }
       ]
+    },
+    {
+      title: '鳥貴族メニューから · Torikizoku selections',
+      items: [
+        { emoji: '🍢', jp: 'もも貴族焼 たれ', say: 'ももきぞくやき たれ', ruby: 'もも<ruby>貴族焼<rt>きぞくやき</rt></ruby> たれ', romaji: 'momo kizokuyaki tare', zh: '鳥貴族雞腿串（醬汁）', en: 'Torikizoku thigh skewer with sauce', desc: '鳥貴族菜單的雞腿串醬汁口味。' },
+        { emoji: '🍢', jp: 'むね貴族焼 塩', say: 'むねきぞくやき しお', ruby: 'むね<ruby>貴族焼<rt>きぞくやき</rt></ruby> <ruby>塩<rt>しお</rt></ruby>', romaji: 'mune kizokuyaki shio', zh: '鳥貴族雞胸串（鹽味）', en: 'Torikizoku breast skewer with salt', desc: '鳥貴族菜單的雞胸串鹽味。' },
+        { emoji: '🍢', jp: 'せせり', ruby: 'せせり', romaji: 'seseri', zh: '雞頸肉', en: 'chicken neck', desc: '鳥貴族菜單的鹽烤雞頸肉。' },
+        { emoji: '❤️', jp: 'ハート（ハツ）塩', say: 'ハート ハツ しお', ruby: 'ハート（ハツ）<ruby>塩<rt>しお</rt></ruby>', romaji: 'hāto hatsu shio', zh: '鹽烤雞心', en: 'salted chicken heart', desc: '鳥貴族菜單的鹽烤雞心。' },
+        { emoji: '🍢', jp: 'かわ塩', say: 'かわしお', ruby: 'かわ<ruby>塩<rt>しお</rt></ruby>', romaji: 'kawa shio', zh: '鹽烤雞皮', en: 'salted chicken skin', desc: '鳥貴族菜單的鹽烤雞皮。' },
+        { emoji: '🍢', jp: '砂ずり（砂肝）', say: 'すなずり すなぎも', ruby: '<ruby>砂<rt>すな</rt></ruby>ずり（<ruby>砂肝<rt>すなぎも</rt></ruby>）', romaji: 'sunazuri sunagimo', zh: '雞胗', en: 'chicken gizzard', desc: '鳥貴族菜單的雞胗串。' },
+        { emoji: '🦴', jp: 'やげんなんこつ', ruby: 'やげんなんこつ', romaji: 'yagen nankotsu', zh: '雞胸軟骨', en: 'chicken breast cartilage', desc: '鳥貴族菜單的鹽烤雞胸軟骨。' },
+        { emoji: '🍢', jp: '三角（ぼんじり）', say: 'さんかく ぼんじり', ruby: '<ruby>三角<rt>さんかく</rt></ruby>（ぼんじり）', romaji: 'sankaku bonjiri', zh: '雞尾椎肉', en: 'chicken tail', desc: '鳥貴族菜單將雞尾椎標為三角。' },
+        { emoji: '🧀', jp: 'つくねチーズ焼', say: 'つくねチーズやき', ruby: 'つくねチーズ<ruby>焼<rt>や</rt></ruby>', romaji: 'tsukune chīzu yaki', zh: '起司雞肉丸串', en: 'cheese chicken-meatball skewer', desc: '鳥貴族菜單的起司雞肉丸串。' },
+        { emoji: '🍢', jp: 'むね明太マヨ焼', say: 'むねめんたいマヨやき', ruby: 'むね<ruby>明太<rt>めんたい</rt></ruby>マヨ<ruby>焼<rt>や</rt></ruby>', romaji: 'mune mentai mayo yaki', zh: '明太子美乃滋雞胸串', en: 'cod-roe mayo chicken-breast skewer', desc: '鳥貴族菜單的明太子美乃滋雞胸串。' },
+        { emoji: '🫛', jp: '国産枝豆', say: 'こくさんえだまめ', ruby: '<ruby>国産<rt>こくさん</rt></ruby><ruby>枝豆<rt>えだまめ</rt></ruby>', romaji: 'kokusan edamame', zh: '國產毛豆', en: 'Japanese-grown edamame', desc: '鳥貴族菜單的快速小菜。' },
+        { emoji: '🥬', jp: 'キャベツ盛', say: 'キャベツもり', ruby: 'キャベツ<ruby>盛<rt>も</rt></ruby>', romaji: 'kyabetsu mori', zh: '高麗菜拼盤', en: 'cabbage platter', desc: '鳥貴族菜單的快速小菜。' }
+      ]
     }
   ],
   phrases: [

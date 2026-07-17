@@ -198,6 +198,25 @@ export const yakiniku = {
         { emoji: '🍲', jp: 'わかめスープ', ruby: 'わかめスープ', romaji: 'wakame sūpu', zh: '海帶芽湯', en: 'seaweed soup', desc: '海帶芽湯，清淡鮮甜、暖胃又解膩。' },
         { emoji: '🍲', jp: 'クッパ', ruby: 'クッパ', romaji: 'kuppa', zh: '韓式湯飯', en: 'gukbap (rice soup)', desc: '韓式湯飯，白飯泡入熱湯、暖胃飽足收尾。' }
       ]
+    },
+    {
+      title: '叙々苑メニューから · Jojoen selections',
+      items: [
+        { emoji: '👅', jp: '上ネギタン塩焼', say: 'じょうネギタンしおやき', ruby: '<ruby>上<rt>じょう</rt></ruby>ネギタン<ruby>塩焼<rt>しおや</rt></ruby>', romaji: 'jō negi tan shioyaki', zh: '上等蔥鹽牛舌', en: 'premium green-onion salted tongue', desc: '叙々苑菜單的上等牛舌配調味蔥。' },
+        { emoji: '🥩', jp: 'カルビ焼', say: 'カルビやき', ruby: 'カルビ<ruby>焼<rt>や</rt></ruby>き', romaji: 'karubi yaki', zh: '牛五花燒肉', en: 'short-rib grill', desc: '叙々苑菜單的經典牛五花燒肉。' },
+        { emoji: '🥩', jp: '上カルビ焼', say: 'じょうカルビやき', ruby: '<ruby>上<rt>じょう</rt></ruby>カルビ<ruby>焼<rt>や</rt></ruby>き', romaji: 'jō karubi yaki', zh: '上等牛五花燒肉', en: 'premium short-rib grill', desc: '叙々苑菜單的上等牛五花燒肉。' },
+        { emoji: '🏺', jp: '壺漬カルビ焼', say: 'つぼづけカルビやき', ruby: '<ruby>壺漬<rt>つぼづ</rt></ruby>けカルビ<ruby>焼<rt>や</rt></ruby>き', romaji: 'tsubozuke karubi yaki', zh: '壺漬牛五花燒肉', en: 'marinated short-rib grill', desc: '叙々苑菜單中以特製醬料醃漬的牛五花。' },
+        { emoji: '🥩', jp: '上赤身焼', say: 'じょうあかみやき', ruby: '<ruby>上<rt>じょう</rt></ruby><ruby>赤身<rt>あかみ</rt></ruby><ruby>焼<rt>や</rt></ruby>き', romaji: 'jō akami yaki', zh: '上等赤身燒肉', en: 'premium lean-beef grill', desc: '叙々苑菜單的上等赤身牛肉。' },
+        { emoji: '🥩', jp: '上ロース焼', say: 'じょうロースやき', ruby: '<ruby>上<rt>じょう</rt></ruby>ロース<ruby>焼<rt>や</rt></ruby>き', romaji: 'jō rōsu yaki', zh: '上等里肌燒肉', en: 'premium loin grill', desc: '叙々苑菜單的上等里肌燒肉。' },
+        { emoji: '🥩', jp: '肩ロース厚切焼', say: 'かたロースあつぎりやき', ruby: '<ruby>肩<rt>かた</rt></ruby>ロース<ruby>厚切<rt>あつぎ</rt></ruby><ruby>焼<rt>や</rt></ruby>き', romaji: 'kata rōsu atsugiri yaki', zh: '厚切肩里肌燒肉', en: 'thick-cut chuck loin grill', desc: '叙々苑菜單的厚切肩里肌燒肉。' },
+        { emoji: '🥩', jp: '上ハラミ焼', say: 'じょうハラミやき', ruby: '<ruby>上<rt>じょう</rt></ruby>ハラミ<ruby>焼<rt>や</rt></ruby>き', romaji: 'jō harami yaki', zh: '上等橫膈膜燒肉', en: 'premium skirt-steak grill', desc: '叙々苑菜單的上等橫膈膜肉。' },
+        { emoji: '🥩', jp: '特選サーロイン焼', say: 'とくせんサーロインやき', ruby: '<ruby>特選<rt>とくせん</rt></ruby>サーロイン<ruby>焼<rt>や</rt></ruby>き', romaji: 'tokusen sāroin yaki', zh: '特選沙朗燒肉', en: 'special selected sirloin grill', desc: '叙々苑菜單的特選沙朗燒肉。' },
+        { emoji: '🥩', jp: '特選ネギサーロイン薄切塩焼', say: 'とくせんネギサーロインうすぎりしおやき', ruby: '<ruby>特選<rt>とくせん</rt></ruby>ネギサーロイン<ruby>薄切<rt>うすぎ</rt></ruby>り<ruby>塩焼<rt>しおや</rt></ruby>', romaji: 'tokusen negi sāroin usugiri shioyaki', zh: '特選蔥鹽薄切沙朗', en: 'special selected thin-sliced scallion sirloin', desc: '叙々苑菜單的薄切特選沙朗，搭配蔥與鹽味。' },
+        { emoji: '🥩', jp: '特選シャトーブリアン', say: 'とくせんシャトーブリアン', ruby: '<ruby>特選<rt>とくせん</rt></ruby>シャトーブリアン', romaji: 'tokusen shatōburiand', zh: '特選夏多布里昂', en: 'special selected chateaubriand', desc: '叙々苑菜單的高級菲力中心部位。' },
+        { emoji: '🍢', jp: 'ホルモン焼', say: 'ホルモンやき', ruby: 'ホルモン<ruby>焼<rt>や</rt></ruby>き', romaji: 'horumon yaki', zh: '燒牛腸', en: 'grilled beef offal', desc: '叙々苑推薦菜單的味噌調味牛內臟。' },
+        { emoji: '🥗', jp: '叙々苑サラダ', say: 'じょじょえんサラダ', ruby: '<ruby>叙々苑<rt>じょじょえん</rt></ruby>サラダ', romaji: 'jojoen sarada', zh: '叙々苑沙拉', en: 'Jojoen salad', desc: '叙々苑的人氣沙拉，以芝麻風味調味。' },
+        { emoji: '🍚', jp: '石焼ビビンバ', say: 'いしやきビビンバ', ruby: '<ruby>石焼<rt>いしや</rt></ruby>きビビンバ', romaji: 'ishiyaki bibinba', zh: '石鍋拌飯', en: 'stone-pot bibimbap', desc: '叙々苑推薦菜單的石鍋拌飯。' }
+      ]
     }
   ],
   phrases: [

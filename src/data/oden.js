@@ -161,6 +161,25 @@ export const oden = {
         { emoji: '🍚', jp: '雑炊', say: 'ぞうすい', ruby: '<ruby>雑炊<rt>ぞうすい</rt></ruby>', romaji: 'zōsui', zh: '雜炊（鹹粥）', en: 'rice porridge', desc: '用剩下的關東煮高湯煮成的鹹粥，是暖胃的收尾吃法。' },
         { emoji: '🍙', jp: 'おにぎり', ruby: 'おにぎり', romaji: 'onigiri', zh: '飯糰', en: 'rice ball', desc: '配關東煮的白飯糰，可泡進高湯做成茶泡飯式收尾。' }
       ]
+    },
+    {
+      title: '浅草おでん大多福から · Asakusa Oden Otafuku selections',
+      items: [
+        { emoji: '🥕', jp: '人参', say: 'にんじん', ruby: '<ruby>人参<rt>にんじん</rt></ruby>', romaji: 'ninjin', zh: '胡蘿蔔', en: 'carrot', desc: '淺草おでん大多福菜單中的胡蘿蔔關東煮。' },
+        { emoji: '🍄', jp: 'しめじ', ruby: 'しめじ', romaji: 'shimeji', zh: '鴻喜菇', en: 'shimeji mushrooms', desc: '淺草おでん大多福菜單中的鴻喜菇。' },
+        { emoji: '🧅', jp: '小たまねぎ', say: 'こたまねぎ', ruby: '<ruby>小<rt>こ</rt></ruby>たまねぎ', romaji: 'ko tamanegi', zh: '小洋蔥', en: 'small onion', desc: '淺草おでん大多福菜單中的小洋蔥。' },
+        { emoji: '🌰', jp: '銀杏', say: 'ぎんなん', ruby: '<ruby>銀杏<rt>ぎんなん</rt></ruby>', romaji: 'ginnan', zh: '銀杏', en: 'ginkgo nuts', desc: '淺草おでん大多福菜單中的串燒銀杏。' },
+        { emoji: '🌿', jp: 'ふき', ruby: 'ふき', romaji: 'fuki', zh: '蜂斗菜梗', en: 'butterbur stem', desc: '淺草おでん大多福菜單中的蜂斗菜梗。' },
+        { emoji: '🌿', jp: 'ぜんまい', ruby: 'ぜんまい', romaji: 'zenmai', zh: '薇菜', en: 'fiddlehead fern', desc: '淺草おでん大多福菜單中的薇菜。' },
+        { emoji: '🥬', jp: 'キャベツ巻き', say: 'キャベツまき', ruby: 'キャベツ<ruby>巻<rt>ま</rt></ruby>き', romaji: 'kyabetsu maki', zh: '高麗菜捲', en: 'cabbage roll', desc: '淺草おでん大多福菜單的高麗菜捲。' },
+        { emoji: '⬜', jp: '白滝', say: 'しらたき', ruby: '<ruby>白滝<rt>しらたき</rt></ruby>', romaji: 'shirataki', zh: '白滝蒟蒻絲', en: 'shirataki noodles', desc: '淺草おでん大多福菜單的白滝（蒟蒻絲）。' },
+        { emoji: '🟤', jp: '揚げボール', say: 'あげボール', ruby: '<ruby>揚<rt>あ</rt></ruby>げボール', romaji: 'age bōru', zh: '炸魚漿球', en: 'fried fish-cake ball', desc: '淺草おでん大多福菜單的洋蔥魚漿炸球。' },
+        { emoji: '🦑', jp: 'イカ天', say: 'いかてん', ruby: 'イカ<ruby>天<rt>てん</rt></ruby>', romaji: 'ika ten', zh: '花枝魚漿餅', en: 'squid fish cake', desc: '淺草おでん大多福菜單的花枝魚漿餅。' },
+        { emoji: '🥟', jp: 'シューマイ巻き', say: 'シューマイまき', ruby: 'シューマイ<ruby>巻<rt>ま</rt></ruby>き', romaji: 'shūmai maki', zh: '燒賣魚漿捲', en: 'dumpling fish-cake roll', desc: '淺草おでん大多福菜單的燒賣魚漿捲。' },
+        { emoji: '🦐', jp: 'エビ爆弾', say: 'エビばくだん', ruby: 'エビ<ruby>爆弾<rt>ばくだん</rt></ruby>', romaji: 'ebi bakudan', zh: '蝦子炸彈魚漿球', en: 'shrimp fish-cake ball', desc: '淺草おでん大多福菜單中加入蝦塊的魚漿球。' },
+        { emoji: '🌿', jp: '茎わかめ', say: 'くきわかめ', ruby: '<ruby>茎<rt>くき</rt></ruby>わかめ', romaji: 'kuki wakame', zh: '海帶芽梗捲', en: 'wakame-stem roll', desc: '淺草おでん大多福菜單的海帶芽梗捲。' },
+        { emoji: '🐙', jp: 'たこ足', say: 'たこあし', ruby: 'たこ<ruby>足<rt>あし</rt></ruby>', romaji: 'tako ashi', zh: '章魚腳', en: 'octopus leg', desc: '淺草おでん大多福菜單的燉煮章魚腳。' }
+      ]
     }
   ],
   phrases: [
